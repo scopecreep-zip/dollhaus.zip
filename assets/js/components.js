@@ -204,6 +204,316 @@ const Components = {
       Utils.URL.navigate(searchURL);
       console.log('Searching for:', query);
     }
+  },
+
+  /**
+   * DocumentReader Component
+   * Creates a government-style document reader with sidebar navigation
+   */
+  DocumentReader: {
+    /**
+     * Initialize a document reader
+     * @param {Object} options - Configuration options
+     * @param {string} options.containerId - ID of the container element
+     * @param {string} options.documentUrl - URL to fetch markdown document
+     * @param {string} options.documentType - Type label (e.g., "Official Policy Document")
+     * @param {string} options.documentTitle - Main document title
+     * @param {string} options.documentSubtitle - Document subtitle
+     * @param {Array} options.sections - Array of section objects {id, label}
+     * @param {string} options.lastUpdated - Last updated date
+     * @param {Function} options.onLoad - Callback after document loads
+     */
+    init(options) {
+      const container = Utils.DOM.select(`#${options.containerId}`);
+      if (!container) {
+        console.warn(`DocumentReader: Container #${options.containerId} not found`);
+        return null;
+      }
+
+      // Render the document reader HTML
+      this.render(container, options);
+
+      // Load the document content
+      this.loadDocument(options);
+
+      return {
+        reload: () => this.loadDocument(options),
+        updateContent: (html) => this.updateContent(options.containerId, html)
+      };
+    },
+
+    /**
+     * Render document reader HTML structure
+     */
+    render(container, options) {
+      const sectionsHTML = options.sections.map(section =>
+        `<a href="#${section.id}" class="doc-nav-link ${section.id === options.sections[0].id ? 'active' : ''}">${section.label}</a>`
+      ).join('');
+
+      container.innerHTML = `
+        <div class="document-reader">
+          <!-- Document Sidebar Navigation -->
+          <aside class="document-nav">
+            <div class="document-nav-header">
+              <h3>Table of Contents</h3>
+            </div>
+            <nav class="document-nav-menu">
+              ${sectionsHTML}
+            </nav>
+            <div class="document-meta">
+              <p class="doc-meta-label">Last Updated</p>
+              <p class="doc-meta-value">${options.lastUpdated}</p>
+            </div>
+          </aside>
+
+          <!-- Document Content Area -->
+          <article class="document-content">
+            <div class="document-header">
+              <p class="document-type">${options.documentType}</p>
+              <h1 class="document-title">${options.documentTitle}</h1>
+              <p class="document-subtitle">${options.documentSubtitle}</p>
+            </div>
+
+            <div class="document-body" data-container-id="${options.containerId}">
+              <p class="loading-text">Loading document...</p>
+            </div>
+
+            <!-- Document Actions -->
+            <div class="document-actions">
+              <button class="doc-action-btn" onclick="window.print()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2" stroke="currentColor" stroke-width="2"/>
+                  <rect x="6" y="14" width="12" height="8" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                Print Document
+              </button>
+              <button class="doc-action-btn" onclick="navigator.share ? navigator.share({title: '${options.documentTitle}', url: window.location.href}) : alert('Share this page: ' + window.location.href)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <circle cx="18" cy="5" r="3" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="6" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="18" cy="19" r="3" stroke="currentColor" stroke-width="2"/>
+                  <path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                Share
+              </button>
+            </div>
+          </article>
+        </div>
+      `;
+    },
+
+    /**
+     * Load document from URL
+     */
+    async loadDocument(options) {
+      const container = Utils.DOM.select(`#${options.containerId}`);
+      if (!container) {
+        console.warn('DocumentReader: Container not found');
+        return;
+      }
+
+      const documentBody = Utils.DOM.select('.document-body', container);
+
+      if (!documentBody) {
+        console.warn('DocumentReader: Document body not found');
+        return;
+      }
+
+      try {
+        console.log('DocumentReader: Fetching', options.documentUrl);
+        const response = await fetch(options.documentUrl);
+
+        if (response.ok) {
+          const content = await response.text();
+          console.log('DocumentReader: Content loaded, length:', content.length);
+          const htmlContent = this.convertMarkdownToHTML(content);
+          documentBody.innerHTML = htmlContent;
+
+          // Add section IDs
+          this.addSectionIds(documentBody, options.sections);
+
+          // Initialize navigation
+          this.initNavigation(options.containerId);
+
+          // Call onLoad callback if provided
+          if (options.onLoad) {
+            options.onLoad();
+          }
+        } else {
+          console.warn('DocumentReader: Fetch failed with status', response.status);
+          // Fallback content
+          this.showFallback(documentBody, options);
+        }
+      } catch (error) {
+        console.error('DocumentReader: Error loading document', error);
+        this.showFallback(documentBody, options);
+      }
+    },
+
+    /**
+     * Show fallback content
+     */
+    showFallback(documentBody, options) {
+      console.log('DocumentReader: Showing fallback content');
+      const fallbackSections = options.sections.map((section, index) => {
+        if (index === 0) {
+          return `<h2 id="${section.id}">${section.label}</h2>
+                  <p>The Doll House operates under a comprehensive governance framework designed to ensure fairness, transparency, and fabulousness for all.</p>`;
+        }
+        return `<h2 id="${section.id}">${section.label}</h2>
+                <p>Content for ${section.label}...</p>`;
+      }).join('\n');
+
+      documentBody.innerHTML = fallbackSections;
+      this.initNavigation(options.containerId);
+    },
+
+    /**
+     * Update document content directly
+     */
+    updateContent(containerId, html) {
+      const documentBody = Utils.DOM.select(`[data-container-id="${containerId}"] .document-body`);
+      if (documentBody) {
+        documentBody.innerHTML = html;
+      }
+    },
+
+    /**
+     * Add IDs to document sections
+     */
+    addSectionIds(documentBody, sections) {
+      const h2Elements = Utils.DOM.selectAll('h2', documentBody);
+      h2Elements.forEach((heading, index) => {
+        if (sections[index]) {
+          heading.id = sections[index].id;
+        }
+      });
+    },
+
+    /**
+     * Initialize document navigation
+     */
+    initNavigation(containerId) {
+      const container = Utils.DOM.select(`#${containerId}`);
+      if (!container) return;
+
+      const navLinks = Utils.DOM.selectAll('.doc-nav-link', container);
+      const documentBody = Utils.DOM.select('.document-body', container);
+      const sections = Utils.DOM.selectAll('.document-body h2', container);
+
+      if (navLinks.length === 0 || !documentBody || sections.length === 0) return;
+
+      // Scroll spy - highlight active section
+      const scrollSpy = Utils.Animation.throttle(() => {
+        let currentSection = '';
+        const scrollPosition = documentBody.scrollTop + 100;
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - documentBody.offsetTop;
+          const sectionHeight = section.offsetHeight;
+
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            currentSection = section.id;
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${currentSection}`) {
+            link.classList.add('active');
+          }
+        });
+      }, 100);
+
+      // Listen to scroll events on the document body container
+      documentBody.addEventListener('scroll', scrollSpy);
+
+      // Smooth scroll for nav links
+      navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute('href').substring(1);
+          const targetSection = Utils.DOM.select(`#${targetId}`, container);
+
+          if (targetSection && documentBody) {
+            const targetPosition = targetSection.offsetTop - documentBody.offsetTop - 20;
+
+            documentBody.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    },
+
+    /**
+     * Convert Markdown to HTML
+     */
+    convertMarkdownToHTML(markdown) {
+      let html = markdown;
+
+      // Headers (must be done in order from largest to smallest)
+      html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
+      html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
+      html = html.replace(/^# (.*$)/gim, '<h2>$1</h2>');
+
+      // Bold
+      html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+      html = html.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+
+      // Italic
+      html = html.replace(/\*([^*]+)\*/g, '<em>$1</em>');
+      html = html.replace(/_([^_]+)_/g, '<em>$1</em>');
+
+      // Links
+      html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+
+      // Code
+      html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+
+      // Lists and paragraphs
+      const lines = html.split('\n');
+      let inList = false;
+      let result = [];
+      let listItems = [];
+
+      lines.forEach(line => {
+        const trimmedLine = line.trim();
+
+        if (trimmedLine.match(/^[\*\-] /)) {
+          const listItem = trimmedLine.replace(/^[\*\-] /, '');
+          listItems.push(`<li>${listItem}</li>`);
+          inList = true;
+        } else {
+          if (inList && listItems.length > 0) {
+            result.push('<ul>' + listItems.join('') + '</ul>');
+            listItems = [];
+            inList = false;
+          }
+
+          if (trimmedLine) {
+            result.push(trimmedLine);
+          }
+        }
+      });
+
+      if (listItems.length > 0) {
+        result.push('<ul>' + listItems.join('') + '</ul>');
+      }
+
+      html = result.join('\n');
+
+      // Paragraph wrapping for non-HTML lines
+      html = html.replace(/^(?!<[hup])(.*?)$/gm, (match, content) => {
+        if (content.trim()) {
+          return `<p>${content}</p>`;
+        }
+        return '';
+      });
+
+      return html;
+    }
   }
 };
 
@@ -214,6 +524,7 @@ Object.freeze(Components.Navigation);
 Object.freeze(Components.Carousel);
 Object.freeze(Components.Form);
 Object.freeze(Components.Search);
+Object.freeze(Components.DocumentReader);
 
 // Export for ES6 modules (if needed in future)
 if (typeof module !== 'undefined' && module.exports) {

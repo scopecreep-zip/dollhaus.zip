@@ -230,126 +230,27 @@ if (newsletterForm && SiteConfig.features.enableNewsletter) {
 }
 
 // =============================================================================
-// Load Governance Content
+// Initialize Governance Document Reader
 // =============================================================================
 
-async function loadGovernanceContent() {
-    const governanceContainer = document.getElementById('governance-content');
-
-    if (!governanceContainer) return;
-
-    try {
-        const response = await fetch('governance.md');
-
-        if (response.ok) {
-            const content = await response.text();
-            const htmlContent = convertMarkdownToHTML(content);
-            governanceContainer.innerHTML = htmlContent;
-        } else {
-            // Fallback content
-            showFallbackGovernance(governanceContainer);
-        }
-    } catch (error) {
-        // Error fallback
-        showFallbackGovernance(governanceContainer);
-    }
-}
-
-function showFallbackGovernance(container) {
-    container.innerHTML = `
-        <div class="governance-fallback">
-            <h3>Governance & Policy Structure</h3>
-            <p>The Doll House operates under a comprehensive governance framework designed to ensure fairness, transparency, and fabulousness for all.</p>
-
-            <h3>Three Branches of Government:</h3>
-            <ul>
-                <li><strong>Executive Branch</strong> - President Barbie and Vice President Ken lead the administration</li>
-                <li><strong>Legislative Branch</strong> - The Doll Congress creates laws and policies</li>
-                <li><strong>Judicial Branch</strong> - The Supreme Doll Court interprets laws</li>
-            </ul>
-
-            <h3>Core Policy Areas:</h3>
-            <ul>
-                <li>Education and Career Development</li>
-                <li>Fashion and Creative Expression</li>
-                <li>Health and Wellness</li>
-                <li>Environmental Sustainability</li>
-                <li>International Doll Relations</li>
-            </ul>
-
-            <p><em>To customize this content, create a <code>governance.md</code> file in your repository root.</em></p>
-        </div>
-    `;
-}
-
-// Simple Markdown to HTML converter
-function convertMarkdownToHTML(markdown) {
-    let html = markdown;
-
-    // Headers (must be done in order from largest to smallest)
-    html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
-    html = html.replace(/^## (.*$)/gim, '<h3>$1</h3>');
-    html = html.replace(/^# (.*$)/gim, '<h3>$1</h3>');
-
-    // Bold
-    html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-    html = html.replace(/__([^_]+)__/g, '<strong>$1</strong>');
-
-    // Italic
-    html = html.replace(/\*([^*]+)\*/g, '<em>$1</em>');
-    html = html.replace(/_([^_]+)_/g, '<em>$1</em>');
-
-    // Links
-    html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
-
-    // Code
-    html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
-
-    // Convert line breaks to <br> except in lists
-    const lines = html.split('\n');
-    let inList = false;
-    let result = [];
-    let listItems = [];
-
-    lines.forEach(line => {
-        const trimmedLine = line.trim();
-
-        // Check for list items
-        if (trimmedLine.match(/^[\*\-] /)) {
-            const listItem = trimmedLine.replace(/^[\*\-] /, '');
-            listItems.push(`<li>${listItem}</li>`);
-            inList = true;
-        } else {
-            // If we were in a list, close it
-            if (inList && listItems.length > 0) {
-                result.push('<ul>' + listItems.join('') + '</ul>');
-                listItems = [];
-                inList = false;
-            }
-
-            // Add the line
-            if (trimmedLine) {
-                result.push(trimmedLine);
-            }
-        }
+function initGovernanceDocument() {
+    Components.DocumentReader.init({
+        containerId: 'governance-document',
+        documentUrl: 'governance.md',
+        documentType: 'Official Policy Document',
+        documentTitle: 'Governance & Policy Structure',
+        documentSubtitle: 'The Doll House Government Framework',
+        lastUpdated: 'November 14, 2025',
+        sections: [
+            { id: 'doc-section-1', label: 'Overview' },
+            { id: 'doc-section-2', label: 'Three Branches' },
+            { id: 'doc-section-3', label: 'Core Policy Areas' },
+            { id: 'doc-section-4', label: 'Legislative Process' },
+            { id: 'doc-section-5', label: 'Rights & Responsibilities' },
+            { id: 'doc-section-6', label: 'Transparency' },
+            { id: 'doc-section-7', label: 'Amendment Process' }
+        ]
     });
-
-    // Close any remaining list
-    if (listItems.length > 0) {
-        result.push('<ul>' + listItems.join('') + '</ul>');
-    }
-
-    html = result.join('\n');
-
-    // Paragraph wrapping for non-HTML lines
-    html = html.replace(/^(?!<[h|u|p])(.*?)$/gm, (match, content) => {
-        if (content.trim()) {
-            return `<p>${content}</p>`;
-        }
-        return '';
-    });
-
-    return html;
 }
 
 // =============================================================================
@@ -410,8 +311,8 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
 
-    // Load governance content
-    loadGovernanceContent();
+    // Initialize governance document reader
+    initGovernanceDocument();
 
     // Render social links using Component
     const headerSocialContainer = Utils.DOM.select('#headerSocialLinks');
