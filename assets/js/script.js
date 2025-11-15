@@ -339,16 +339,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize governance document reader
     initGovernanceDocument();
 
+    // Render footer using Component
+    const footerContainer = Utils.DOM.select('#footerContainer');
+    if (footerContainer) {
+        Components.Footer.render(footerContainer);
+    }
+
     // Render social links using Component
     const headerSocialContainer = Utils.DOM.select('#headerSocialLinks');
-    const footerSocialContainer = Utils.DOM.select('#footerSocialLinks');
 
     if (headerSocialContainer) {
         Components.SocialLinks.render(headerSocialContainer);
-    }
-
-    if (footerSocialContainer) {
-        Components.SocialLinks.render(footerSocialContainer);
     }
 
     // Floating Join Button Close Functionality

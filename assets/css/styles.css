@@ -1306,65 +1306,74 @@ button {
    ============================================================================= */
 
 .newsletter-section {
-    padding: var(--spacing-100) 0;
+    padding: 60px 0;
     background: linear-gradient(135deg, var(--color-primary-accent) 0%, var(--color-primary) 100%);
     color: var(--color-white);
 }
 
 .newsletter-content {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
 
-.newsletter-content h2 {
+.newsletter-text h2 {
+    font-family: var(--font-serif);
+    font-size: 48px;
     color: var(--color-white);
-    margin-bottom: 16px;
+    margin: 0 0 8px 0;
+    font-weight: 400;
 }
 
-.newsletter-content > p {
+.newsletter-text p {
     font-size: 18px;
-    margin-bottom: 32px;
+    color: var(--color-white);
+    margin: 0;
 }
 
 .newsletter-form {
-    margin-bottom: 0;
-}
-
-.form-group {
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
     gap: 10px;
+    min-width: 500px;
 }
 
-.form-group input {
+.newsletter-form input {
+    flex: 1;
     padding: 16px 20px;
     border: 2px solid var(--color-text-dark);
-    border-radius: var(--radius-full);
-    font-size: 16px;
-    font-family: inherit;
-    min-height: 54px;
     background: var(--color-white);
+    color: var(--color-text-dark);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    border-radius: var(--radius-full);
+    min-height: 54px;
 }
 
-.form-group input:focus {
+.newsletter-form input::placeholder {
+    color: #666;
+}
+
+.newsletter-form input:focus {
     outline: none;
     border-color: var(--color-primary-accent);
 }
 
-.form-group button {
+.newsletter-form button {
     padding: calc(.667em + 2px) calc(1.333em + 2px);
     background: var(--color-pale);
     color: var(--color-text-dark);
     border: 2px solid var(--color-text-dark);
     border-radius: var(--radius-full);
+    font-family: var(--font-sans);
     font-size: 16px;
     font-weight: 600;
-    font-family: inherit;
+    cursor: pointer;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
-.form-group button:hover {
+.newsletter-form button:hover {
     background: var(--color-light);
     transform: translateY(-2px);
 }
@@ -1374,108 +1383,263 @@ button {
    ============================================================================= */
 
 .site-footer {
+    margin: 0;
+    padding: 0;
+    background: var(--color-text-dark);
+}
+
+/* Main Footer - 3 Columns */
+.footer-main {
     background: var(--color-text-dark);
     color: var(--color-white);
-    padding: var(--spacing-80) 0 var(--spacing-40) 0;
-}
-
-.footer-top {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 60px;
-    margin-bottom: var(--spacing-60);
-    padding-bottom: var(--spacing-60);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer-logo img {
-    height: 48px;
-    width: auto;
+    padding: var(--spacing-80) 0;
 }
 
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    grid-template-columns: 200px 1fr;
+    gap: 80px;
 }
 
-.footer-column h3 {
-    color: var(--color-secondary);
-    font-size: 18px;
-    margin-bottom: 20px;
-    font-family: var(--font-sans);
-    font-weight: 600;
-}
-
-.footer-column ul {
+/* Left Navigation Column */
+.footer-nav-left ul,
+.footer-nav-right ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.footer-column ul li {
-    margin-bottom: 12px;
+.footer-nav-left li,
+.footer-nav-right li {
+    margin-bottom: 20px;
 }
 
-.footer-column a {
+.footer-nav-left a,
+.footer-nav-right a {
     color: var(--color-white);
     text-decoration: none;
-    font-size: 16px;
-    opacity: 0.8;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
     transition: opacity 0.3s ease;
 }
 
-.footer-column a:hover {
-    opacity: 1;
-    color: var(--color-secondary);
+.footer-nav-left a:hover,
+.footer-nav-right a:hover {
+    opacity: 0.7;
 }
 
-.footer-bottom {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    align-items: center;
-    justify-content: space-between;
+/* Center Column - 3 sub-columns: Nav | Logo/Newsletter | Address/Social */
+.footer-center {
+    display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    gap: 60px;
 }
 
-.footer-social {
-    display: flex;
-    gap: 20px;
+.footer-nav-center ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.footer-social a {
+.footer-nav-center li {
+    margin-bottom: 20px;
+}
+
+.footer-nav-center a {
     color: var(--color-white);
     text-decoration: none;
-    transition: color 0.3s ease;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: opacity 0.3s ease;
 }
 
-.footer-social a:hover {
-    color: var(--color-secondary);
+.footer-nav-center a:hover {
+    opacity: 0.7;
+}
+
+.footer-center-middle {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-center-right {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer-logo {
+    margin-bottom: 40px;
+}
+
+.footer-logo h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.footer-newsletter-main h4 {
+    font-family: var(--font-serif);
+    font-size: 24px;
+    color: var(--color-white);
+    margin: 0 0 20px 0;
+    font-weight: 400;
+}
+
+.newsletter-form-main {
+    display: flex;
+    gap: 0;
+    max-width: 400px;
+    margin: 0 auto 16px;
+}
+
+.newsletter-form-main input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--color-white);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    border-radius: 0;
+}
+
+.newsletter-form-main input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.newsletter-form-main button {
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--color-white);
+    border: none;
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter-form-main button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.sms-text {
+    font-size: 14px;
+    opacity: 0.7;
+    margin: 0;
 }
 
 .footer-address {
-    font-size: 14px;
-    opacity: 0.8;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 .footer-address p {
     margin: 0;
-    line-height: 1.6;
+}
+
+.footer-address strong {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Social Media - Icons */
+.footer-social {
+    text-align: inherit;
+}
+
+.footer-social ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+}
+
+.footer-social a {
+    color: var(--color-white);
+    font-size: 24px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-social a:hover {
+    opacity: 0.7;
+}
+
+/* Bottom Bar - Dark with 3 Items */
+.footer-bottom-bar {
+    background: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0;
+}
+
+.footer-bottom-bar .container {
+    padding: 0;
+    max-width: 100%;
+}
+
+.footer-bottom-content {
+    display: flex;
+    align-items: stretch;
+    min-height: 60px;
+}
+
+.footer-brand {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-brand:hover {
+    opacity: 0.7;
 }
 
 .footer-legal {
     display: flex;
     gap: 24px;
+    align-items: center;
+    padding: 0 20px;
+    margin-right: auto;
 }
 
 .footer-legal a {
     color: var(--color-white);
     text-decoration: none;
     font-size: 14px;
-    opacity: 0.8;
     transition: opacity 0.3s ease;
 }
 
 .footer-legal a:hover {
-    opacity: 1;
+    opacity: 0.7;
+}
+
+.back-to-top {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 14px;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    margin-left: auto;
+}
+
+.back-to-top:hover {
+    opacity: 0.7;
 }
 
 /* =============================================================================

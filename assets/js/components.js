@@ -514,6 +514,130 @@ const Components = {
 
       return html;
     }
+  },
+
+  /**
+   * Footer Component
+   * Renders the universal footer for all pages
+   */
+  Footer: {
+    render(container, options = {}) {
+      console.log('Footer.render called', container);
+      if (!container) {
+        console.error('Footer.render: No container provided');
+        return;
+      }
+
+      const defaults = {
+        siteName: 'THE DOLL HOUSE',
+        address: {
+          line1: 'THE DOLL HOUSE',
+          line2: '1600 Pennsylvania Ave NW',
+          line3: 'Washington, DC 20500'
+        },
+        brandLink: 'DOLLHAUS.ZIP',
+        brandHref: 'index.html',
+        basePath: '' // For pages in subdirectories, set to '../' or '../../'
+      };
+
+      // Merge options with defaults (Safari-compatible)
+      const config = Object.assign({}, defaults, options);
+      if (options.address) {
+        config.address = Object.assign({}, defaults.address, options.address);
+      }
+      const bp = config.basePath; // Shorthand for base path
+
+      const footerHTML = `
+        <footer class="site-footer" id="contact">
+          <!-- Main Footer - 3 Columns -->
+          <div class="footer-main">
+            <div class="container">
+              <div class="footer-grid">
+                <!-- Left Column: Navigation -->
+                <nav class="footer-nav-left">
+                  <ul>
+                    <li><a href="${bp}pages/news.html">NEWS</a></li>
+                    <li><a href="${bp}pages/media/wire.html">WIRE</a></li>
+                    <li><a href="${bp}pages/priorities/priorities.html">ISSUES</a></li>
+                    <li><a href="${bp}pages/contact/contact.html">CONTACT</a></li>
+                    <li><a href="${bp}pages/contact/visit.html">VISIT</a></li>
+                    <li><a href="${bp}pages/eop/eop.html">EOP</a></li>
+                  </ul>
+                </nav>
+
+                <!-- Center Column: 3 sub-columns -->
+                <div class="footer-center">
+                  <!-- Sub-column 1: Navigation -->
+                  <nav class="footer-nav-center">
+                    <ul>
+                      <li><a href="${bp}pages/administration.html">ADMINISTRATION</a></li>
+                      <li><a href="${bp}pages/media/gallery.html">GALLERY</a></li>
+                      <li><a href="${bp}pages/media/videos.html">VIDEO LIBRARY</a></li>
+                      <li><a href="${bp}pages/history/america-250.html">AMERICA 250</a></li>
+                      <li><a href="${bp}pages/history/founding-fathers.html">FOUNDING FATHERS</a></li>
+                      <li><a href="${bp}pages/history.html">THE SIGNERS</a></li>
+                    </ul>
+                  </nav>
+
+                  <!-- Sub-column 2: Logo & Newsletter -->
+                  <div class="footer-center-middle">
+                    <div class="footer-logo">
+                      <h3 style="color: var(--color-secondary); font-family: var(--font-serif); margin: 0;">${config.siteName}</h3>
+                    </div>
+                    <div class="footer-newsletter-main">
+                      <h4>Subscribe to The Doll House newsletter</h4>
+                      <form class="newsletter-form-main">
+                        <input type="email" placeholder="Your email" aria-label="Email address" required>
+                        <button type="submit">SIGN UP</button>
+                      </form>
+                      <p class="sms-text">📱 Text DOLL to 45470 to receive updates</p>
+                    </div>
+                  </div>
+
+                  <!-- Sub-column 3: Address & Social -->
+                  <div class="footer-center-right">
+                    <div class="footer-address">
+                      <p><strong>${config.address.line1}</strong><br>
+                      ${config.address.line2}<br>
+                      ${config.address.line3}</p>
+                    </div>
+                    <div class="footer-social">
+                      <ul id="footerSocialLinks">
+                        <!-- Social links will be rendered by Components.SocialLinks -->
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Bar -->
+          <div class="footer-bottom-bar">
+            <div class="container">
+              <div class="footer-bottom-content">
+                <a href="${config.brandHref}" class="footer-brand">${config.brandLink}</a>
+                <div class="footer-legal">
+                  <a href="${bp}pages/legal/copyright.html">Copyright</a>
+                  <a href="${bp}pages/legal/privacy.html">Privacy</a>
+                </div>
+                <a href="#top" class="back-to-top" title="Back to top">↑ Back to top</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      `;
+
+      container.innerHTML = footerHTML;
+
+      // Render social links after footer is in DOM
+      setTimeout(() => {
+        const socialContainer = document.querySelector('#footerSocialLinks');
+        if (socialContainer) {
+          Components.SocialLinks.render(socialContainer);
+        }
+      }, 0);
+    }
   }
 };
 
@@ -525,6 +649,7 @@ Object.freeze(Components.Carousel);
 Object.freeze(Components.Form);
 Object.freeze(Components.Search);
 Object.freeze(Components.DocumentReader);
+Object.freeze(Components.Footer);
 
 // Export for ES6 modules (if needed in future)
 if (typeof module !== 'undefined' && module.exports) {
