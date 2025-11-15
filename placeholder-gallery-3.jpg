@@ -1,0 +1,13 @@
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9B59B6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0218A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#g3Grad)"/>
+  <rect x="300" y="200" width="600" height="200" fill="#FFFFFF" rx="15"/>
+  <text x="600" y="320" font-family="Arial, sans-serif" font-size="48" fill="#E0218A" text-anchor="middle" font-weight="bold">Dream Big Act</text>
+  <circle cx="250" cy="300" r="30" fill="#FFD700"/>
+  <circle cx="950" cy="300" r="30" fill="#FFD700"/>
+</svg>

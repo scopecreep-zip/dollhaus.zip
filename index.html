@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Doll House - President Barbie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Announcement Banner -->
+    <div class="announcement-banner">
+        <div class="container">
+            <p class="announcement-text">Breaking: The Age of Dreams Has Officially Begun - Join Us in Making History!</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-inner">
+                <!-- Hamburger Menu Toggle (LEFT) -->
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <!-- Logo (CENTER-LEFT) -->
+                <div class="site-logo">
+                    <a href="/">President Barbie</a>
+                </div>
+
+                <!-- Utility Navigation (RIGHT) -->
+                <div class="utility-nav">
+                    <button class="search-toggle" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                            <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="social-links">
+                        <a href="#" aria-label="X (Twitter)">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Full-Screen Navigation Overlay -->
+        <nav class="primary-nav" aria-label="Primary" id="primary-nav">
+            <div class="nav-overlay-content">
+                <ul class="nav-menu">
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">News</button>
+                        <ul class="submenu">
+                            <li><a href="#articles">Articles</a></li>
+                            <li><a href="#briefings">Briefings & Statements</a></li>
+                            <li><a href="#fact-sheets">Fact Sheets</a></li>
+                            <li><a href="#presidential-actions">Presidential Actions</a></li>
+                            <li><a href="#remarks">Remarks</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Administration</button>
+                        <ul class="submenu">
+                            <li><a href="#president">President Barbie</a></li>
+                            <li><a href="#vp">Vice President Ken</a></li>
+                            <li><a href="#first-doll">First Doll Skipper</a></li>
+                            <li><a href="#second-doll">Second Doll Teresa</a></li>
+                            <li><a href="#cabinet">The Cabinet</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Media</button>
+                        <ul class="submenu">
+                            <li><a href="#video-library">Video Library</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#live-news">Live News</a></li>
+                            <li><a href="#wire">Doll House Wire</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Priorities</button>
+                        <ul class="submenu">
+                            <li><a href="#issues">Issues</a></li>
+                            <li><a href="#investments">Investments</a></li>
+                            <li><a href="#wins">Wins and Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">History</button>
+                        <ul class="submenu">
+                            <li><a href="#founders">Founders Museum</a></li>
+                            <li><a href="#timeline">Timeline</a></li>
+                            <li><a href="#government">Government Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Get in Touch</button>
+                        <ul class="submenu">
+                            <li><a href="#contact-us">Contact</a></li>
+                            <li><a href="#visit">Visit</a></li>
+                            <li><a href="#internships">Internships</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Carousel -->
+        <section class="hero-carousel">
+            <div class="carousel-slides">
+                <div class="carousel-slide active" style="background-image: url('placeholder-hero.jpg');">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <div class="container">
+                            <h2 class="slide-title">Dreams Are Reality</h2>
+                            <p class="slide-text">Private and public investments fueling doll empowerment and innovation</p>
+                            <a href="#priorities" class="slide-cta">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide" style="background-image: url('placeholder-gallery-1.jpg');">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <div class="container">
+                            <h2 class="slide-title">Honoring Our Heroes</h2>
+                            <p class="slide-text">Celebrating dolls who have served with distinction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide" style="background-image: url('placeholder-gallery-2.jpg');">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <div class="container">
+                            <h2 class="slide-title">The Work Never Stops</h2>
+                            <p class="slide-text">Cabinet meeting on advancing our fabulous agenda</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control prev" aria-label="Previous slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <button class="carousel-control next" aria-label="Next slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="carousel-indicators">
+                <button class="indicator active" data-slide="0" aria-label="Slide 1"></button>
+                <button class="indicator" data-slide="1" aria-label="Slide 2"></button>
+                <button class="indicator" data-slide="2" aria-label="Slide 3"></button>
+            </div>
+        </section>
+
+        <!-- Administration Grid -->
+        <section class="administration-section" id="administration">
+            <div class="container">
+                <div class="admin-grid">
+                    <article class="admin-card">
+                        <a href="#president" class="admin-link">
+                            <div class="admin-image-wrapper">
+                                <img src="placeholder-president.jpg" alt="President Barbie" loading="lazy">
+                            </div>
+                            <div class="admin-info">
+                                <h3 class="admin-name">President Barbie</h3>
+                                <p class="admin-title">President of the United Dolls</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="admin-card">
+                        <a href="#vp" class="admin-link">
+                            <div class="admin-image-wrapper">
+                                <img src="placeholder-vp.jpg" alt="Vice President Ken" loading="lazy">
+                            </div>
+                            <div class="admin-info">
+                                <h3 class="admin-name">Vice President Ken</h3>
+                                <p class="admin-title">Vice President</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="admin-card">
+                        <a href="#first-doll" class="admin-link">
+                            <div class="admin-image-wrapper">
+                                <img src="placeholder-first-doll.jpg" alt="First Doll Skipper" loading="lazy">
+                            </div>
+                            <div class="admin-info">
+                                <h3 class="admin-name">First Doll Skipper</h3>
+                                <p class="admin-title">First Doll of the United Dolls</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="admin-card">
+                        <a href="#cabinet" class="admin-link">
+                            <div class="admin-image-wrapper">
+                                <img src="placeholder-cabinet.jpg" alt="The Cabinet" loading="lazy">
+                            </div>
+                            <div class="admin-info">
+                                <h3 class="admin-name">The Cabinet</h3>
+                                <p class="admin-title">Meet the Cabinet</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Sections -->
+        <section class="featured-content">
+            <div class="container">
+                <!-- Executive Actions -->
+                <article class="featured-block" id="news">
+                    <div class="featured-image">
+                        <img src="placeholder-gallery-3.jpg" alt="Executive Actions" loading="lazy">
+                    </div>
+                    <div class="featured-text">
+                        <h2>Executive Actions</h2>
+                        <p>President Barbie is taking bold action to empower all dolls and create a more fabulous future for everyone.</p>
+                        <a href="#" class="text-link">View All Actions →</a>
+                    </div>
+                </article>
+
+                <!-- News -->
+                <article class="featured-block featured-reverse">
+                    <div class="featured-image">
+                        <img src="placeholder-gallery-4.jpg" alt="Latest News" loading="lazy">
+                    </div>
+                    <div class="featured-text">
+                        <h2>News</h2>
+                        <p>Stay up to date with the latest announcements, briefings, and statements from The Doll House.</p>
+                        <a href="#" class="text-link">Read the Latest →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Priorities Text Block -->
+        <section class="priorities-section" id="priorities">
+            <div class="container">
+                <div class="priorities-content">
+                    <h2>Our Priorities</h2>
+                    <p class="priorities-text">President Barbie is committed to empowering all dolls, creating opportunities for everyone, ensuring every voice is heard, spreading joy and positivity, making the world a more colorful and inclusive place, investing in education and career development, promoting creativity and self-expression, protecting the environment for future generations, and building strong partnerships with dolls around the world.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Governance & Policy Section -->
+        <section class="governance-section" id="governance">
+            <div class="container">
+                <h2 class="section-heading">Governance & Policy by the Dolls</h2>
+                <div id="governance-content" class="governance-content">
+                    <p class="loading-text">Loading governance structure...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery & Videos -->
+        <section class="media-section" id="media">
+            <div class="container">
+                <div class="media-grid">
+                    <article class="media-block">
+                        <a href="#gallery" class="media-link">
+                            <div class="media-image">
+                                <img src="placeholder-gallery-1.jpg" alt="Gallery" loading="lazy">
+                            </div>
+                            <h3>Gallery</h3>
+                        </a>
+                    </article>
+                    <article class="media-block">
+                        <a href="#videos" class="media-link">
+                            <div class="media-image">
+                                <img src="placeholder-gallery-2.jpg" alt="Videos" loading="lazy">
+                            </div>
+                            <h3>Videos</h3>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay in the Know</h2>
+                    <p>Get the latest updates from President Barbie and The Doll House</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="dollhouse-logo.svg" alt="The Doll House" width="120" height="48">
+                </div>
+
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3>News</h3>
+                        <ul>
+                            <li><a href="#wire">Wire</a></li>
+                            <li><a href="#issues">Issues</a></li>
+                            <li><a href="#contact-us">Contact</a></li>
+                            <li><a href="#visit">Visit</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Administration</h3>
+                        <ul>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#video-library">Video Library</a></li>
+                            <li><a href="#founders">Founders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#governance">Governance</a></li>
+                            <li><a href="#history">History</a></li>
+                            <li><a href="#internships">Internships</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#" aria-label="X (Twitter)">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="footer-address">
+                    <p>The Doll House<br>
+                    1600 Dreamhouse Lane<br>
+                    Malibu, CA 90265</p>
+                </div>
+
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Copyright Policy</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
