@@ -219,7 +219,6 @@ const Components = {
      * @param {string} options.documentType - Type label (e.g., "Official Policy Document")
      * @param {string} options.documentTitle - Main document title
      * @param {string} options.documentSubtitle - Document subtitle
-     * @param {Array} options.sections - Array of section objects {id, label}
      * @param {string} options.lastUpdated - Last updated date
      * @param {Function} options.onLoad - Callback after document loads
      */
@@ -230,7 +229,7 @@ const Components = {
         return null;
       }
 
-      // Render the document reader HTML
+      // Render the document reader HTML (without sections initially)
       this.render(container, options);
 
       // Load the document content
@@ -246,10 +245,6 @@ const Components = {
      * Render document reader HTML structure
      */
     render(container, options) {
-      const sectionsHTML = options.sections.map(section =>
-        `<a href="#${section.id}" class="doc-nav-link ${section.id === options.sections[0].id ? 'active' : ''}">${section.label}</a>`
-      ).join('');
-
       container.innerHTML = `
         <div class="document-reader">
           <!-- Document Sidebar Navigation -->
@@ -257,8 +252,8 @@ const Components = {
             <div class="document-nav-header">
               <h3>Table of Contents</h3>
             </div>
-            <nav class="document-nav-menu">
-              ${sectionsHTML}
+            <nav class="document-nav-menu" id="${options.containerId}-nav">
+              <p class="loading-text">Loading table of contents...</p>
             </nav>
             <div class="document-meta">
               <p class="doc-meta-label">Last Updated</p>
@@ -329,8 +324,8 @@ const Components = {
           const htmlContent = this.convertMarkdownToHTML(content);
           documentBody.innerHTML = htmlContent;
 
-          // Add section IDs
-          this.addSectionIds(documentBody, options.sections);
+          // Generate table of contents dynamically from headings
+          this.generateTableOfContents(documentBody, options.containerId);
 
           // Initialize navigation
           this.initNavigation(options.containerId);
@@ -351,20 +346,58 @@ const Components = {
     },
 
     /**
+     * Generate table of contents from document headings
+     */
+    generateTableOfContents(documentBody, containerId) {
+      const navMenu = Utils.DOM.select(`#${containerId}-nav`);
+      if (!navMenu) return;
+
+      // Find all h2 headings (main sections)
+      const headings = Utils.DOM.selectAll('h2', documentBody);
+
+      if (headings.length === 0) {
+        navMenu.innerHTML = '<p class="loading-text">No sections found</p>';
+        return;
+      }
+
+      // Generate navigation links
+      const navLinks = headings.map((heading, index) => {
+        // Create a slug from heading text
+        const text = heading.textContent.trim();
+        const slug = text
+          .toLowerCase()
+          .replace(/[^\w\s-]/g, '') // Remove special chars
+          .replace(/\s+/g, '-')      // Replace spaces with hyphens
+          .replace(/--+/g, '-');     // Replace multiple hyphens with single
+
+        const id = `doc-section-${slug}`;
+
+        // Add ID to heading
+        heading.id = id;
+
+        // Return navigation link HTML
+        return `<a href="#${id}" class="doc-nav-link ${index === 0 ? 'active' : ''}">${text}</a>`;
+      }).join('');
+
+      navMenu.innerHTML = navLinks;
+    },
+
+    /**
      * Show fallback content
      */
     showFallback(documentBody, options) {
       console.log('DocumentReader: Showing fallback content');
-      const fallbackSections = options.sections.map((section, index) => {
-        if (index === 0) {
-          return `<h2 id="${section.id}">${section.label}</h2>
-                  <p>The Doll House operates under a comprehensive governance framework designed to ensure fairness, transparency, and fabulousness for all.</p>`;
-        }
-        return `<h2 id="${section.id}">${section.label}</h2>
-                <p>Content for ${section.label}...</p>`;
-      }).join('\n');
+      documentBody.innerHTML = `
+        <h2>Overview</h2>
+        <p>The Doll Haus operates under a comprehensive governance framework based on ballroom culture's haus system.</p>
+        <h2>Core Principles</h2>
+        <p>Our governance is built on protecting the dolls, chosen family, bimbo feminism, sex worker rights, and ballroom culture preservation.</p>
+        <h2>The Three Branches</h2>
+        <p>The Mother (Executive), The House (Legislative), and The Elders (Judicial) work together through community care and restorative justice.</p>
+      `;
 
-      documentBody.innerHTML = fallbackSections;
+      // Generate TOC from fallback content
+      this.generateTableOfContents(documentBody, options.containerId);
       this.initNavigation(options.containerId);
     },
 
@@ -376,18 +409,6 @@ const Components = {
       if (documentBody) {
         documentBody.innerHTML = html;
       }
-    },
-
-    /**
-     * Add IDs to document sections
-     */
-    addSectionIds(documentBody, sections) {
-      const h2Elements = Utils.DOM.selectAll('h2', documentBody);
-      h2Elements.forEach((heading, index) => {
-        if (sections[index]) {
-          heading.id = sections[index].id;
-        }
-      });
     },
 
     /**
@@ -529,9 +550,9 @@ const Components = {
       }
 
       const defaults = {
-        siteName: 'THE DOLL HOUSE',
+        siteName: 'THE DOLL HAUS',
         address: {
-          line1: 'THE DOLL HOUSE',
+          line1: 'THE DOLL HAUS',
           line2: '1600 Pennsylvania Ave NW',
           line3: 'Washington, DC 20500'
         },
@@ -585,12 +606,12 @@ const Components = {
                       <h3 style="color: var(--color-secondary); font-family: var(--font-serif); margin: 0;">${config.siteName}</h3>
                     </div>
                     <div class="footer-newsletter-main">
-                      <h4>Subscribe to The Doll House newsletter</h4>
+                      <h4>Subscribe to The Doll Haus newsletter</h4>
                       <form class="newsletter-form-main">
                         <input type="email" placeholder="Your email" aria-label="Email address" required>
                         <button type="submit">SIGN UP</button>
                       </form>
-                      <p class="sms-text">📱 Text DOLL to 45470 to receive updates</p>
+                      <p class="sms-text">📱 Text PROTECT to 45470 to receive updates</p>
                     </div>
                   </div>
 

@@ -6,9 +6,9 @@
 
 const SiteConfig = {
   // Site Information
-  siteName: 'The Doll House',
+  siteName: 'The Doll Haus',
   siteTitle: 'President Doll',
-  siteDescription: 'Official website of President Doll and The Doll House',
+  siteDescription: 'Making the White House Femme Again - A trans woman\'s radical take on bimbo feminism, chosen family, and political resistance. Protect the dolls.',
 
   // Social Media Links
   social: {

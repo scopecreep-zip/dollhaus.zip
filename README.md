@@ -1,37 +1,59 @@
-# The Doll House - President Barbie Website
+# dollhaus.zip - Making the White House Femme Again
 
-A fabulous **1:1 recreation** of the White House website (whitehouse.gov), reimagined with Barbie colors and themes!
+A radical **political art project** by a trans woman - spoofing whitehouse.gov to celebrate bimbo feminism, protect the dolls, and honor ballroom culture's chosen family (haus) tradition.
 
-## 1:1 White House Recreation
+## About This Project
 
-This website is an exact structural replica of whitehouse.gov with Barbie theming:
+**dollhaus.zip** is a political art project created by a trans woman to reclaim space, celebrate hyperfemininity as resistance, and honor the cultural legacy of ballroom.
+
+### Cultural Context
+
+**"Dolls"** - A term coined by Black & Latina trans women in 1980s ballroom culture:
+- Celebrates trans femininity, confidence, and authentic self-expression
+- "Protect the Dolls" - movement supporting trans women facing discrimination
+- Code language for trans women to recognize each other
+
+**"Haus"** - From ballroom culture:
+- Chosen families led by mothers/fathers providing shelter, mentorship, community
+- Safe spaces for LGBTQ+ youth rejected by biological families
+- Founded in Harlem's House of LaBeija (1972) by Crystal & Lottie LaBeija
+
+**Bimbo Feminism (2025)**:
+- Reclaiming hyperfemininity as radical leftist resistance
+- Intelligence + political engagement + glamorous presentation
+- Pro-LGBTQ+, pro-sex work, pro-BLM, anti-patriarchy
+- Rejecting "girlboss" hustle culture for authentic joy
+
+### Technical Implementation
+
+This is a 1:1 structural spoof of whitehouse.gov with updated messaging:
 
 - **Exact Layout**: Matching whitehouse.gov's sections, grid systems, and content hierarchy
 - **Typography**: Uses Instrument Sans & Instrument Serif fonts (same as whitehouse.gov)
-- **Spacing System**: Fluid spacing with clamp() functions matching WH responsive design
-- **Navigation Structure**: Identical menu structure with dropdowns for News, Administration, Media, Priorities, History, and Get in Touch
-- **Hero Carousel**: Full-width rotating carousel like whitehouse.gov with 3 slides
-- **Content Sections**: Matching order - Announcement Banner → Hero → Administration Grid → Featured Blocks → Priorities → Governance → Media → Newsletter
-- **Barbie Color Adaptation**: Navy blues (#030A1B, #0D132D) → Barbie pinks (#E0218A, #C71585, #FF69B4, #9B59B6)
+- **Navigation Structure**: Identical menu structure with dropdowns
+- **Color Palette**: Navy blues → Pink/purple gradient (trans pride + femme aesthetics)
+- **Content**: Rewritten to center trans women, chosen family, and bimbo feminist values
 
 ## Features
 
 - **Responsive Design**: Works beautifully on desktop, tablet, and mobile devices
-- **Barbie Color Palette**: Pink (#E0218A), purple (#9B59B6), lavender (#E6B3E6), and gold (#FFD700)
-- **Complete White House Structure**:
+- **Trans Pride Color Palette**: Pink (#E0218A), purple (#9B59B6), lavender (#E6B3E6) - celebrating femme aesthetics
+- **Political Messaging**:
+  - Announcement: "Making the White House Femme Again ✨ Protect the Dolls"
+  - Carousel: Bimbo feminism, ballroom history, chosen family
+  - Priorities: Trans rights, sex worker support, LGBTQ+ liberation, anti-patriarchy
+  - Footer: "Text PROTECT to 45470" - solidarity messaging
+- **Structure**:
   - Header with navigation and social links
-  - Hero section with call-to-action
-  - Administration profiles section
-  - Priorities showcase
-  - **Governance & Policy section** (reads from `governance.md`)
-  - Image carousel gallery
-  - Executive actions/news
-  - Newsletter signup
-  - Comprehensive footer
+  - Hero carousel with political messaging
+  - Administration profiles (President Doll: "Trans Woman Making America Femme Again")
+  - Priorities: Radical leftist values
+  - Governance & Policy by the Haus
+  - Newsletter: "Bimbo feminism, trans joy, and radical politics delivered with glitter"
 
 ## Dynamic Governance Section
 
-The "Governance & Policy by the Dolls" section automatically reads from the `governance.md` file in your repository. This allows you to:
+The "Governance & Policy by the Haus" section can read from a `governance.md` file in your repository. This allows you to:
 
 1. Edit governance structure in a simple markdown file
 2. Automatically display updates on the website
@@ -210,8 +232,17 @@ See LICENSE file for details.
 
 ## Credits
 
-Created as a fabulous spoof of the White House website, reimagined for President Barbie!
+Created by a trans woman as political art - spoofing whitehouse.gov to make space for dolls, honor ballroom culture, and celebrate bimbo feminism as resistance.
+
+Inspired by:
+- Black & Latina trans women who created ballroom culture and the term "dolls"
+- House mothers and fathers who built chosen families for rejected LGBTQ+ youth
+- The "Protect the Dolls" movement (popularized by Pedro Pascal, Connor Ives)
+- Bimbo feminism's radical reclamation of hyperfemininity
+- Paris Is Burning (1990) and the ongoing ballroom scene
 
 ---
 
-**You can be anything - including President!** 💖✨
+**Protect the Dolls. Support Trans Joy. Choose Your Haus.** 💖✨
+
+*"Being a doll means being politically fierce."*

@@ -263,18 +263,9 @@ function initGovernanceDocument() {
         containerId: 'governance-document',
         documentUrl: 'governance.md',
         documentType: 'Official Policy Document',
-        documentTitle: 'Governance & Policy Structure',
-        documentSubtitle: 'The Doll House Government Framework',
-        lastUpdated: 'November 14, 2025',
-        sections: [
-            { id: 'doc-section-1', label: 'Overview' },
-            { id: 'doc-section-2', label: 'Three Branches' },
-            { id: 'doc-section-3', label: 'Core Policy Areas' },
-            { id: 'doc-section-4', label: 'Legislative Process' },
-            { id: 'doc-section-5', label: 'Rights & Responsibilities' },
-            { id: 'doc-section-6', label: 'Transparency' },
-            { id: 'doc-section-7', label: 'Amendment Process' }
-        ]
+        documentTitle: 'Governance & Policy Framework',
+        documentSubtitle: 'The Doll Haus Political Manifesto',
+        lastUpdated: 'November 14, 2025'
     });
 }
 
@@ -383,5 +374,6 @@ window.addEventListener('resize', handleResize);
 // =============================================================================
 
 console.log(`%c💖 ${SiteConfig.siteName} - ${SiteConfig.siteTitle} 💖`, 'color: #E0218A; font-size: 24px; font-weight: bold;');
-console.log('%cYou can be anything - including President!', 'color: #9B59B6; font-size: 14px;');
-console.log('%c\nWebsite built with modern modular architecture.', 'color: #FF69B4; font-size: 12px;');
+console.log('%cProtect the Dolls • Support Trans Joy • Choose Your Haus', 'color: #9B59B6; font-size: 14px;');
+console.log('%c\nMaking the White House Femme Again - A trans woman\'s political art project', 'color: #FF69B4; font-size: 12px;');
+console.log('%cBimbo feminism: hyperfemininity + radical politics + unapologetic trans joy', 'color: #E6B3E6; font-size: 11px;');
