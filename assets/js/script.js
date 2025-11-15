@@ -96,27 +96,52 @@ if (menuToggle && primaryNav) {
     });
 }
 
-// Toggle submenus
+// Handle submenus
 menuLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        const isExpanded = link.getAttribute('aria-expanded') === 'true';
-        const submenu = link.nextElementSibling;
+    // Desktop: hover to show and persist
+    link.addEventListener('mouseenter', () => {
+        if (window.innerWidth > 768) {
+            const submenu = link.nextElementSibling;
 
-        // Close all other submenus
-        menuLinks.forEach(otherLink => {
-            if (otherLink !== link) {
-                otherLink.setAttribute('aria-expanded', 'false');
+            // Remove active from all other submenus
+            menuLinks.forEach(otherLink => {
                 const otherSubmenu = otherLink.nextElementSibling;
-                if (otherSubmenu) {
+                if (otherSubmenu && otherSubmenu !== submenu) {
                     otherSubmenu.classList.remove('active');
                 }
-            }
-        });
+            });
 
-        // Toggle current submenu
-        link.setAttribute('aria-expanded', !isExpanded);
-        if (submenu) {
-            submenu.classList.toggle('active');
+            // Add active to current submenu
+            if (submenu) {
+                submenu.classList.add('active');
+            }
+        }
+    });
+
+    // Mobile: click to toggle
+    link.addEventListener('click', (e) => {
+        // Only handle clicks on mobile (below 768px)
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            const isExpanded = link.getAttribute('aria-expanded') === 'true';
+            const submenu = link.nextElementSibling;
+
+            // Close all other submenus
+            menuLinks.forEach(otherLink => {
+                if (otherLink !== link) {
+                    otherLink.setAttribute('aria-expanded', 'false');
+                    const otherSubmenu = otherLink.nextElementSibling;
+                    if (otherSubmenu) {
+                        otherSubmenu.classList.remove('active');
+                    }
+                }
+            });
+
+            // Toggle current submenu
+            link.setAttribute('aria-expanded', !isExpanded);
+            if (submenu) {
+                submenu.classList.toggle('active');
+            }
         }
     });
 });

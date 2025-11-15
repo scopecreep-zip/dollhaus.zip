@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>America 250 - The Doll House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Announcement Banner -->
+    <div class="announcement-banner">
+        <div class="container">
+            <p class="announcement-text">Celebrating 250 Years of Dreams, Freedom, and Fabulous Achievements!</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-inner">
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <div class="site-logo">
+                    <a href="../../index.html">President Doll</a>
+                </div>
+
+                <div class="utility-nav">
+                    <button class="search-toggle" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                            <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="social-links" id="headerSocialLinks"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="primary-nav" aria-label="Primary" id="primary-nav">
+            <div class="nav-overlay-header" id="navOverlayHeader">
+                <div class="nav-close-btn-wrapper">
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <span class="nav-close-text">Close</span>
+                </div>
+                <button class="nav-search" aria-label="Open search">
+                    <span>Search</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-search-header" id="navSearchHeader" style="display: none;">
+                <div class="nav-menu-btn-wrapper">
+                    <button class="nav-menu-btn" aria-label="Back to menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <span class="nav-menu-text">Menu</span>
+                </div>
+                <div class="nav-close-btn-wrapper nav-close-btn-wrapper-reverse">
+                    <span class="nav-close-text">Close</span>
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-search-container" id="navSearchContainer" style="display: none;">
+                <div class="nav-search-wrapper">
+                    <input type="search" class="nav-search-input" id="navSearchInput" placeholder="Search The Doll House..." aria-label="Search">
+                    <p class="nav-search-hint">Press Enter to search</p>
+                </div>
+            </div>
+            <div class="nav-overlay-content" id="navOverlayContent">
+                <ul class="nav-menu">
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">News</button>
+                        <ul class="submenu">
+                            <li><a href="../news/articles.html">Articles</a></li>
+                            <li><a href="../news/briefings-statements.html">Briefings & Statements</a></li>
+                            <li><a href="../news/fact-sheets.html">Fact Sheets</a></li>
+                            <li><a href="../news/presidential-actions.html">Presidential Actions</a></li>
+                            <li><a href="../news/remarks.html">Remarks</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Administration</button>
+                        <ul class="submenu">
+                            <li><a href="../administration/president-barbie.html">President Doll</a></li>
+                            <li><a href="../administration/vp-ken.html">Vice President Ken</a></li>
+                            <li><a href="../administration/first-doll-skipper.html">First Doll Skipper</a></li>
+                            <li><a href="../administration/second-doll-teresa.html">Second Doll Teresa</a></li>
+                            <li><a href="../administration/cabinet.html">The Cabinet</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Media</button>
+                        <ul class="submenu">
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/live.html">Live News</a></li>
+                            <li><a href="../media/wire.html">Doll House Wire</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Priorities</button>
+                        <ul class="submenu">
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../priorities/investments.html">Investments</a></li>
+                            <li><a href="../priorities/achievements.html">Wins and Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">History</button>
+                        <ul class="submenu">
+                            <li><a href="../history/founders-museum.html">Founders Museum</a></li>
+                            <li><a href="america-250.html">America 250</a></li>
+                            <li><a href="../legal/government.html">Government Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Get in Touch</button>
+                        <ul class="submenu">
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section style="background: linear-gradient(135deg, #1e3a8a 0%, #93c5fd 50%, #ef4444 100%); padding: 6rem 0; color: white; text-align: center; position: relative;">
+            <div class="container">
+                <div style="font-size: 6rem; margin-bottom: 1rem;">🇺🇸</div>
+                <h1 style="font-size: 3.5rem; font-family: var(--font-serif); margin-bottom: 1rem; color: white;">America 250</h1>
+                <p style="font-size: 1.5rem; max-width: 800px; margin: 0 auto 2rem; opacity: 0.95;">Celebrating 250 Years of Dreams, Freedom, and Fabulous Achievements</p>
+                <p style="font-size: 1.125rem; opacity: 0.9;">1776 - 2026</p>
+            </div>
+        </section>
+
+        <!-- Timeline Overview -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto; text-align: center; margin-bottom: 3rem;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; font-family: var(--font-serif);">A Quarter Millennium of Excellence</h2>
+                    <p style="font-size: 1.25rem; line-height: 1.75; color: #666;">For 250 years, our nation has stood as a beacon of hope, innovation, and possibility. From the signing of the Declaration of Independence to the modern age of digital dreams, we've continuously evolved while staying true to our founding principles.</p>
+                </div>
+
+                <!-- Interactive Timeline -->
+                <div style="position: relative; padding: 3rem 0;">
+                    <!-- Timeline Line -->
+                    <div style="position: absolute; left: 50%; top: 0; bottom: 0; width: 4px; background: linear-gradient(to bottom, #1e3a8a, #ef4444); transform: translateX(-50%);"></div>
+
+                    <!-- Timeline Items -->
+                    <div style="display: flex; flex-direction: column; gap: 4rem;">
+                        <!-- 1776 - Founding -->
+                        <div style="display: flex; align-items: center; gap: 2rem;">
+                            <div style="flex: 1; text-align: right; padding-right: 3rem;">
+                                <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                    <h3 style="font-size: 1.75rem; color: #1e3a8a; margin-bottom: 0.5rem; font-family: var(--font-serif);">1776</h3>
+                                    <h4 style="font-size: 1.25rem; margin-bottom: 1rem; color: #333;">The Declaration</h4>
+                                    <p style="line-height: 1.75; color: #666;">The Founding Dolls declare independence, establishing the principle that all dolls are created equal and endowed with unalienable rights to life, liberty, and the pursuit of fabulousness.</p>
+                                </div>
+                            </div>
+                            <div style="width: 60px; height: 60px; background: #1e3a8a; border-radius: 50%; border: 6px solid white; box-shadow: 0 0 0 4px #1e3a8a; flex-shrink: 0; z-index: 1; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">1</div>
+                            <div style="flex: 1;"></div>
+                        </div>
+
+                        <!-- 1789 - Constitution -->
+                        <div style="display: flex; align-items: center; gap: 2rem;">
+                            <div style="flex: 1;"></div>
+                            <div style="width: 60px; height: 60px; background: #7c3aed; border-radius: 50%; border: 6px solid white; box-shadow: 0 0 0 4px #7c3aed; flex-shrink: 0; z-index: 1; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">2</div>
+                            <div style="flex: 1; padding-left: 3rem;">
+                                <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                    <h3 style="font-size: 1.75rem; color: #7c3aed; margin-bottom: 0.5rem; font-family: var(--font-serif);">1789</h3>
+                                    <h4 style="font-size: 1.25rem; margin-bottom: 1rem; color: #333;">The Constitution</h4>
+                                    <p style="line-height: 1.75; color: #666;">The Constitution is ratified, creating a framework for democratic governance that has endured for centuries. The first President takes office, beginning a tradition of peaceful transfer of power.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 1863 - Freedom -->
+                        <div style="display: flex; align-items: center; gap: 2rem;">
+                            <div style="flex: 1; text-align: right; padding-right: 3rem;">
+                                <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                    <h3 style="font-size: 1.75rem; color: #059669; margin-bottom: 0.5rem; font-family: var(--font-serif);">1863</h3>
+                                    <h4 style="font-size: 1.25rem; margin-bottom: 1rem; color: #333;">Emancipation</h4>
+                                    <p style="line-height: 1.75; color: #666;">A proclamation of freedom marks a turning point in our nation's journey toward equality and justice for all dolls, regardless of their origin or design.</p>
+                                </div>
+                            </div>
+                            <div style="width: 60px; height: 60px; background: #059669; border-radius: 50%; border: 6px solid white; box-shadow: 0 0 0 4px #059669; flex-shrink: 0; z-index: 1; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">3</div>
+                            <div style="flex: 1;"></div>
+                        </div>
+
+                        <!-- 1920 - Suffrage -->
+                        <div style="display: flex; align-items: center; gap: 2rem;">
+                            <div style="flex: 1;"></div>
+                            <div style="width: 60px; height: 60px; background: #dc2626; border-radius: 50%; border: 6px solid white; box-shadow: 0 0 0 4px #dc2626; flex-shrink: 0; z-index: 1; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">4</div>
+                            <div style="flex: 1; padding-left: 3rem;">
+                                <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                    <h3 style="font-size: 1.75rem; color: #dc2626; margin-bottom: 0.5rem; font-family: var(--font-serif);">1920</h3>
+                                    <h4 style="font-size: 1.25rem; margin-bottom: 1rem; color: #333;">Votes for All</h4>
+                                    <p style="line-height: 1.75; color: #666;">The expansion of voting rights ensures that every doll's voice can be heard in our democracy, strengthening the foundation of representative government.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 1959 - First Barbie -->
+                        <div style="display: flex; align-items: center; gap: 2rem;">
+                            <div style="flex: 1; text-align: right; padding-right: 3rem;">
+                                <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                    <h3 style="font-size: 1.75rem; color: #FF1493; margin-bottom: 0.5rem; font-family: var(--font-serif);">1959</h3>
+                                    <h4 style="font-size: 1.25rem; margin-bottom: 1rem; color: #333;">The First Doll</h4>
+                                    <p style="line-height: 1.75; color: #666;">A revolutionary moment arrives as the first modern fashion doll debuts, changing the landscape of play, imagination, and possibility forever.</p>
+                                </div>
+                            </div>
+                            <div style="width: 60px; height: 60px; background: #FF1493; border-radius: 50%; border: 6px solid white; box-shadow: 0 0 0 4px #FF1493; flex-shrink: 0; z-index: 1; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">5</div>
+                            <div style="flex: 1;"></div>
+                        </div>
+
+                        <!-- 2026 - America 250 -->
+                        <div style="display: flex; align-items: center; gap: 2rem;">
+                            <div style="flex: 1;"></div>
+                            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #1e3a8a, #ef4444); border-radius: 50%; border: 6px solid white; box-shadow: 0 0 0 4px #FFD700; flex-shrink: 0; z-index: 1; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem;">★</div>
+                            <div style="flex: 1; padding-left: 3rem;">
+                                <div style="background: linear-gradient(135deg, #FFB6D9, #FFD700); padding: 2rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                    <h3 style="font-size: 1.75rem; color: #1e3a8a; margin-bottom: 0.5rem; font-family: var(--font-serif);">2026</h3>
+                                    <h4 style="font-size: 1.25rem; margin-bottom: 1rem; color: #333;">America 250</h4>
+                                    <p style="line-height: 1.75; color: #333;">We celebrate a quarter millennium of democracy, innovation, and dreams realized. Together, we look forward to the next 250 years of making history.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What Makes Dolls Great -->
+        <section style="padding: 4rem 0; background: #f8f8f8;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem; font-family: var(--font-serif);">What Makes Dolls Great</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+                    <!-- Innovation -->
+                    <div style="background: white; padding: 2.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">💡</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #1e3a8a;">Innovation</h3>
+                        <p style="line-height: 1.75; color: #666;">From the first assembly line to space exploration, dolls have always pushed the boundaries of what's possible.</p>
+                    </div>
+
+                    <!-- Diversity -->
+                    <div style="background: white; padding: 2.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🌈</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #7c3aed;">Diversity</h3>
+                        <p style="line-height: 1.75; color: #666;">Our strength comes from dolls of all types, styles, and backgrounds working together toward shared dreams.</p>
+                    </div>
+
+                    <!-- Resilience -->
+                    <div style="background: white; padding: 2.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">💪</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #059669;">Resilience</h3>
+                        <p style="line-height: 1.75; color: #666;">Through challenges and triumphs, dolls have shown unwavering determination and the ability to overcome any obstacle.</p>
+                    </div>
+
+                    <!-- Compassion -->
+                    <div style="background: white; padding: 2.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">❤️</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #dc2626;">Compassion</h3>
+                        <p style="line-height: 1.75; color: #666;">Caring for each other and extending help to dolls around the world defines who we are as a nation.</p>
+                    </div>
+
+                    <!-- Freedom -->
+                    <div style="background: white; padding: 2.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🗽</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #ea580c;">Freedom</h3>
+                        <p style="line-height: 1.75; color: #666;">The liberty to dream, create, and pursue happiness remains our most cherished value.</p>
+                    </div>
+
+                    <!-- Unity -->
+                    <div style="background: white; padding: 2.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🤝</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #0891b2;">Unity</h3>
+                        <p style="line-height: 1.75; color: #666;">E Pluribus Unum - out of many, one. Together we are stronger, brighter, and more fabulous.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Commemorative Events -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 1rem; font-family: var(--font-serif);">America 250 Celebrations</h2>
+                <p style="text-align: center; font-size: 1.125rem; color: #666; margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">Join us in commemorating this historic milestone with events across the nation</p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+                    <!-- National Parade -->
+                    <article style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); color: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎊</div>
+                        <h3 style="font-size: 1.75rem; margin-bottom: 1rem; font-family: var(--font-serif);">National Parade</h3>
+                        <p style="margin-bottom: 1rem; opacity: 0.95; line-height: 1.75;">A spectacular parade celebrating our heritage, featuring dolls from all 50 states, historical reenactments, and fabulous floats.</p>
+                        <p style="font-size: 0.875rem; opacity: 0.9;">July 4, 2026 - Washington, D.C.</p>
+                    </article>
+
+                    <!-- Fireworks Spectacular -->
+                    <article style="background: linear-gradient(135deg, #dc2626 0%, #f97316 100%); color: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎆</div>
+                        <h3 style="font-size: 1.75rem; margin-bottom: 1rem; font-family: var(--font-serif);">Fireworks Spectacular</h3>
+                        <p style="margin-bottom: 1rem; opacity: 0.95; line-height: 1.75;">The largest synchronized fireworks display in history, lighting up the sky in all 50 states simultaneously.</p>
+                        <p style="font-size: 0.875rem; opacity: 0.9;">July 4, 2026 - Nationwide</p>
+                    </article>
+
+                    <!-- Heritage Exhibitions -->
+                    <article style="background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%); color: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🏛️</div>
+                        <h3 style="font-size: 1.75rem; margin-bottom: 1rem; font-family: var(--font-serif);">Heritage Exhibitions</h3>
+                        <p style="margin-bottom: 1rem; opacity: 0.95; line-height: 1.75;">Special exhibitions at museums nationwide showcasing 250 years of artifacts, documents, and stories.</p>
+                        <p style="font-size: 0.875rem; opacity: 0.9;">Year-round 2026 - Museums Nationwide</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Heritage Quote -->
+        <section style="padding: 4rem 0; background: linear-gradient(135deg, #FFB6D9 0%, #FFD700 50%, #87CEEB 100%); text-align: center;">
+            <div class="container">
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div style="font-size: 4rem; margin-bottom: 1.5rem;">✨</div>
+                    <blockquote style="font-size: 1.75rem; font-family: var(--font-serif); line-height: 1.6; margin-bottom: 1.5rem; color: #1e3a8a;">
+                        "We hold these truths to be self-evident, that all dolls are created equal, that they are endowed with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Fabulousness."
+                    </blockquote>
+                    <p style="font-size: 1.125rem; font-style: italic; color: #333;">- The Declaration of Independence, reimagined</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Involved -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; font-family: var(--font-serif);">Join the Celebration</h2>
+                    <p style="font-size: 1.125rem; line-height: 1.75; margin-bottom: 2rem; color: #666;">Be part of this historic moment. Learn how you can participate in America 250 events in your community.</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="visit.html" style="display: inline-block; padding: 1rem 2rem; background: #1e3a8a; color: white; text-decoration: none; border-radius: 6px; font-weight: 600;">Plan Your Visit</a>
+                        <a href="contact.html" style="display: inline-block; padding: 1rem 2rem; background: white; color: #1e3a8a; text-decoration: none; border-radius: 6px; font-weight: 600; border: 2px solid #1e3a8a;">Get Updates</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay in the Know</h2>
+                    <p>Get the latest updates from President Doll and The Doll House</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h3 style="color: var(--color-secondary); font-family: var(--font-serif); margin: 0;">The Doll House</h3>
+                </div>
+
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3>News</h3>
+                        <ul>
+                            <li><a href="wire.html">Wire</a></li>
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Administration</h3>
+                        <ul>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../history/founders-museum.html">Founders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="government.html">Governance</a></li>
+                            <li><a href="../../history.html">History</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-social" id="footerSocialLinks"></div>
+
+                <div class="footer-address">
+                    <p>The Doll House<br>
+                    1600 Dreamhouse Lane<br>
+                    Malibu, CA 90265</p>
+                </div>
+
+                <div class="footer-legal">
+                    <a href="../legal/privacy.html">Privacy Policy</a>
+                    <a href="../legal/copyright.html">Copyright Policy</a>
+                    <a href="../legal/government.html">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Join Button -->
+    <div class="floating-join-btn" id="floatingJoinBtn">
+        <button class="join-close-btn" aria-label="Close join button" onclick="document.getElementById('floatingJoinBtn').style.display='none'; return false;">×</button>
+        <a href="#newsletter" class="join-now-link">Join Now</a>
+    </div>
+
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/utils.js"></script>
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

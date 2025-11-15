@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - The Doll House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Announcement Banner -->
+    <div class="announcement-banner">
+        <div class="container">
+            <p class="announcement-text">Breaking: The Age of Dreams Has Officially Begun - Join Us in Making History!</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-inner">
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <div class="site-logo">
+                    <a href="../../index.html">President Doll</a>
+                </div>
+
+                <div class="utility-nav">
+                    <button class="search-toggle" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                            <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="social-links" id="headerSocialLinks"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="primary-nav" aria-label="Primary" id="primary-nav">
+            <div class="nav-overlay-header" id="navOverlayHeader">
+                <div class="nav-close-btn-wrapper">
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <span class="nav-close-text">Close</span>
+                </div>
+                <button class="nav-search" aria-label="Open search">
+                    <span>Search</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-search-header" id="navSearchHeader" style="display: none;">
+                <div class="nav-menu-btn-wrapper">
+                    <button class="nav-menu-btn" aria-label="Back to menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <span class="nav-menu-text">Menu</span>
+                </div>
+                <div class="nav-close-btn-wrapper nav-close-btn-wrapper-reverse">
+                    <span class="nav-close-text">Close</span>
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-search-container" id="navSearchContainer" style="display: none;">
+                <div class="nav-search-wrapper">
+                    <input type="search" class="nav-search-input" id="navSearchInput" placeholder="Search The Doll House..." aria-label="Search">
+                    <p class="nav-search-hint">Press Enter to search</p>
+                </div>
+            </div>
+            <div class="nav-overlay-content" id="navOverlayContent">
+                <ul class="nav-menu">
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">News</button>
+                        <ul class="submenu">
+                            <li><a href="../news/articles.html">Articles</a></li>
+                            <li><a href="../news/briefings-statements.html">Briefings & Statements</a></li>
+                            <li><a href="../news/fact-sheets.html">Fact Sheets</a></li>
+                            <li><a href="../news/presidential-actions.html">Presidential Actions</a></li>
+                            <li><a href="../news/remarks.html">Remarks</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Administration</button>
+                        <ul class="submenu">
+                            <li><a href="../administration/president-barbie.html">President Doll</a></li>
+                            <li><a href="../administration/vp-ken.html">Vice President Ken</a></li>
+                            <li><a href="../administration/first-doll-skipper.html">First Doll Skipper</a></li>
+                            <li><a href="../administration/second-doll-teresa.html">Second Doll Teresa</a></li>
+                            <li><a href="../administration/cabinet.html">The Cabinet</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Media</button>
+                        <ul class="submenu">
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/live.html">Live News</a></li>
+                            <li><a href="../media/wire.html">Doll House Wire</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Priorities</button>
+                        <ul class="submenu">
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../priorities/investments.html">Investments</a></li>
+                            <li><a href="../priorities/achievements.html">Wins and Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">History</button>
+                        <ul class="submenu">
+                            <li><a href="../history/founders-museum.html">Founders Museum</a></li>
+                            <li><a href="../history/moments-that-made-us.html">Timeline</a></li>
+                            <li><a href="../legal/government.html">Government Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Get in Touch</button>
+                        <ul class="submenu">
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Contact The Doll House</h1>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="content-wrapper" style="max-width: 800px; margin: 0 auto;">
+                    <div class="intro-text" style="margin-bottom: 3rem;">
+                        <p style="font-size: 1.125rem; line-height: 1.75; margin-bottom: 1.5rem;">
+                            Thank you for your interest in contacting The Doll House. We welcome your comments, questions, and feedback.
+                        </p>
+                        <p style="font-size: 1rem; line-height: 1.75; color: #666; margin-bottom: 1.5rem;">
+                            Please be advised that under the Presidential Records Act, communications sent to President Barbie, Vice President Ken, or The Doll House may be preserved as part of the official presidential record.
+                        </p>
+                    </div>
+
+                    <form class="contact-form" action="#" method="post" style="background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <label for="contact-name" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Full Name *</label>
+                            <input type="text" id="contact-name" name="name" required style="width: 100%; padding: 0.75rem; border: 2px solid #ddd; border-radius: 4px; font-size: 1rem;">
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <label for="contact-email" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Email Address *</label>
+                            <input type="email" id="contact-email" name="email" required style="width: 100%; padding: 0.75rem; border: 2px solid #ddd; border-radius: 4px; font-size: 1rem;">
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <label for="contact-recipient" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Contact Recipient *</label>
+                            <select id="contact-recipient" name="recipient" required style="width: 100%; padding: 0.75rem; border: 2px solid #ddd; border-radius: 4px; font-size: 1rem; background: white;">
+                                <option value="">Select a recipient</option>
+                                <option value="president">President Barbie</option>
+                                <option value="vp">Vice President Ken</option>
+                                <option value="first-doll">First Doll Skipper</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <label for="message-type" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Message Type *</label>
+                            <select id="message-type" name="message-type" required style="width: 100%; padding: 0.75rem; border: 2px solid #ddd; border-radius: 4px; font-size: 1rem; background: white;">
+                                <option value="">Select message type</option>
+                                <option value="comment">Comment</option>
+                                <option value="question">Question</option>
+                                <option value="suggestion">Suggestion</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="appreciation">Appreciation</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <label for="contact-message" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Your Message *</label>
+                            <textarea id="contact-message" name="message" rows="8" required style="width: 100%; padding: 0.75rem; border: 2px solid #ddd; border-radius: 4px; font-size: 1rem; resize: vertical;"></textarea>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <label style="display: flex; align-items: start; cursor: pointer;">
+                                <input type="checkbox" name="newsletter" style="margin-right: 0.75rem; margin-top: 0.25rem; width: 18px; height: 18px;">
+                                <span>Sign me up to receive email updates from The Doll House</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" style="background: var(--color-secondary); color: white; padding: 1rem 2.5rem; border: none; border-radius: 4px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.2s;">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="contact-info" style="margin-top: 3rem; padding: 2rem; background: #f8f8f8; border-radius: 8px;">
+                        <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Other Ways to Contact Us</h2>
+                        <div style="line-height: 1.75;">
+                            <p style="margin-bottom: 1rem;"><strong>Mailing Address:</strong></p>
+                            <p style="margin-bottom: 1.5rem;">
+                                The Doll House<br>
+                                1600 Dreamhouse Lane<br>
+                                Malibu, CA 90265
+                            </p>
+                            <p style="margin-bottom: 1rem;"><strong>Telephone:</strong></p>
+                            <p style="margin-bottom: 1rem;">Comments: 202-456-1111</p>
+                            <p style="margin-bottom: 1rem;">Switchboard: 202-456-1414</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay in the Know</h2>
+                    <p>Get the latest updates from President Doll and The Doll House</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h3 style="color: var(--color-secondary); font-family: var(--font-serif); margin: 0;">The Doll House</h3>
+                </div>
+
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3>News</h3>
+                        <ul>
+                            <li><a href="wire.html">Wire</a></li>
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Administration</h3>
+                        <ul>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../history/founders-museum.html">Founders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="government.html">Governance</a></li>
+                            <li><a href="../../history.html">History</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-social" id="footerSocialLinks"></div>
+
+                <div class="footer-address">
+                    <p>The Doll House<br>
+                    1600 Dreamhouse Lane<br>
+                    Malibu, CA 90265</p>
+                </div>
+
+                <div class="footer-legal">
+                    <a href="../legal/privacy.html">Privacy Policy</a>
+                    <a href="../legal/copyright.html">Copyright Policy</a>
+                    <a href="../legal/government.html">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Join Button -->
+    <div class="floating-join-btn" id="floatingJoinBtn">
+        <button class="join-close-btn" aria-label="Close join button" onclick="document.getElementById('floatingJoinBtn').style.display='none'; return false;">×</button>
+        <a href="#newsletter" class="join-now-link">Join Now</a>
+    </div>
+
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/utils.js"></script>
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Security - The Doll House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div class="announcement-banner">
+        <div class="container">
+            <p class="announcement-text">Breaking: The Age of Dreams Has Officially Begun - Join Us in Making History!</p>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-inner">
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <div class="site-logo">
+                    <a href="../../index.html">President Doll</a>
+                </div>
+
+                <div class="utility-nav">
+                    <button class="search-toggle" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                            <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="social-links" id="headerSocialLinks"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="primary-nav" aria-label="Primary" id="primary-nav">
+            <div class="nav-overlay-header" id="navOverlayHeader">
+                <div class="nav-close-btn-wrapper">
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <span class="nav-close-text">Close</span>
+                </div>
+                <button class="nav-search" aria-label="Open search">
+                    <span>Search</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-search-header" id="navSearchHeader" style="display: none;">
+                <div class="nav-menu-btn-wrapper">
+                    <button class="nav-menu-btn" aria-label="Back to menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <span class="nav-menu-text">Menu</span>
+                </div>
+                <div class="nav-close-btn-wrapper nav-close-btn-wrapper-reverse">
+                    <span class="nav-close-text">Close</span>
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-search-container" id="navSearchContainer" style="display: none;">
+                <div class="nav-search-wrapper">
+                    <input type="search" class="nav-search-input" id="navSearchInput" placeholder="Search The Doll House..." aria-label="Search">
+                    <p class="nav-search-hint">Press Enter to search</p>
+                </div>
+            </div>
+            <div class="nav-overlay-content" id="navOverlayContent">
+                <ul class="nav-menu">
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">News</button>
+                        <ul class="submenu">
+                            <li><a href="../news/articles.html">Articles</a></li>
+                            <li><a href="../news/briefings-statements.html">Briefings & Statements</a></li>
+                            <li><a href="../news/fact-sheets.html">Fact Sheets</a></li>
+                            <li><a href="../news/presidential-actions.html">Presidential Actions</a></li>
+                            <li><a href="../news/remarks.html">Remarks</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Administration</button>
+                        <ul class="submenu">
+                            <li><a href="../administration/president-barbie.html">President Doll</a></li>
+                            <li><a href="../administration/vp-ken.html">Vice President Ken</a></li>
+                            <li><a href="../administration/first-doll-skipper.html">First Doll Skipper</a></li>
+                            <li><a href="../administration/second-doll-teresa.html">Second Doll Teresa</a></li>
+                            <li><a href="../administration/cabinet.html">The Cabinet</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Media</button>
+                        <ul class="submenu">
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/live.html">Live News</a></li>
+                            <li><a href="../media/wire.html">Doll House Wire</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Priorities</button>
+                        <ul class="submenu">
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../priorities/investments.html">Investments</a></li>
+                            <li><a href="../priorities/achievements.html">Wins and Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">History</button>
+                        <ul class="submenu">
+                            <li><a href="../history/founders-museum.html">Founders Museum</a></li>
+                            <li><a href="../history/moments-that-made-us.html">Timeline</a></li>
+                            <li><a href="../legal/government.html">Government Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Get in Touch</button>
+                        <ul class="submenu">
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="issue-hero" style="background-image: url('assets/images/placeholder-hero.jpg');">
+            <div class="issue-hero-overlay"></div>
+            <div class="container">
+                <div class="issue-hero-content">
+                    <h1>National Security</h1>
+                    <p class="issue-hero-description">Protecting doll communities and ensuring the safety and security of all residents of Dreamhouse Nation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section class="issue-overview-section">
+            <div class="container">
+                <div class="issue-overview-content">
+                    <h2>Overview</h2>
+                    <p>The safety and security of every doll is President Barbie's highest priority. Our comprehensive national security strategy focuses on protecting communities, safeguarding our digital infrastructure, and ensuring that all dolls can live, work, and dream without fear.</p>
+                    <p>We're taking a holistic approach to security that includes physical safety, cybersecurity, emergency preparedness, and community resilience. Through partnerships with local communities and investment in cutting-edge security technology, we're building a safer future for all dolls.</p>
+                    <p>Our security measures are designed with respect for privacy and civil liberties, ensuring that protection never comes at the cost of freedom and individual rights.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Initiatives -->
+        <section class="initiatives-section">
+            <div class="container">
+                <h2>Key Initiatives</h2>
+                <div class="initiatives-grid">
+                    <div class="initiative-card">
+                        <span class="initiative-icon">🛡️</span>
+                        <h3>Community Protection</h3>
+                        <p>Enhancing security measures in doll communities through advanced surveillance systems and community watch programs.</p>
+                    </div>
+                    <div class="initiative-card">
+                        <span class="initiative-icon">🏠</span>
+                        <h3>Dreamhouse Security</h3>
+                        <p>Implementing smart security systems in dreamhouses to protect families and property with advanced technology.</p>
+                    </div>
+                    <div class="initiative-card">
+                        <span class="initiative-icon">💻</span>
+                        <h3>Cyber Protection</h3>
+                        <p>Defending against cyber threats and protecting critical digital infrastructure from attacks and breaches.</p>
+                    </div>
+                    <div class="initiative-card">
+                        <span class="initiative-icon">🚨</span>
+                        <h3>Emergency Preparedness</h3>
+                        <p>Building robust emergency response systems and training communities to respond effectively to crises.</p>
+                    </div>
+                    <div class="initiative-card">
+                        <span class="initiative-icon">🌐</span>
+                        <h3>International Cooperation</h3>
+                        <p>Partnering with allied doll nations to address global security challenges and share intelligence.</p>
+                    </div>
+                    <div class="initiative-card">
+                        <span class="initiative-icon">🔐</span>
+                        <h3>Privacy Protection</h3>
+                        <p>Safeguarding personal information and ensuring security measures respect individual privacy rights.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Statistics -->
+        <section class="impact-stats-section">
+            <div class="container">
+                <h2>Impact by the Numbers</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">99.8%</span>
+                        <span class="stat-label">Community Safety Rate</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">15K</span>
+                        <span class="stat-label">Emergency Response Teams</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">50M</span>
+                        <span class="stat-label">Protected Dreamhouses</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Security Monitoring</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related News -->
+        <section class="related-news-section">
+            <div class="container">
+                <h2>Related News</h2>
+                <div class="related-news-grid">
+                    <article class="related-news-card">
+                        <a href="#" class="related-news-link">
+                            <div class="related-news-content">
+                                <p class="related-news-date">December 20, 2024</p>
+                                <h3>New Cybersecurity Initiative Launched</h3>
+                                <p class="related-news-excerpt">Comprehensive program will protect critical infrastructure from emerging digital threats.</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="related-news-card">
+                        <a href="#" class="related-news-link">
+                            <div class="related-news-content">
+                                <p class="related-news-date">December 14, 2024</p>
+                                <h3>Emergency Response Training Expands</h3>
+                                <p class="related-news-excerpt">Thousands of dolls receive training to help their communities prepare for emergencies.</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="related-news-card">
+                        <a href="#" class="related-news-link">
+                            <div class="related-news-content">
+                                <p class="related-news-date">December 7, 2024</p>
+                                <h3>Smart Security Systems Reach All Communities</h3>
+                                <p class="related-news-excerpt">Final phase of nationwide security upgrade completed ahead of schedule.</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery -->
+        <section class="photo-gallery-section">
+            <div class="container">
+                <h2>In Action</h2>
+                <div class="photo-gallery-grid">
+                    <div class="photo-gallery-item">
+                        <img src="../../assets/images/placeholder-gallery-1.jpg" alt="Security Command Center">
+                    </div>
+                    <div class="photo-gallery-item">
+                        <img src="../../assets/images/placeholder-gallery-2.jpg" alt="Emergency Response Training">
+                    </div>
+                    <div class="photo-gallery-item">
+                        <img src="../../assets/images/placeholder-gallery-3.jpg" alt="Community Watch Program">
+                    </div>
+                    <div class="photo-gallery-item">
+                        <img src="../../assets/images/placeholder-gallery-4.jpg" alt="Cybersecurity Operations">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay in the Know</h2>
+                    <p>Get the latest updates from President Doll and The Doll House</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h3 style="color: var(--color-secondary); font-family: var(--font-serif); margin: 0;">The Doll House</h3>
+                </div>
+
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3>News</h3>
+                        <ul>
+                            <li><a href="wire.html">Wire</a></li>
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Administration</h3>
+                        <ul>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../history/founders-museum.html">Founders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="government.html">Governance</a></li>
+                            <li><a href="../../history.html">History</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-social" id="footerSocialLinks"></div>
+
+                <div class="footer-address">
+                    <p>The Doll House<br>
+                    1600 Dreamhouse Lane<br>
+                    Malibu, CA 90265</p>
+                </div>
+
+                <div class="footer-legal">
+                    <a href="../legal/privacy.html">Privacy Policy</a>
+                    <a href="../legal/copyright.html">Copyright Policy</a>
+                    <a href="../legal/government.html">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-join-btn" id="floatingJoinBtn">
+        <button class="join-close-btn" aria-label="Close join button" onclick="document.getElementById('floatingJoinBtn').style.display='none'; return false;">×</button>
+        <a href="#newsletter" class="join-now-link">Join Now</a>
+    </div>
+
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/utils.js"></script>
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Founders Museum - The Doll House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Announcement Banner -->
+    <div class="announcement-banner">
+        <div class="container">
+            <p class="announcement-text">Now Open: Special Exhibition - The Vision of Ruth Handler</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-inner">
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <div class="site-logo">
+                    <a href="../../index.html">President Doll</a>
+                </div>
+
+                <div class="utility-nav">
+                    <button class="search-toggle" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                            <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="social-links" id="headerSocialLinks"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="primary-nav" aria-label="Primary" id="primary-nav">
+            <div class="nav-overlay-header" id="navOverlayHeader">
+                <div class="nav-close-btn-wrapper">
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <span class="nav-close-text">Close</span>
+                </div>
+                <button class="nav-search" aria-label="Open search">
+                    <span>Search</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-search-header" id="navSearchHeader" style="display: none;">
+                <div class="nav-menu-btn-wrapper">
+                    <button class="nav-menu-btn" aria-label="Back to menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <span class="nav-menu-text">Menu</span>
+                </div>
+                <div class="nav-close-btn-wrapper nav-close-btn-wrapper-reverse">
+                    <span class="nav-close-text">Close</span>
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-search-container" id="navSearchContainer" style="display: none;">
+                <div class="nav-search-wrapper">
+                    <input type="search" class="nav-search-input" id="navSearchInput" placeholder="Search The Doll House..." aria-label="Search">
+                    <p class="nav-search-hint">Press Enter to search</p>
+                </div>
+            </div>
+            <div class="nav-overlay-content" id="navOverlayContent">
+                <ul class="nav-menu">
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">News</button>
+                        <ul class="submenu">
+                            <li><a href="../news/articles.html">Articles</a></li>
+                            <li><a href="../news/briefings-statements.html">Briefings & Statements</a></li>
+                            <li><a href="../news/fact-sheets.html">Fact Sheets</a></li>
+                            <li><a href="../news/presidential-actions.html">Presidential Actions</a></li>
+                            <li><a href="../news/remarks.html">Remarks</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Administration</button>
+                        <ul class="submenu">
+                            <li><a href="../administration/president-barbie.html">President Doll</a></li>
+                            <li><a href="../administration/vp-ken.html">Vice President Ken</a></li>
+                            <li><a href="../administration/first-doll-skipper.html">First Doll Skipper</a></li>
+                            <li><a href="../administration/second-doll-teresa.html">Second Doll Teresa</a></li>
+                            <li><a href="../administration/cabinet.html">The Cabinet</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Media</button>
+                        <ul class="submenu">
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/live.html">Live News</a></li>
+                            <li><a href="../media/wire.html">Doll House Wire</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Priorities</button>
+                        <ul class="submenu">
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../priorities/investments.html">Investments</a></li>
+                            <li><a href="../priorities/achievements.html">Wins and Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">History</button>
+                        <ul class="submenu">
+                            <li><a href="../history/founders-museum.html">Founders Museum</a></li>
+                            <li><a href="america-250.html">America 250</a></li>
+                            <li><a href="../legal/government.html">Government Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Get in Touch</button>
+                        <ul class="submenu">
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section style="background: linear-gradient(135deg, #2c1810 0%, #8b4513 50%, #d2691e 100%); padding: 6rem 0; color: white; text-align: center;">
+            <div class="container">
+                <div style="font-size: 6rem; margin-bottom: 1rem;">🏛️</div>
+                <h1 style="font-size: 3.5rem; font-family: var(--font-serif); margin-bottom: 1rem; color: white;">The Founders Museum</h1>
+                <p style="font-size: 1.5rem; max-width: 800px; margin: 0 auto; opacity: 0.95;">Preserving the Legacy of Visionaries Who Built a Dream</p>
+            </div>
+        </section>
+
+        <!-- Museum Introduction -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; text-align: center; font-family: var(--font-serif);">Welcome to the Founders Museum</h2>
+                    <p style="font-size: 1.25rem; line-height: 1.75; text-align: center; color: #666; margin-bottom: 3rem;">Step into history and discover the stories of the remarkable dolls who imagined a world of infinite possibilities and made it real.</p>
+
+                    <div style="background: #f8f8f8; padding: 2.5rem; border-radius: 8px; border-left: 6px solid var(--color-secondary);">
+                        <p style="font-size: 1.125rem; line-height: 1.75; color: #333;">The Founders Museum honors Ruth Handler and the pioneering designers who revolutionized play, imagination, and empowerment. Through interactive exhibits, rare artifacts, and immersive experiences, visitors explore the innovation, courage, and vision that transformed a simple idea into a global phenomenon that has inspired generations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Exhibitions -->
+        <section style="padding: 4rem 0; background: #f8f8f8;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem; font-family: var(--font-serif);">Current Exhibitions</h2>
+
+                <div style="display: grid; gap: 3rem; max-width: 1200px; margin: 0 auto;">
+                    <!-- Ruth Handler Exhibit -->
+                    <article style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+                        <div style="background: linear-gradient(135deg, #FFB6D9 0%, #FF69B4 100%); padding: 3rem; display: flex; align-items: center; justify-content: center;">
+                            <div style="text-align: center; color: white;">
+                                <div style="font-size: 5rem; margin-bottom: 1rem;">👑</div>
+                                <h3 style="font-size: 2rem; font-family: var(--font-serif);">The Vision of Ruth Handler</h3>
+                            </div>
+                        </div>
+                        <div style="padding: 3rem;">
+                            <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: #FF1493;">Featured Exhibition</h3>
+                            <p style="line-height: 1.75; color: #666; margin-bottom: 1.5rem;">Explore the life and legacy of Ruth Handler, co-founder of Mattel and creator of the iconic Barbie doll. This comprehensive exhibition showcases her entrepreneurial journey, design philosophy, and lasting impact on culture and society.</p>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
+                                <li style="padding: 0.5rem 0; color: #333;">✓ Original sketches and prototypes from 1959</li>
+                                <li style="padding: 0.5rem 0; color: #333;">✓ Personal letters and business documents</li>
+                                <li style="padding: 0.5rem 0; color: #333;">✓ Interactive timeline of innovation</li>
+                                <li style="padding: 0.5rem 0; color: #333;">✓ Multimedia presentations</li>
+                            </ul>
+                            <p style="font-size: 0.875rem; color: #999;">Gallery A • First Floor</p>
+                        </div>
+                    </article>
+
+                    <!-- Design Evolution Exhibit -->
+                    <article style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+                        <div style="padding: 3rem;">
+                            <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: #7c3aed;">Permanent Collection</h3>
+                            <p style="line-height: 1.75; color: #666; margin-bottom: 1.5rem;">Journey through six decades of design evolution, from the first teenage fashion model to today's diverse and inclusive dolls representing careers, cultures, and body types from around the world.</p>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
+                                <li style="padding: 0.5rem 0; color: #333;">✓ Original 1959 debut collection</li>
+                                <li style="padding: 0.5rem 0; color: #333;">✓ Career dolls through the decades</li>
+                                <li style="padding: 0.5rem 0; color: #333;">✓ Fashion and cultural evolution</li>
+                                <li style="padding: 0.5rem 0; color: #333;">✓ Manufacturing and materials showcase</li>
+                            </ul>
+                            <p style="font-size: 0.875rem; color: #999;">Gallery B • First Floor</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #E0BBE4 0%, #957DAD 100%); padding: 3rem; display: flex; align-items: center; justify-content: center;">
+                            <div style="text-align: center; color: white;">
+                                <div style="font-size: 5rem; margin-bottom: 1rem;">🎨</div>
+                                <h3 style="font-size: 2rem; font-family: var(--font-serif);">The Design Evolution</h3>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Innovation Lab Exhibit -->
+                    <article style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+                        <div style="background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%); padding: 3rem; display: flex; align-items: center; justify-content: center;">
+                            <div style="text-align: center; color: white;">
+                                <div style="font-size: 5rem; margin-bottom: 1rem;">🔬</div>
+                                <h3 style="font-size: 2rem; font-family: var(--font-serif);">The Innovation Lab</h3>
+                            </div>
+                        </div>
+                        <div style="padding: 3rem;">
+                            <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: #0891b2;">Interactive Experience</h3>
+                            <p style="line-height: 1.75; color: #666; margin-bottom: 1.5rem;">Step into the creative process and discover how dolls are designed, from initial concept sketches to final production. Try your hand at digital design tools and learn about sustainable manufacturing.</p>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
+                                <li style="padding: 0.5rem 0; color: #333;">✓ Design your own doll (digital)</li>
+                                <li style="padding: 0.5rem 0; color: #333;">✓ 3D printing demonstrations</li>
+                                <li style="padding: 0.5rem 0; color: #333;">✓ Sustainability initiatives</li>
+                                <li style="padding: 0.5rem 0; color: #333;">✓ Meet the designers (select dates)</li>
+                            </ul>
+                            <p style="font-size: 0.875rem; color: #999;">Gallery C • Second Floor</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Historical Artifacts -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 1.5rem; font-family: var(--font-serif);">Treasures of the Collection</h2>
+                <p style="text-align: center; font-size: 1.125rem; color: #666; margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">Rare artifacts that tell the story of innovation and inspiration</p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+                    <!-- Artifact 1 -->
+                    <div style="background: #f8f8f8; padding: 2rem; border-radius: 8px; text-align: center;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">📝</div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: #333;">Original Patent Documents</h3>
+                        <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">The original 1958 patent application for the teenage fashion doll, complete with Ruth Handler's signature.</p>
+                    </div>
+
+                    <!-- Artifact 2 -->
+                    <div style="background: #f8f8f8; padding: 2rem; border-radius: 8px; text-align: center;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">👗</div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: #333;">First Production Outfit</h3>
+                        <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">The iconic black and white striped swimsuit from the debut 1959 collection, perfectly preserved.</p>
+                    </div>
+
+                    <!-- Artifact 3 -->
+                    <div style="background: #f8f8f8; padding: 2rem; border-radius: 8px; text-align: center;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">🎬</div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: #333;">Early Commercial Films</h3>
+                        <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">Restored original television commercials that introduced the doll to the world in March 1959.</p>
+                    </div>
+
+                    <!-- Artifact 4 -->
+                    <div style="background: #f8f8f8; padding: 2rem; border-radius: 8px; text-align: center;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">✏️</div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: #333;">Designer Sketches</h3>
+                        <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">Hand-drawn concept sketches from legendary fashion designers who created doll wardrobes.</p>
+                    </div>
+
+                    <!-- Artifact 5 -->
+                    <div style="background: #f8f8f8; padding: 2rem; border-radius: 8px; text-align: center;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">📸</div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: #333;">Behind-the-Scenes Photos</h3>
+                        <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">Rare photographs of Ruth Handler and the Mattel team during the development years.</p>
+                    </div>
+
+                    <!-- Artifact 6 -->
+                    <div style="background: #f8f8f8; padding: 2rem; border-radius: 8px; text-align: center;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">🌍</div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: #333;">International Editions</h3>
+                        <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">First editions from countries around the world, showcasing global cultural adaptation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Gallery -->
+        <section style="padding: 4rem 0; background: linear-gradient(135deg, #FFB6D9 0%, #E0BBE4 100%);">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 1.5rem; color: white; font-family: var(--font-serif);">Virtual Gallery Tour</h2>
+                <p style="text-align: center; font-size: 1.125rem; color: white; margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto; opacity: 0.95;">Explore the museum from anywhere in the world</p>
+
+                <div style="max-width: 900px; margin: 0 auto; background: white; border-radius: 12px; padding: 3rem; box-shadow: 0 8px 24px rgba(0,0,0,0.2);">
+                    <div style="aspect-ratio: 16/9; background: #f0f0f0; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem; opacity: 0.5;">🖼️</div>
+                            <p style="color: #999; font-size: 1.125rem;">360° Virtual Tour Coming Soon</p>
+                        </div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+                        <button style="padding: 1rem; background: var(--color-secondary); color: white; border: none; border-radius: 6px; font-weight: 600; cursor: pointer;">Gallery A</button>
+                        <button style="padding: 1rem; background: var(--color-secondary); color: white; border: none; border-radius: 6px; font-weight: 600; cursor: pointer;">Gallery B</button>
+                        <button style="padding: 1rem; background: var(--color-secondary); color: white; border: none; border-radius: 6px; font-weight: 600; cursor: pointer;">Gallery C</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visiting Information -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem; font-family: var(--font-serif);">Plan Your Visit</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+                    <!-- Hours -->
+                    <div style="background: #f8f8f8; padding: 2.5rem; border-radius: 8px;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">🕒</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; text-align: center;">Hours</h3>
+                        <div style="line-height: 2; color: #666;">
+                            <p style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid #ddd;"><span>Monday - Friday</span> <strong>10am - 6pm</strong></p>
+                            <p style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid #ddd;"><span>Saturday</span> <strong>9am - 8pm</strong></p>
+                            <p style="display: flex; justify-content: space-between; padding: 0.5rem 0;"><span>Sunday</span> <strong>12pm - 5pm</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- Admission -->
+                    <div style="background: #f8f8f8; padding: 2.5rem; border-radius: 8px;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">🎫</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; text-align: center;">Admission</h3>
+                        <div style="line-height: 2; color: #666;">
+                            <p style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid #ddd;"><span>Adults</span> <strong>$25</strong></p>
+                            <p style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid #ddd;"><span>Children (5-17)</span> <strong>$15</strong></p>
+                            <p style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid #ddd;"><span>Seniors (65+)</span> <strong>$20</strong></p>
+                            <p style="display: flex; justify-content: space-between; padding: 0.5rem 0;"><span>Children under 5</span> <strong>Free</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- Location -->
+                    <div style="background: #f8f8f8; padding: 2.5rem; border-radius: 8px;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">📍</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; text-align: center;">Location</h3>
+                        <div style="color: #666; text-align: center; line-height: 1.75;">
+                            <p style="margin-bottom: 1rem;">The Doll House<br>East Wing, First Floor</p>
+                            <p style="margin-bottom: 1rem;">1600 Dreamhouse Lane<br>Malibu, CA 90265</p>
+                            <p style="font-size: 0.875rem; color: #999;">Wheelchair accessible<br>Free parking available</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="visit.html" style="display: inline-block; padding: 1rem 2.5rem; background: var(--color-secondary); color: white; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1.125rem;">Book Your Tickets</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educational Programs -->
+        <section style="padding: 4rem 0; background: #f8f8f8;">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; font-family: var(--font-serif);">Educational Programs</h2>
+                    <p style="font-size: 1.125rem; line-height: 1.75; color: #666; margin-bottom: 2rem;">The museum offers specialized programs for schools, researchers, and enthusiasts. From guided tours to hands-on workshops, there's something for every age and interest.</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="contact.html" style="display: inline-block; padding: 1rem 2rem; background: white; color: var(--color-secondary); text-decoration: none; border-radius: 6px; font-weight: 600; border: 2px solid var(--color-secondary);">School Programs</a>
+                        <a href="contact.html" style="display: inline-block; padding: 1rem 2rem; background: white; color: var(--color-secondary); text-decoration: none; border-radius: 6px; font-weight: 600; border: 2px solid var(--color-secondary);">Research Access</a>
+                        <a href="contact.html" style="display: inline-block; padding: 1rem 2rem; background: white; color: var(--color-secondary); text-decoration: none; border-radius: 6px; font-weight: 600; border: 2px solid var(--color-secondary);">Workshops</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Museum Updates</h2>
+                    <p>Get notified about new exhibitions, special events, and museum news</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h3 style="color: var(--color-secondary); font-family: var(--font-serif); margin: 0;">The Doll House</h3>
+                </div>
+
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3>News</h3>
+                        <ul>
+                            <li><a href="wire.html">Wire</a></li>
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Administration</h3>
+                        <ul>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../history/founders-museum.html">Founders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="government.html">Governance</a></li>
+                            <li><a href="../../history.html">History</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-social" id="footerSocialLinks"></div>
+
+                <div class="footer-address">
+                    <p>The Doll House<br>
+                    1600 Dreamhouse Lane<br>
+                    Malibu, CA 90265</p>
+                </div>
+
+                <div class="footer-legal">
+                    <a href="../legal/privacy.html">Privacy Policy</a>
+                    <a href="../legal/copyright.html">Copyright Policy</a>
+                    <a href="../legal/government.html">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Join Button -->
+    <div class="floating-join-btn" id="floatingJoinBtn">
+        <button class="join-close-btn" aria-label="Close join button" onclick="document.getElementById('floatingJoinBtn').style.display='none'; return false;">×</button>
+        <a href="#newsletter" class="join-now-link">Join Now</a>
+    </div>
+
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/utils.js"></script>
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

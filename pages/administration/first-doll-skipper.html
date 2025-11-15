@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Doll Skipper - The Doll House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Announcement Banner -->
+    <div class="announcement-banner">
+        <div class="container">
+            <p class="announcement-text">Breaking: The Age of Dreams Has Officially Begun - Join Us in Making History!</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-inner">
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <div class="site-logo">
+                    <a href="../../index.html">President Doll</a>
+                </div>
+
+                <div class="utility-nav">
+                    <button class="search-toggle" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                            <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="social-links" id="headerSocialLinks"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="primary-nav" aria-label="Primary" id="primary-nav">
+            <div class="nav-overlay-header" id="navOverlayHeader">
+                <div class="nav-close-btn-wrapper">
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <span class="nav-close-text">Close</span>
+                </div>
+                <button class="nav-search" aria-label="Open search">
+                    <span>Search</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-search-header" id="navSearchHeader" style="display: none;">
+                <div class="nav-menu-btn-wrapper">
+                    <button class="nav-menu-btn" aria-label="Back to menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <span class="nav-menu-text">Menu</span>
+                </div>
+                <div class="nav-close-btn-wrapper nav-close-btn-wrapper-reverse">
+                    <span class="nav-close-text">Close</span>
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-search-container" id="navSearchContainer" style="display: none;">
+                <div class="nav-search-wrapper">
+                    <input type="search" class="nav-search-input" id="navSearchInput" placeholder="Search The Doll House..." aria-label="Search">
+                    <p class="nav-search-hint">Press Enter to search</p>
+                </div>
+            </div>
+            <div class="nav-overlay-content" id="navOverlayContent">
+                <ul class="nav-menu">
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">News</button>
+                        <ul class="submenu">
+                            <li><a href="../news/articles.html">Articles</a></li>
+                            <li><a href="../news/briefings-statements.html">Briefings & Statements</a></li>
+                            <li><a href="../news/fact-sheets.html">Fact Sheets</a></li>
+                            <li><a href="../news/presidential-actions.html">Presidential Actions</a></li>
+                            <li><a href="../news/remarks.html">Remarks</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Administration</button>
+                        <ul class="submenu">
+                            <li><a href="../administration/president-barbie.html">President Barbie</a></li>
+                            <li><a href="../administration/vp-ken.html">Vice President Ken</a></li>
+                            <li><a href="../administration/first-doll-skipper.html">First Doll Skipper</a></li>
+                            <li><a href="../administration/second-doll-teresa.html">Second Doll Teresa</a></li>
+                            <li><a href="../administration/cabinet.html">The Cabinet</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Media</button>
+                        <ul class="submenu">
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/live.html">Live News</a></li>
+                            <li><a href="../media/wire.html">Doll House Wire</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Priorities</button>
+                        <ul class="submenu">
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../priorities/investments.html">Investments</a></li>
+                            <li><a href="../priorities/achievements.html">Wins and Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">History</button>
+                        <ul class="submenu">
+                            <li><a href="../history/founders-museum.html">Founders Museum</a></li>
+                            <li><a href="../history/moments-that-made-us.html">Timeline</a></li>
+                            <li><a href="../legal/government.html">Government Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Get in Touch</button>
+                        <ul class="submenu">
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="profile-hero" style="background: linear-gradient(135deg, rgba(224, 33, 138, 0.9) 0%, rgba(199, 21, 133, 0.9) 100%), url('assets/images/placeholder-first-doll.jpg') center/cover; min-height: 60vh; display: flex; align-items: center; color: white;">
+            <div class="container" style="max-width: 1200px;">
+                <div style="max-width: 800px;">
+                    <p style="font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px;">First Doll of the United Dolls</p>
+                    <h1 style="font-size: clamp(48px, 6vw, 72px); margin-bottom: 24px; color: white;">First Doll Skipper</h1>
+                    <p style="font-size: 22px; line-height: 1.6; margin: 0;">A passionate advocate for youth empowerment, education excellence, and equal opportunities for all young dolls across the nation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Biography Section -->
+        <section style="padding: var(--spacing-100) 0; background: var(--color-white);">
+            <div class="container" style="max-width: 1200px;">
+                <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 60px; align-items: start;">
+                    <div>
+                        <h2 style="color: var(--color-primary); margin-bottom: 32px;">About First Doll Skipper</h2>
+
+                        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px;">First Doll Skipper Roberts brings boundless energy, innovative thinking, and a deep commitment to youth empowerment to her role as First Doll of the United Dolls. As President Barbie's younger sister, she has grown up witnessing the power of breaking barriers and dreaming big—lessons she now shares with young dolls across the nation.</p>
+
+                        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px;">Born with an innate curiosity and entrepreneurial spirit, Skipper has always been a trailblazer in her own right. From launching successful businesses as a teenager to advocating for STEM education and digital literacy, she has consistently demonstrated that age is no barrier to making a meaningful impact.</p>
+
+                        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px;">As First Doll, Skipper has redefined the role, transforming it into a platform for addressing critical issues affecting young people today. Her initiatives focus on education equity, digital inclusion, youth mental health, entrepreneurship, and leadership development—all aimed at ensuring the next generation has the tools and opportunities to succeed.</p>
+
+                        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px;">Her signature "Dream Big, Start Now" campaign has reached millions of young dolls, providing mentorship, resources, and inspiration to pursue their passions. Through partnerships with schools, tech companies, and community organizations, Skipper has created pathways for young dolls to explore careers in technology, science, arts, and public service.</p>
+
+                        <h3 style="color: var(--color-primary); margin-top: 48px; margin-bottom: 24px;">Early Life and Education</h3>
+
+                        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px;">Growing up as President Barbie's sister, Skipper learned early on that she could forge her own path while honoring her family's legacy of service and achievement. She excelled in school, particularly in mathematics and computer science, and became an advocate for ensuring all young dolls had access to quality STEM education.</p>
+
+                        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px;">Skipper graduated with honors, earning degrees in Education Technology and Youth Development. Her academic work focused on how digital tools can democratize learning and create opportunities for young people from all backgrounds. She has continued her education through various leadership programs and remains committed to lifelong learning.</p>
+
+                        <h3 style="color: var(--color-primary); margin-top: 48px; margin-bottom: 24px;">Youth Advocacy and Innovation</h3>
+
+                        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px;">Before becoming First Doll, Skipper founded several youth-focused organizations, including a nonprofit providing free coding classes to underserved communities and a mentorship network connecting young entrepreneurs with business leaders. Her work has been recognized nationally for its innovation and impact.</p>
+
+                        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px;">She is a sought-after speaker on topics including youth empowerment, education technology, and the future of work. Her TED talk, "Why Age Shouldn't Define Opportunity," has been viewed millions of times and inspired young dolls worldwide to pursue their ambitions.</p>
+
+                        <h3 style="color: var(--color-primary); margin-top: 48px; margin-bottom: 24px;">Personal Values and Vision</h3>
+
+                        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px;">First Doll Skipper believes that investing in young people is investing in the future. She is passionate about creating inclusive spaces where all young dolls feel valued, heard, and empowered to make their mark on the world. Her approach combines optimism with pragmatism, recognizing both the challenges young people face and their incredible potential to overcome them.</p>
+                    </div>
+
+                    <div>
+                        <div style="background: var(--color-cream); border: 2px solid var(--color-pale); border-radius: var(--radius-large); padding: 32px; position: sticky; top: 120px;">
+                            <h3 style="font-family: var(--font-sans); font-size: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 24px; color: var(--color-text-dark);">Quick Facts</h3>
+
+                            <div style="margin-bottom: 24px;">
+                                <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-dark); opacity: 0.7; margin-bottom: 4px; font-weight: 600;">Full Name</p>
+                                <p style="font-size: 16px; font-weight: 500; margin: 0;">Skipper Madison Roberts</p>
+                            </div>
+
+                            <div style="margin-bottom: 24px;">
+                                <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-dark); opacity: 0.7; margin-bottom: 4px; font-weight: 600;">Born</p>
+                                <p style="font-size: 16px; font-weight: 500; margin: 0;">July 15, 1964</p>
+                            </div>
+
+                            <div style="margin-bottom: 24px;">
+                                <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-dark); opacity: 0.7; margin-bottom: 4px; font-weight: 600;">Birthplace</p>
+                                <p style="font-size: 16px; font-weight: 500; margin: 0;">Willows, Wisconsin</p>
+                            </div>
+
+                            <div style="margin-bottom: 24px;">
+                                <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-dark); opacity: 0.7; margin-bottom: 4px; font-weight: 600;">Relation</p>
+                                <p style="font-size: 16px; font-weight: 500; margin: 0;">Sister of President Barbie</p>
+                            </div>
+
+                            <div style="margin-bottom: 24px;">
+                                <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-dark); opacity: 0.7; margin-bottom: 4px; font-weight: 600;">Education</p>
+                                <p style="font-size: 16px; font-weight: 500; margin: 0;">Education Technology, Youth Development</p>
+                            </div>
+
+                            <div>
+                                <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-dark); opacity: 0.7; margin-bottom: 4px; font-weight: 600;">Focus Areas</p>
+                                <p style="font-size: 16px; font-weight: 500; margin: 0;">Youth Empowerment, Education</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Initiatives -->
+        <section style="padding: var(--spacing-100) 0; background: var(--color-light);">
+            <div class="container" style="max-width: 1200px;">
+                <h2 style="color: var(--color-primary); text-align: center; margin-bottom: 60px;">Signature Initiatives</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                    <div style="background: var(--color-white); padding: 40px; border-radius: var(--radius-large); border: 2px solid var(--color-pale);">
+                        <h3 style="color: var(--color-primary); margin-bottom: 16px;">Dream Big, Start Now</h3>
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0;">A nationwide campaign providing mentorship, resources, and opportunities for young dolls to explore their passions and develop leadership skills.</p>
+                    </div>
+
+                    <div style="background: var(--color-white); padding: 40px; border-radius: var(--radius-large); border: 2px solid var(--color-pale);">
+                        <h3 style="color: var(--color-primary); margin-bottom: 16px;">Code the Future</h3>
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0;">Free coding and digital literacy programs for young dolls in underserved communities, preparing them for technology careers.</p>
+                    </div>
+
+                    <div style="background: var(--color-white); padding: 40px; border-radius: var(--radius-large); border: 2px solid var(--color-pale);">
+                        <h3 style="color: var(--color-primary); margin-bottom: 16px;">Young Leaders Summit</h3>
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0;">Annual gathering of exceptional young dolls for workshops, networking, and direct engagement with national leaders and innovators.</p>
+                    </div>
+
+                    <div style="background: var(--color-white); padding: 40px; border-radius: var(--radius-large); border: 2px solid var(--color-pale);">
+                        <h3 style="color: var(--color-primary); margin-bottom: 16px;">Student Voice Project</h3>
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0;">Platform amplifying student perspectives on policy issues, ensuring young dolls' concerns are heard at the highest levels of government.</p>
+                    </div>
+
+                    <div style="background: var(--color-white); padding: 40px; border-radius: var(--radius-large); border: 2px solid var(--color-pale);">
+                        <h3 style="color: var(--color-primary); margin-bottom: 16px;">Youth Mental Health Initiative</h3>
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0;">Expanding mental health resources in schools and communities, reducing stigma, and promoting wellness among young dolls.</p>
+                    </div>
+
+                    <div style="background: var(--color-white); padding: 40px; border-radius: var(--radius-large); border: 2px solid var(--color-pale);">
+                        <h3 style="color: var(--color-primary); margin-bottom: 16px;">Read to Succeed</h3>
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0;">Literacy campaign ensuring every young doll has access to books and develops strong reading skills as a foundation for lifelong learning.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inspirational Quotes -->
+        <section style="padding: var(--spacing-100) 0; background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary-accent) 100%); color: white;">
+            <div class="container" style="max-width: 900px;">
+                <h2 style="color: white; text-align: center; margin-bottom: 60px;">In Her Own Words</h2>
+
+                <div style="display: grid; gap: 40px;">
+                    <blockquote style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); padding: 40px; border-radius: var(--radius-large); border-left: 4px solid var(--color-gold); margin: 0;">
+                        <p style="font-size: 22px; font-family: var(--font-serif); line-height: 1.6; margin-bottom: 16px;">"Every young doll deserves the opportunity to discover their talents, pursue their passions, and make their mark on the world. That's what this work is all about."</p>
+                        <footer style="font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Dream Big Campaign Launch</footer>
+                    </blockquote>
+
+                    <blockquote style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); padding: 40px; border-radius: var(--radius-large); border-left: 4px solid var(--color-gold); margin: 0;">
+                        <p style="font-size: 22px; font-family: var(--font-serif); line-height: 1.6; margin-bottom: 16px;">"The future belongs to young people who dare to dream and have the courage to turn those dreams into reality. My job is to help remove the barriers standing in their way."</p>
+                        <footer style="font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Young Leaders Summit Address</footer>
+                    </blockquote>
+
+                    <blockquote style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); padding: 40px; border-radius: var(--radius-large); border-left: 4px solid var(--color-gold); margin: 0;">
+                        <p style="font-size: 22px; font-family: var(--font-serif); line-height: 1.6; margin-bottom: 16px;">"Technology should be a great equalizer, not a divider. When we ensure every young doll has access to digital tools and skills, we unlock unlimited potential."</p>
+                        <footer style="font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Code the Future Initiative</footer>
+                    </blockquote>
+
+                    <blockquote style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); padding: 40px; border-radius: var(--radius-large); border-left: 4px solid var(--color-gold); margin: 0;">
+                        <p style="font-size: 22px; font-family: var(--font-serif); line-height: 1.6; margin-bottom: 16px;">"Don't wait for permission to make a difference. Start where you are, use what you have, and never underestimate the power of one person—or one young doll—to change the world."</p>
+                        <footer style="font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">TED Talk</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Stats -->
+        <section style="padding: var(--spacing-100) 0; background: var(--color-white);">
+            <div class="container" style="max-width: 1200px;">
+                <h2 style="color: var(--color-primary); text-align: center; margin-bottom: 60px;">Making an Impact</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; text-align: center;">
+                    <div>
+                        <div style="font-size: 56px; font-family: var(--font-serif); color: var(--color-primary); font-weight: 400; margin-bottom: 12px;">2.5M+</div>
+                        <p style="font-size: 18px; color: var(--color-text-dark); margin: 0;">Young dolls reached through Dream Big campaign</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 56px; font-family: var(--font-serif); color: var(--color-primary); font-weight: 400; margin-bottom: 12px;">500+</div>
+                        <p style="font-size: 18px; color: var(--color-text-dark); margin: 0;">Schools participating in Code the Future program</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 56px; font-family: var(--font-serif); color: var(--color-primary); font-weight: 400; margin-bottom: 12px;">10,000+</div>
+                        <p style="font-size: 18px; color: var(--color-text-dark); margin: 0;">Mentorship connections created nationwide</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 56px; font-family: var(--font-serif); color: var(--color-primary); font-weight: 400; margin-bottom: 12px;">150+</div>
+                        <p style="font-size: 18px; color: var(--color-text-dark); margin: 0;">Community events and school visits annually</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery -->
+        <section style="padding: var(--spacing-100) 0; background: var(--color-cream);">
+            <div class="container" style="max-width: 1200px;">
+                <h2 style="color: var(--color-primary); text-align: center; margin-bottom: 60px;">Photo Gallery</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+                    <div style="aspect-ratio: 4/3; background: linear-gradient(135deg, var(--color-lavender) 0%, var(--color-pale) 100%); border-radius: var(--radius-large); overflow: hidden; box-shadow: var(--shadow-natural);">
+                        <img src="../../assets/images/placeholder-first-doll.jpg" alt="First Doll Skipper at youth event" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="aspect-ratio: 4/3; background: linear-gradient(135deg, var(--color-lavender) 0%, var(--color-pale) 100%); border-radius: var(--radius-large); overflow: hidden; box-shadow: var(--shadow-natural);">
+                        <img src="../../assets/images/placeholder-gallery-1.jpg" alt="Skipper teaching coding class" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="aspect-ratio: 4/3; background: linear-gradient(135deg, var(--color-lavender) 0%, var(--color-pale) 100%); border-radius: var(--radius-large); overflow: hidden; box-shadow: var(--shadow-natural);">
+                        <img src="../../assets/images/placeholder-gallery-2.jpg" alt="Skipper with student leaders" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="aspect-ratio: 4/3; background: linear-gradient(135deg, var(--color-lavender) 0%, var(--color-pale) 100%); border-radius: var(--radius-large); overflow: hidden; box-shadow: var(--shadow-natural);">
+                        <img src="../../assets/images/placeholder-gallery-3.jpg" alt="Skipper at school visit" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="aspect-ratio: 4/3; background: linear-gradient(135deg, var(--color-lavender) 0%, var(--color-pale) 100%); border-radius: var(--radius-large); overflow: hidden; box-shadow: var(--shadow-natural);">
+                        <img src="../../assets/images/placeholder-gallery-4.jpg" alt="Skipper reading to children" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="aspect-ratio: 4/3; background: linear-gradient(135deg, var(--color-lavender) 0%, var(--color-pale) 100%); border-radius: var(--radius-large); overflow: hidden; box-shadow: var(--shadow-natural);">
+                        <img src="../../assets/images/placeholder-cabinet.jpg" alt="Skipper at youth summit" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay Connected</h2>
+                    <p>Get the latest updates from First Doll Skipper and The Doll House</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h3 style="color: var(--color-secondary); font-family: var(--font-serif); margin: 0;">The Doll House</h3>
+                </div>
+
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3>News</h3>
+                        <ul>
+                            <li><a href="../media/wire.html">Wire</a></li>
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Administration</h3>
+                        <ul>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../history/founders-museum.html">Founders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="../../index.html#governance">Governance</a></li>
+                            <li><a href="../../history.html">History</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-social" id="footerSocialLinks"></div>
+
+                <div class="footer-address">
+                    <p>The Doll House<br>
+                    1600 Dreamhouse Lane<br>
+                    Malibu, CA 90265</p>
+                </div>
+
+                <div class="footer-legal">
+                    <a href="../legal/privacy.html">Privacy Policy</a>
+                    <a href="../legal/copyright.html">Copyright Policy</a>
+                    <a href="../legal/government.html">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Join Button -->
+    <div class="floating-join-btn" id="floatingJoinBtn">
+        <button class="join-close-btn" aria-label="Close join button" onclick="document.getElementById('floatingJoinBtn').style.display='none'; return false;">×</button>
+        <a href="#newsletter" class="join-now-link">Join Now</a>
+    </div>
+
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/utils.js"></script>
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

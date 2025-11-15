@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Orders - The Doll House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Announcement Banner -->
+    <div class="announcement-banner">
+        <div class="container">
+            <p class="announcement-text">Breaking: The Age of Dreams Has Officially Begun - Join Us in Making History!</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-inner">
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <div class="site-logo">
+                    <a href="../../index.html">President Doll</a>
+                </div>
+
+                <div class="utility-nav">
+                    <button class="search-toggle" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                            <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="social-links" id="headerSocialLinks"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="primary-nav" aria-label="Primary" id="primary-nav">
+            <div class="nav-overlay-header" id="navOverlayHeader">
+                <div class="nav-close-btn-wrapper">
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <span class="nav-close-text">Close</span>
+                </div>
+                <button class="nav-search" aria-label="Open search">
+                    <span>Search</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-search-header" id="navSearchHeader" style="display: none;">
+                <div class="nav-menu-btn-wrapper">
+                    <button class="nav-menu-btn" aria-label="Back to menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <span class="nav-menu-text">Menu</span>
+                </div>
+                <div class="nav-close-btn-wrapper nav-close-btn-wrapper-reverse">
+                    <span class="nav-close-text">Close</span>
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-search-container" id="navSearchContainer" style="display: none;">
+                <div class="nav-search-wrapper">
+                    <input type="search" class="nav-search-input" id="navSearchInput" placeholder="Search executive orders..." aria-label="Search">
+                    <p class="nav-search-hint">Press Enter to search</p>
+                </div>
+            </div>
+            <div class="nav-overlay-content" id="navOverlayContent">
+                <ul class="nav-menu">
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">News</button>
+                        <ul class="submenu">
+                            <li><a href="../news/articles.html">Articles</a></li>
+                            <li><a href="../news/briefings-statements.html">Briefings & Statements</a></li>
+                            <li><a href="../news/fact-sheets.html">Fact Sheets</a></li>
+                            <li><a href="../news/presidential-actions.html">Presidential Actions</a></li>
+                            <li><a href="../news/remarks.html">Remarks</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Administration</button>
+                        <ul class="submenu">
+                            <li><a href="../administration/president-barbie.html">President Doll</a></li>
+                            <li><a href="../administration/vp-ken.html">Vice President Ken</a></li>
+                            <li><a href="../administration/first-doll-skipper.html">First Doll Skipper</a></li>
+                            <li><a href="../administration/second-doll-teresa.html">Second Doll Teresa</a></li>
+                            <li><a href="../administration/cabinet.html">The Cabinet</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Media</button>
+                        <ul class="submenu">
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/live.html">Live News</a></li>
+                            <li><a href="../media/wire.html">Doll House Wire</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Priorities</button>
+                        <ul class="submenu">
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../priorities/investments.html">Investments</a></li>
+                            <li><a href="../priorities/achievements.html">Wins and Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">History</button>
+                        <ul class="submenu">
+                            <li><a href="../history/founders-museum.html">Founders Museum</a></li>
+                            <li><a href="../history/moments-that-made-us.html">Timeline</a></li>
+                            <li><a href="../legal/government.html">Government Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Get in Touch</button>
+                        <ul class="submenu">
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Executive Orders</h1>
+                <p style="text-align: center; max-width: 700px; margin: 20px auto 0; color: var(--color-text-dark); opacity: 0.8;">
+                    <a href="presidential-actions.html" style="color: var(--color-primary); text-decoration: none;">← Back to Presidential Actions</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Filter Options -->
+        <section class="news-filter-section">
+            <div class="container">
+                <nav class="news-filter" aria-label="Filter executive orders">
+                    <button class="filter-btn active" data-filter="all">All Orders</button>
+                    <button class="filter-btn" data-filter="economy">Economy</button>
+                    <button class="filter-btn" data-filter="education">Education</button>
+                    <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+                    <button class="filter-btn" data-filter="climate">Climate</button>
+                    <button class="filter-btn" data-filter="civil-rights">Civil Rights</button>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Executive Orders List -->
+        <section class="news-list-section">
+            <div class="container">
+                <div class="news-list">
+                    <!-- EO 87 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">EO 87</span>
+                            <span class="news-date">November 14, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Executive Order on Expanding Dream Opportunities in Rural Communities</a>
+                        </h2>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">Directs federal agencies to prioritize investment and resources in underserved rural doll communities to ensure equitable access to dream fulfillment programs.</p>
+                    </article>
+
+                    <!-- EO 86 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">EO 86</span>
+                            <span class="news-date">November 12, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Executive Order on Fashion Freedom and Self-Expression</a>
+                        </h2>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">Establishes comprehensive protections for dolls to express themselves through fashion choices without discrimination or restriction in public and private settings.</p>
+                    </article>
+
+                    <!-- EO 85 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">EO 85</span>
+                            <span class="news-date">November 10, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Executive Order on Climate Action and Environmental Justice</a>
+                        </h2>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">Commits the administration to achieving carbon neutrality by 2030 and ensures environmental protections benefit all doll communities equally.</p>
+                    </article>
+
+                    <!-- EO 84 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">EO 84</span>
+                            <span class="news-date">November 8, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Executive Order on Universal Dreamcare Implementation</a>
+                        </h2>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">Establishes framework for implementing comprehensive healthcare coverage for all dolls, including mental health and wellness services.</p>
+                    </article>
+
+                    <!-- EO 83 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">EO 83</span>
+                            <span class="news-date">November 6, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Executive Order on STEM Education and Innovation</a>
+                        </h2>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">Directs increased federal investment in science, technology, engineering, and mathematics education programs to prepare dolls for careers of the future.</p>
+                    </article>
+
+                    <!-- EO 82 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">EO 82</span>
+                            <span class="news-date">November 4, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Executive Order on Supporting Doll Entrepreneurs and Small Businesses</a>
+                        </h2>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">Creates Dream Ventures program providing grants, loans, and mentorship to dolls starting businesses and pursuing entrepreneurial dreams.</p>
+                    </article>
+
+                    <!-- EO 81 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">EO 81</span>
+                            <span class="news-date">November 2, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Executive Order on Diversity, Equity, and Inclusion in Government</a>
+                        </h2>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">Mandates diversity and inclusion initiatives across all federal agencies to ensure government reflects the diversity of all doll communities.</p>
+                    </article>
+
+                    <!-- EO 80 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">EO 80</span>
+                            <span class="news-date">October 30, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Executive Order on Infrastructure Modernization and Dreamhouse Development</a>
+                        </h2>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">Authorizes comprehensive infrastructure investments to modernize dreamhouses, transportation, and community facilities nationwide.</p>
+                    </article>
+
+                    <!-- EO 79 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">EO 79</span>
+                            <span class="news-date">October 28, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Executive Order on Protecting Workers' Rights and Fair Wages</a>
+                        </h2>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">Strengthens labor protections and establishes fair wage standards ensuring all working dolls receive equitable compensation and benefits.</p>
+                    </article>
+
+                    <!-- EO 78 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">EO 78</span>
+                            <span class="news-date">October 26, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Executive Order on Arts, Culture, and Creative Expression</a>
+                        </h2>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">Establishes Creative Dreams Fund supporting arts and cultural programs that celebrate diverse voices and creative expression across doll communities.</p>
+                    </article>
+
+                    <!-- EO 77 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">EO 77</span>
+                            <span class="news-date">October 24, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Executive Order on Digital Equity and Technology Access</a>
+                        </h2>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">Ensures all dolls have access to high-speed internet, digital devices, and technology education to participate fully in the digital economy.</p>
+                    </article>
+
+                    <!-- EO 76 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">EO 76</span>
+                            <span class="news-date">October 22, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Executive Order on Youth Empowerment and Mentorship</a>
+                        </h2>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">Creates national mentorship programs connecting young dolls with role models and providing resources for personal and professional development.</p>
+                    </article>
+                </div>
+
+                <!-- Pagination -->
+                <nav class="pagination" aria-label="Executive orders pagination">
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">4</button>
+                    <button class="page-btn">5</button>
+                    <span class="page-ellipsis">...</span>
+                    <button class="page-btn">8</button>
+                    <button class="page-btn">9</button>
+                    <button class="page-btn">Next →</button>
+                </nav>
+                <p style="text-align: center; margin-top: 20px; color: var(--color-text-dark); opacity: 0.7;">
+                    Showing page 1 of 9 (87 executive orders)
+                </p>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay in the Know</h2>
+                    <p>Get the latest updates from President Doll and The Doll House</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h3 style="color: var(--color-secondary); font-family: var(--font-serif); margin: 0;">The Doll House</h3>
+                </div>
+
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3>News</h3>
+                        <ul>
+                            <li><a href="../media/wire.html">Wire</a></li>
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Administration</h3>
+                        <ul>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../history/founders-museum.html">Founders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="../../index.html#governance">Governance</a></li>
+                            <li><a href="../../history.html">History</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-social" id="footerSocialLinks"></div>
+
+                <div class="footer-address">
+                    <p>The Doll House<br>
+                    1600 Dreamhouse Lane<br>
+                    Malibu, CA 90265</p>
+                </div>
+
+                <div class="footer-legal">
+                    <a href="../legal/privacy.html">Privacy Policy</a>
+                    <a href="../legal/copyright.html">Copyright Policy</a>
+                    <a href="../legal/government.html">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Join Button -->
+    <div class="floating-join-btn" id="floatingJoinBtn">
+        <button class="join-close-btn" aria-label="Close join button" onclick="document.getElementById('floatingJoinBtn').style.display='none'; return false;">×</button>
+        <a href="#newsletter" class="join-now-link">Join Now</a>
+    </div>
+
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/utils.js"></script>
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>
