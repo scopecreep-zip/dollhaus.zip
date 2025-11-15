@@ -1,23 +1,24 @@
 /**
- * The Doll House - President Barbie
+ * The Doll House - President Doll
  * JavaScript functionality matching whitehouse.gov interactions
+ * Refactored to use modular architecture with config, utils, and components
  */
 
 // =============================================================================
 // Hamburger Menu Toggle (Upper Left)
 // =============================================================================
 
-const menuToggle = document.querySelector('.menu-toggle');
-const primaryNav = document.querySelector('.primary-nav');
-const menuLinks = document.querySelectorAll('.menu-link');
-const navCloseBtns = document.querySelectorAll('.nav-close-btn');
-const navSearchBtn = document.querySelector('.nav-search');
-const navSearchContainer = document.getElementById('navSearchContainer');
-const navSearchInput = document.querySelector('.nav-search-input');
-const navOverlayHeader = document.getElementById('navOverlayHeader');
-const navSearchHeader = document.getElementById('navSearchHeader');
-const navOverlayContent = document.getElementById('navOverlayContent');
-const navMenuBtn = document.querySelector('.nav-menu-btn');
+const menuToggle = Utils.DOM.select('.menu-toggle');
+const primaryNav = Utils.DOM.select('.primary-nav');
+const menuLinks = Utils.DOM.selectAll('.menu-link');
+const navCloseBtns = Utils.DOM.selectAll('.nav-close-btn');
+const navSearchBtn = Utils.DOM.select('.nav-search');
+const navSearchContainer = Utils.DOM.select('#navSearchContainer');
+const navSearchInput = Utils.DOM.select('.nav-search-input');
+const navOverlayHeader = Utils.DOM.select('#navOverlayHeader');
+const navSearchHeader = Utils.DOM.select('#navSearchHeader');
+const navOverlayContent = Utils.DOM.select('#navOverlayContent');
+const navMenuBtn = Utils.DOM.select('.nav-menu-btn');
 
 // Function to close menu
 function closeMenu() {
@@ -45,20 +46,9 @@ function showSearchView() {
     if (navSearchInput) navSearchInput.focus();
 }
 
-// Handle search on Enter key
+// Handle search on Enter key using Component
 if (navSearchInput) {
-    navSearchInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-            const searchQuery = navSearchInput.value.trim();
-            if (searchQuery) {
-                // Perform search - you can customize this URL
-                window.location.href = `#search?q=${encodeURIComponent(searchQuery)}`;
-                // Or open in new tab: window.open(`/search?q=${encodeURIComponent(searchQuery)}`, '_blank');
-                console.log('Searching for:', searchQuery);
-            }
-        }
-    });
+    Components.Search.init(navSearchInput, Components.Search.performSearch);
 }
 
 // Toggle main menu overlay
@@ -132,106 +122,73 @@ menuLinks.forEach(link => {
 });
 
 // =============================================================================
-// Hero Carousel
+// Hero Carousel (using Component)
 // =============================================================================
 
-let currentSlideIndex = 0;
-const slides = document.querySelectorAll('.carousel-slide');
-const indicators = document.querySelectorAll('.indicator');
-const prevButton = document.querySelector('.carousel-control.prev');
-const nextButton = document.querySelector('.carousel-control.next');
-let autoplayInterval;
+const carouselContainer = Utils.DOM.select('.hero-carousel');
+let carouselControls = null;
 
-function showSlide(index) {
-    // Remove active class from all slides and indicators
-    slides.forEach(slide => slide.classList.remove('active'));
-    indicators.forEach(indicator => indicator.classList.remove('active'));
-
-    // Wrap around
-    if (index >= slides.length) {
-        currentSlideIndex = 0;
-    } else if (index < 0) {
-        currentSlideIndex = slides.length - 1;
-    } else {
-        currentSlideIndex = index;
-    }
-
-    // Add active class to current slide and indicator
-    if (slides[currentSlideIndex]) {
-        slides[currentSlideIndex].classList.add('active');
-    }
-    if (indicators[currentSlideIndex]) {
-        indicators[currentSlideIndex].classList.add('active');
-    }
-}
-
-function nextSlide() {
-    showSlide(currentSlideIndex + 1);
-}
-
-function prevSlide() {
-    showSlide(currentSlideIndex - 1);
-}
-
-// Button controls
-if (nextButton) {
-    nextButton.addEventListener('click', nextSlide);
-}
-
-if (prevButton) {
-    prevButton.addEventListener('click', prevSlide);
-}
-
-// Indicator controls
-indicators.forEach((indicator, index) => {
-    indicator.addEventListener('click', () => {
-        showSlide(index);
-        resetAutoplay();
+if (carouselContainer) {
+    // Initialize carousel with component
+    carouselControls = Components.Carousel.init(carouselContainer, {
+        autoAdvance: SiteConfig.features.enableCarousel,
+        interval: SiteConfig.timing.carouselAutoAdvance,
+        pauseOnHover: true
     });
-});
 
-// Keyboard navigation
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowLeft') {
-        prevSlide();
-        resetAutoplay();
-    } else if (e.key === 'ArrowRight') {
-        nextSlide();
-        resetAutoplay();
+    // Set up button controls
+    const prevButton = Utils.DOM.select('.carousel-control.prev', carouselContainer);
+    const nextButton = Utils.DOM.select('.carousel-control.next', carouselContainer);
+
+    if (nextButton && carouselControls) {
+        nextButton.addEventListener('click', () => {
+            carouselControls.next();
+            carouselControls.stop();
+            carouselControls.start();
+        });
     }
-});
 
-// Autoplay
-function startAutoplay() {
-    autoplayInterval = setInterval(nextSlide, 5000);
-}
-
-function stopAutoplay() {
-    if (autoplayInterval) {
-        clearInterval(autoplayInterval);
+    if (prevButton && carouselControls) {
+        prevButton.addEventListener('click', () => {
+            carouselControls.prev();
+            carouselControls.stop();
+            carouselControls.start();
+        });
     }
-}
 
-function resetAutoplay() {
-    stopAutoplay();
-    startAutoplay();
-}
+    // Set up indicator controls
+    const indicators = Utils.DOM.selectAll('.indicator', carouselContainer);
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            if (carouselControls) {
+                carouselControls.goToSlide(index);
+                carouselControls.stop();
+                carouselControls.start();
+            }
+        });
+    });
 
-// Pause on hover
-const carousel = document.querySelector('.hero-carousel');
-if (carousel) {
-    carousel.addEventListener('mouseenter', stopAutoplay);
-    carousel.addEventListener('mouseleave', startAutoplay);
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (!carouselControls) return;
 
-    // Start autoplay on load
-    startAutoplay();
+        if (e.key === 'ArrowLeft') {
+            carouselControls.prev();
+            carouselControls.stop();
+            carouselControls.start();
+        } else if (e.key === 'ArrowRight') {
+            carouselControls.next();
+            carouselControls.stop();
+            carouselControls.start();
+        }
+    });
 }
 
 // =============================================================================
-// Smooth Scrolling
+// Smooth Scrolling (using Utils)
 // =============================================================================
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+Utils.DOM.selectAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
 
@@ -241,43 +198,32 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             return;
         }
 
-        const target = document.querySelector(href);
+        const target = Utils.DOM.select(href);
 
         if (target) {
             e.preventDefault();
-            const headerOffset = 100; // Account for sticky header
-            const elementPosition = target.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
+            Utils.Animation.scrollTo(target, 100);
 
             // Close menu if open
             if (primaryNav && primaryNav.classList.contains('active')) {
-                primaryNav.classList.remove('active');
-                menuToggle.setAttribute('aria-expanded', 'false');
-                document.body.style.overflow = '';
+                closeMenu();
             }
         }
     });
 });
 
 // =============================================================================
-// Newsletter Form Handler
+// Newsletter Form Handler (using Component)
 // =============================================================================
 
-const newsletterForm = document.querySelector('.newsletter-form');
-if (newsletterForm) {
-    newsletterForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const emailInput = newsletterForm.querySelector('input[type="email"]');
-        const email = emailInput.value;
+const newsletterForm = Utils.DOM.select('.newsletter-form');
+if (newsletterForm && SiteConfig.features.enableNewsletter) {
+    Components.Form.onSubmit(newsletterForm, (formData) => {
+        const email = formData.get('email');
 
         // Placeholder functionality - would normally send to backend
         if (email) {
-            alert(`Thank you for subscribing!\n\nYou'll receive fabulous updates from President Barbie at: ${email}`);
+            alert(`Thank you for subscribing!\n\nYou'll receive fabulous updates from President Doll at: ${email}`);
             newsletterForm.reset();
         }
     });
@@ -410,32 +356,31 @@ function convertMarkdownToHTML(markdown) {
 // Search Toggle (Placeholder)
 // =============================================================================
 
-const searchToggle = document.querySelector('.search-toggle');
-if (searchToggle) {
+const searchToggle = Utils.DOM.select('.search-toggle');
+if (searchToggle && SiteConfig.features.enableSearch) {
     searchToggle.addEventListener('click', () => {
         alert('Search functionality - Placeholder\n\nThis would open a search modal or redirect to a search page.');
     });
 }
 
 // =============================================================================
-// Scroll Effects
+// Scroll Effects (using Utils throttle)
 // =============================================================================
 
-let lastScrollY = window.pageYOffset;
-const header = document.querySelector('.site-header');
+const header = Utils.DOM.select('.site-header');
 
-window.addEventListener('scroll', () => {
+const handleScroll = Utils.Animation.throttle(() => {
     const currentScrollY = window.pageYOffset;
 
     // Enhanced shadow on scroll
-    if (currentScrollY > 50 && header) {
+    if (currentScrollY > SiteConfig.timing.scrollThreshold && header) {
         header.style.boxShadow = '12px 12px 50px rgba(224, 33, 138, 0.4)';
     } else if (header) {
         header.style.boxShadow = '6px 6px 9px rgba(224, 33, 138, 0.2)';
     }
+}, SiteConfig.timing.transitionSpeed);
 
-    lastScrollY = currentScrollY;
-});
+window.addEventListener('scroll', handleScroll);
 
 // =============================================================================
 // Intersection Observer for Animations
@@ -457,7 +402,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe cards for fade-in animation
 document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.admin-card, .media-block, .featured-block');
+    const cards = Utils.DOM.selectAll('.admin-card, .media-block, .featured-block');
     cards.forEach(card => {
         card.style.opacity = '0';
         card.style.transform = 'translateY(20px)';
@@ -468,9 +413,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load governance content
     loadGovernanceContent();
 
+    // Render social links using Component
+    const headerSocialContainer = Utils.DOM.select('#headerSocialLinks');
+    const footerSocialContainer = Utils.DOM.select('#footerSocialLinks');
+
+    if (headerSocialContainer) {
+        Components.SocialLinks.render(headerSocialContainer);
+    }
+
+    if (footerSocialContainer) {
+        Components.SocialLinks.render(footerSocialContainer);
+    }
+
     // Floating Join Button Close Functionality
-    const floatingJoinBtn = document.getElementById('floatingJoinBtn');
-    const joinCloseBtn = document.querySelector('.join-close-btn');
+    const floatingJoinBtn = Utils.DOM.select('#floatingJoinBtn');
+    const joinCloseBtn = Utils.DOM.select('.join-close-btn');
 
     if (joinCloseBtn && floatingJoinBtn) {
         joinCloseBtn.addEventListener('click', (e) => {
@@ -482,28 +439,22 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // =============================================================================
-// Resize Handler
+// Resize Handler (using Utils debounce)
 // =============================================================================
 
-let resizeTimer;
-window.addEventListener('resize', () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-        // Reset menu state on resize
-        if (primaryNav && primaryNav.classList.contains('active')) {
-            primaryNav.classList.remove('active');
-            if (menuToggle) {
-                menuToggle.setAttribute('aria-expanded', 'false');
-            }
-            document.body.style.overflow = '';
-        }
-    }, 250);
-});
+const handleResize = Utils.Animation.debounce(() => {
+    // Reset menu state on resize
+    if (primaryNav && primaryNav.classList.contains('active')) {
+        closeMenu();
+    }
+}, 250);
+
+window.addEventListener('resize', handleResize);
 
 // =============================================================================
-// Console Welcome Message
+// Console Welcome Message (using Config)
 // =============================================================================
 
-console.log('%c💖 The Doll House - President Barbie 💖', 'color: #E0218A; font-size: 24px; font-weight: bold;');
+console.log(`%c💖 ${SiteConfig.siteName} - ${SiteConfig.siteTitle} 💖`, 'color: #E0218A; font-size: 24px; font-weight: bold;');
 console.log('%cYou can be anything - including President!', 'color: #9B59B6; font-size: 14px;');
-console.log('%c\nWebsite built with Barbie colors and White House structure.', 'color: #FF69B4; font-size: 12px;');
+console.log('%c\nWebsite built with modern modular architecture.', 'color: #FF69B4; font-size: 12px;');
