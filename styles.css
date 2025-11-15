@@ -407,7 +407,7 @@ button {
 
 .hero-carousel {
     position: relative;
-    height: clamp(400px, 60vw, 600px);
+    height: 88vh;
     overflow: hidden;
     background: var(--color-lavender);
 }
@@ -521,7 +521,7 @@ button {
 
 .carousel-indicators {
     position: absolute;
-    bottom: 30px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
