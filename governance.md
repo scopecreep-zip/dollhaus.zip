@@ -1,5 +1,5 @@
 # Governance & Policy Framework
-## The Doll Haus Political Manifesto
+## The Doll Haus Governance Structure
 
 *Making the White House Femme Again - A Radical Vision for Trans Liberation*
 
