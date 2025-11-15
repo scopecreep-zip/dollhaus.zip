@@ -266,10 +266,189 @@ button {
     visibility: visible;
 }
 
+.nav-overlay-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-search-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-menu-btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-menu-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.nav-menu-btn .hamburger-line {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--color-white);
+    border-radius: 2px;
+}
+
+.nav-menu-text {
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--color-white);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    padding: 8px;
+}
+
+.nav-search:hover {
+    opacity: 0.7;
+}
+
+.nav-search span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-search-container {
+    padding: 80px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+.nav-search-wrapper {
+    width: 100%;
+}
+
+.nav-search-input {
+    width: 100%;
+    padding: 0 0 16px 0;
+    font-size: 48px;
+    border: none;
+    border-bottom: 2px solid var(--color-white);
+    border-radius: 0;
+    background: transparent;
+    color: var(--color-white);
+    font-family: var(--font-serif);
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.nav-search-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.nav-search-input:focus {
+    outline: none;
+    border-bottom-color: var(--color-white);
+}
+
+.nav-search-hint {
+    text-align: center;
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 24px;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 782px) {
+    .nav-search-input {
+        font-size: 32px;
+        padding: 0 0 12px 0;
+    }
+
+    .nav-search-container {
+        padding: 60px 30px;
+    }
+}
+
+.nav-close-btn-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-close-btn-wrapper .nav-close-btn {
+    order: 1;
+}
+
+.nav-close-btn-wrapper .nav-close-text {
+    order: 2;
+    white-space: nowrap;
+}
+
+.nav-close-btn-wrapper-reverse {
+    flex-direction: row !important;
+}
+
+.nav-close-btn-wrapper-reverse .nav-close-text {
+    order: 1 !important;
+    white-space: nowrap;
+}
+
+.nav-close-btn-wrapper-reverse .nav-close-btn {
+    order: 2 !important;
+}
+
+.nav-close-btn {
+    background: none;
+    border: none;
+    color: var(--color-white);
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+}
+
+.nav-close-btn:hover {
+    opacity: 0.7;
+}
+
+.nav-close-text {
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 .nav-overlay-content {
     max-width: 600px;
     margin: 0 auto;
-    padding: 100px 40px 60px;
+    padding: 60px 40px 60px;
 }
 
 .nav-menu {
@@ -491,11 +670,10 @@ button {
 /* Carousel Controls */
 .carousel-control {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.9);
-    color: var(--color-primary);
-    border: none;
+    bottom: 120px;
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--color-white);
+    border: 2px solid rgba(255, 255, 255, 0.5);
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -504,11 +682,13 @@ button {
     justify-content: center;
     transition: all 0.3s ease;
     z-index: 10;
+    backdrop-filter: blur(4px);
 }
 
 .carousel-control:hover {
-    background: var(--color-white);
-    transform: translateY(-50%) scale(1.1);
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
 }
 
 .carousel-control.prev {
@@ -1074,6 +1254,7 @@ button {
     .carousel-control {
         width: 40px;
         height: 40px;
+        bottom: 110px;
     }
 
     .carousel-control.prev {
@@ -1105,6 +1286,61 @@ button {
 }
 
 /* =============================================================================
+   Floating Join Button
+   ============================================================================= */
+
+.floating-join-btn {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 16px 32px;
+    border-radius: var(--radius-full);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: var(--shadow-deep);
+    z-index: 10000;
+    transition: all 0.3s ease;
+    border: 2px solid var(--color-white);
+    display: flex;
+    align-items: center;
+}
+
+.floating-join-btn:hover {
+    background: var(--color-primary-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(224, 33, 138, 0.5);
+}
+
+.join-close-btn {
+    background: none;
+    border: none;
+    color: var(--color-white);
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 8px;
+    font-weight: 400;
+}
+
+.join-now-link {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+@media (max-width: 782px) {
+    .floating-join-btn {
+        bottom: 20px;
+        left: 20px;
+        padding: 14px 24px;
+        font-size: 14px;
+    }
+}
+
+/* =============================================================================
    Accessibility
    ============================================================================= */
 
@@ -1130,7 +1366,8 @@ button {
     .carousel-control,
     .carousel-indicators,
     .newsletter-section,
-    .site-footer {
+    .site-footer,
+    .floating-join-btn {
         display: none;
     }
 }

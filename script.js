@@ -10,6 +10,56 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const primaryNav = document.querySelector('.primary-nav');
 const menuLinks = document.querySelectorAll('.menu-link');
+const navCloseBtns = document.querySelectorAll('.nav-close-btn');
+const navSearchBtn = document.querySelector('.nav-search');
+const navSearchContainer = document.getElementById('navSearchContainer');
+const navSearchInput = document.querySelector('.nav-search-input');
+const navOverlayHeader = document.getElementById('navOverlayHeader');
+const navSearchHeader = document.getElementById('navSearchHeader');
+const navOverlayContent = document.getElementById('navOverlayContent');
+const navMenuBtn = document.querySelector('.nav-menu-btn');
+
+// Function to close menu
+function closeMenu() {
+    primaryNav.classList.remove('active');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+    // Reset to menu view
+    showMenuView();
+}
+
+// Function to show menu view
+function showMenuView() {
+    if (navOverlayHeader) navOverlayHeader.style.display = 'flex';
+    if (navSearchHeader) navSearchHeader.style.display = 'none';
+    if (navSearchContainer) navSearchContainer.style.display = 'none';
+    if (navOverlayContent) navOverlayContent.style.display = 'block';
+}
+
+// Function to show search view
+function showSearchView() {
+    if (navOverlayHeader) navOverlayHeader.style.display = 'none';
+    if (navSearchHeader) navSearchHeader.style.display = 'flex';
+    if (navSearchContainer) navSearchContainer.style.display = 'flex';
+    if (navOverlayContent) navOverlayContent.style.display = 'none';
+    if (navSearchInput) navSearchInput.focus();
+}
+
+// Handle search on Enter key
+if (navSearchInput) {
+    navSearchInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            const searchQuery = navSearchInput.value.trim();
+            if (searchQuery) {
+                // Perform search - you can customize this URL
+                window.location.href = `#search?q=${encodeURIComponent(searchQuery)}`;
+                // Or open in new tab: window.open(`/search?q=${encodeURIComponent(searchQuery)}`, '_blank');
+                console.log('Searching for:', searchQuery);
+            }
+        }
+    });
+}
 
 // Toggle main menu overlay
 if (menuToggle && primaryNav) {
@@ -26,21 +76,32 @@ if (menuToggle && primaryNav) {
         }
     });
 
+    // Close menu when clicking X button (both headers)
+    navCloseBtns.forEach(btn => {
+        btn.addEventListener('click', closeMenu);
+    });
+
+    // Toggle search view
+    if (navSearchBtn) {
+        navSearchBtn.addEventListener('click', showSearchView);
+    }
+
+    // Back to menu from search
+    if (navMenuBtn) {
+        navMenuBtn.addEventListener('click', showMenuView);
+    }
+
     // Close menu when clicking outside
     primaryNav.addEventListener('click', (e) => {
         if (e.target === primaryNav) {
-            primaryNav.classList.remove('active');
-            menuToggle.setAttribute('aria-expanded', 'false');
-            document.body.style.overflow = '';
+            closeMenu();
         }
     });
 
     // Close menu on escape key
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && primaryNav.classList.contains('active')) {
-            primaryNav.classList.remove('active');
-            menuToggle.setAttribute('aria-expanded', 'false');
-            document.body.style.overflow = '';
+            closeMenu();
         }
     });
 }
@@ -406,6 +467,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Load governance content
     loadGovernanceContent();
+
+    // Floating Join Button Close Functionality
+    const floatingJoinBtn = document.getElementById('floatingJoinBtn');
+    const joinCloseBtn = document.querySelector('.join-close-btn');
+
+    if (joinCloseBtn && floatingJoinBtn) {
+        joinCloseBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            floatingJoinBtn.hidden = true;
+        });
+    }
 });
 
 // =============================================================================

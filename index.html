@@ -72,7 +72,51 @@
 
         <!-- Full-Screen Navigation Overlay -->
         <nav class="primary-nav" aria-label="Primary" id="primary-nav">
-            <div class="nav-overlay-content">
+            <div class="nav-overlay-header" id="navOverlayHeader">
+                <div class="nav-close-btn-wrapper">
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <span class="nav-close-text">Close</span>
+                </div>
+                <button class="nav-search" aria-label="Open search">
+                    <span>Search</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Search Mode Header (hidden by default) -->
+            <div class="nav-search-header" id="navSearchHeader" style="display: none;">
+                <div class="nav-menu-btn-wrapper">
+                    <button class="nav-menu-btn" aria-label="Back to menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <span class="nav-menu-text">Menu</span>
+                </div>
+                <div class="nav-close-btn-wrapper nav-close-btn-wrapper-reverse">
+                    <span class="nav-close-text">Close</span>
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-search-container" id="navSearchContainer" style="display: none;">
+                <div class="nav-search-wrapper">
+                    <input type="search" class="nav-search-input" id="navSearchInput" placeholder="Search The Doll House..." aria-label="Search">
+                    <p class="nav-search-hint">Press Enter to search</p>
+                </div>
+            </div>
+            <div class="nav-overlay-content" id="navOverlayContent">
                 <ul class="nav-menu">
                     <li class="menu-item has-submenu">
                         <button class="menu-link" aria-expanded="false">News</button>
@@ -401,6 +445,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- Floating Join Button (Bottom Left) -->
+    <div class="floating-join-btn" id="floatingJoinBtn">
+        <button class="join-close-btn" aria-label="Close join button" onclick="document.getElementById('floatingJoinBtn').style.display='none'; return false;">×</button>
+        <a href="#newsletter" class="join-now-link">Join Now</a>
+    </div>
 
     <script src="script.js"></script>
 </body>
