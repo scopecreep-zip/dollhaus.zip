@@ -14,7 +14,7 @@
 
     <div class="announcement-banner">
         <div class="container">
-            <p class="announcement-text">Breaking: The Age of Dreams Has Officially Begun - Join Us in Making History!</p>
+            <p class="announcement-text">Making the White House Femme Again ✨ Protect the Dolls • Support Trans Joy • Choose Your Haus</p>
         </div>
     </div>
 
@@ -153,8 +153,8 @@
             <div class="issue-hero-overlay"></div>
             <div class="container">
                 <div class="issue-hero-content">
-                    <h1>National Security</h1>
-                    <p class="issue-hero-description">Protecting doll communities and ensuring the safety and security of all residents of Dreamhouse Nation.</p>
+                    <h1>Community Defense & Antifascist Protection</h1>
+                    <p class="issue-hero-description">Protecting trans communities FROM state violence, fascism, and borders - not through militarism but through international solidarity and community defense.</p>
                 </div>
             </div>
         </section>
@@ -164,9 +164,9 @@
             <div class="container">
                 <div class="issue-overview-content">
                     <h2>Overview</h2>
-                    <p>The safety and security of every doll is President Barbie's highest priority. Our comprehensive national security strategy focuses on protecting communities, safeguarding our digital infrastructure, and ensuring that all dolls can live, work, and dream without fear.</p>
-                    <p>We're taking a holistic approach to security that includes physical safety, cybersecurity, emergency preparedness, and community resilience. Through partnerships with local communities and investment in cutting-edge security technology, we're building a safer future for all dolls.</p>
-                    <p>Our security measures are designed with respect for privacy and civil liberties, ensuring that protection never comes at the cost of freedom and individual rights.</p>
+                    <p>Real security for trans women means protection FROM the state, not BY the state. Militaries, police, borders, and surveillance systems harm trans communities - especially trans women of color and sex workers. We reject the national security framework that targets marginalized people while claiming to protect us. Our communities need defense against fascism, white supremacy, and state violence - not more cops or drones.</p>
+                    <p>We're building community defense networks that protect trans people from hate violence without relying on police who criminalize us. We're abolishing ICE and borders that separate chosen families. We're redirecting military budgets to trans healthcare, mutual aid, and reparations. Real security comes from meeting material needs - housing, healthcare, food - not from armed agents of the state.</p>
+                    <p>Through international solidarity with global trans movements, antifascist organizing, and community-led safety protocols, we're protecting our people without strengthening systems designed to harm us. Trans liberation requires abolishing the military-industrial complex and building power to defend ourselves.</p>
                 </div>
             </div>
         </section>
@@ -177,34 +177,34 @@
                 <h2>Key Initiatives</h2>
                 <div class="initiatives-grid">
                     <div class="initiative-card">
+                        <span class="initiative-icon">🏴</span>
+                        <h3>Abolish ICE & Borders</h3>
+                        <p>Dismantle immigration enforcement that separates chosen families and targets undocumented trans people. Borders are violence - freedom of movement is a right.</p>
+                    </div>
+                    <div class="initiative-card">
+                        <span class="initiative-icon">✨</span>
+                        <h3>Trans Safety Patrols</h3>
+                        <p>Community-led safety patrols protecting trans women from hate violence. Trans people protecting trans people - no cops, no state violence.</p>
+                    </div>
+                    <div class="initiative-card">
                         <span class="initiative-icon">🛡️</span>
-                        <h3>Community Protection</h3>
-                        <p>Enhancing security measures in doll communities through advanced surveillance systems and community watch programs.</p>
+                        <h3>Antifascist Defense Networks</h3>
+                        <p>Tracking fascist organizing, protecting communities from white supremacist violence, and building rapid response networks when our people are under attack.</p>
                     </div>
                     <div class="initiative-card">
-                        <span class="initiative-icon">🏠</span>
-                        <h3>Dreamhouse Security</h3>
-                        <p>Implementing smart security systems in dreamhouses to protect families and property with advanced technology.</p>
+                        <span class="initiative-icon">💰</span>
+                        <h3>Defund Military, Fund Healthcare</h3>
+                        <p>Redirect military budgets to trans healthcare, mutual aid, and reparations. Real security comes from meeting needs, not from drones and bombs.</p>
                     </div>
                     <div class="initiative-card">
-                        <span class="initiative-icon">💻</span>
-                        <h3>Cyber Protection</h3>
-                        <p>Defending against cyber threats and protecting critical digital infrastructure from attacks and breaches.</p>
-                    </div>
-                    <div class="initiative-card">
-                        <span class="initiative-icon">🚨</span>
-                        <h3>Emergency Preparedness</h3>
-                        <p>Building robust emergency response systems and training communities to respond effectively to crises.</p>
-                    </div>
-                    <div class="initiative-card">
-                        <span class="initiative-icon">🌐</span>
-                        <h3>International Cooperation</h3>
-                        <p>Partnering with allied doll nations to address global security challenges and share intelligence.</p>
+                        <span class="initiative-icon">🌍</span>
+                        <h3>International Trans Solidarity</h3>
+                        <p>Supporting global trans liberation movements, not military alliances. Solidarity with trans people worldwide fighting state violence and oppression.</p>
                     </div>
                     <div class="initiative-card">
                         <span class="initiative-icon">🔐</span>
-                        <h3>Privacy Protection</h3>
-                        <p>Safeguarding personal information and ensuring security measures respect individual privacy rights.</p>
+                        <h3>Digital Security for Activists</h3>
+                        <p>Encrypted communications, secure organizing tools, and protection from state surveillance for trans activists, sex workers, and organizers.</p>
                     </div>
                 </div>
             </div>
@@ -309,6 +309,9 @@
         </section>
     </main>
 
+    <!-- Footer Container -->
+    <div id="footerContainer"></div>
+
     <footer class="site-footer" id="contact">
         <div class="container">
             <div class="footer-top">
@@ -372,5 +375,27 @@
     <script src="../../assets/js/utils.js"></script>
     <script src="../../assets/js/components.js"></script>
     <script src="../../assets/js/script.js"></script>
+    <script>
+        // Render header and footer with basePath for subdirectory
+        document.addEventListener('DOMContentLoaded', () => {
+            const headerContainer = document.querySelector('#headerContainer');
+            const footerContainer = document.querySelector('#footerContainer');
+
+            if (headerContainer) {
+                Components.Header.render(headerContainer, { basePath: '../../' });
+                // Initialize header navigation after rendering
+                if (typeof initHeaderNavigation === 'function') {
+                    initHeaderNavigation();
+                }
+            }
+
+            if (footerContainer) {
+                Components.Footer.render(footerContainer, {
+                    basePath: '../../',
+                    brandHref: '../../index.html'
+                });
+            }
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doll House Wire - The Doll House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Announcement Banner -->
+    <div class="announcement-banner">
+        <div class="container">
+            <p class="announcement-text">Making the White House Femme Again ✨ Protect the Dolls • Support Trans Joy • Choose Your Haus</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-inner">
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <div class="site-logo">
+                    <a href="../../index.html">President Doll</a>
+                </div>
+
+                <div class="utility-nav">
+                    <button class="search-toggle" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                            <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="social-links" id="headerSocialLinks"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="primary-nav" aria-label="Primary" id="primary-nav">
+            <div class="nav-overlay-header" id="navOverlayHeader">
+                <div class="nav-close-btn-wrapper">
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <span class="nav-close-text">Close</span>
+                </div>
+                <button class="nav-search" aria-label="Open search">
+                    <span>Search</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-search-header" id="navSearchHeader" style="display: none;">
+                <div class="nav-menu-btn-wrapper">
+                    <button class="nav-menu-btn" aria-label="Back to menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <span class="nav-menu-text">Menu</span>
+                </div>
+                <div class="nav-close-btn-wrapper nav-close-btn-wrapper-reverse">
+                    <span class="nav-close-text">Close</span>
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-search-container" id="navSearchContainer" style="display: none;">
+                <div class="nav-search-wrapper">
+                    <input type="search" class="nav-search-input" id="navSearchInput" placeholder="Search The Doll House..." aria-label="Search">
+                    <p class="nav-search-hint">Press Enter to search</p>
+                </div>
+            </div>
+            <div class="nav-overlay-content" id="navOverlayContent">
+                <ul class="nav-menu">
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">News</button>
+                        <ul class="submenu">
+                            <li><a href="../news/articles.html">Articles</a></li>
+                            <li><a href="../news/briefings-statements.html">Briefings & Statements</a></li>
+                            <li><a href="../news/fact-sheets.html">Fact Sheets</a></li>
+                            <li><a href="../news/presidential-actions.html">Presidential Actions</a></li>
+                            <li><a href="../news/remarks.html">Remarks</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Administration</button>
+                        <ul class="submenu">
+                            <li><a href="../administration/president-barbie.html">President Doll</a></li>
+                            <li><a href="../administration/vp-ken.html">Vice President Ken</a></li>
+                            <li><a href="../administration/first-doll-skipper.html">First Doll Skipper</a></li>
+                            <li><a href="../administration/second-doll-teresa.html">Second Doll Teresa</a></li>
+                            <li><a href="../administration/cabinet.html">The Cabinet</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Media</button>
+                        <ul class="submenu">
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/live.html">Live News</a></li>
+                            <li><a href="../media/wire.html">Doll House Wire</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Priorities</button>
+                        <ul class="submenu">
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../priorities/investments.html">Investments</a></li>
+                            <li><a href="../priorities/achievements.html">Wins and Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">History</button>
+                        <ul class="submenu">
+                            <li><a href="../history/founders-museum.html">Founders Museum</a></li>
+                            <li><a href="../history/moments-that-made-us.html">Timeline</a></li>
+                            <li><a href="../legal/government.html">Government Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Get in Touch</button>
+                        <ul class="submenu">
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Doll House Wire</h1>
+                <p style="font-size: 1.25rem; margin-top: 1rem;">Your source for comprehensive coverage of The Doll House and the Administration</p>
+            </div>
+        </section>
+
+        <!-- Wire Content -->
+        <section class="wire-content-section">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; margin-top: 3rem;">
+
+                    <!-- Main Content Column -->
+                    <div>
+                        <!-- Latest News -->
+                        <div style="margin-bottom: 4rem;">
+                            <h2 style="font-size: 2rem; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 3px solid var(--color-secondary);">Latest News</h2>
+
+                            <article style="margin-bottom: 3rem; padding-bottom: 3rem; border-bottom: 1px solid #e0e0e0;">
+                                <div style="display: flex; gap: 2rem;">
+                                    <div style="flex-shrink: 0; width: 200px; height: 130px; background: linear-gradient(135deg, #FFB6D9 0%, #FF69B4 100%); border-radius: 8px;"></div>
+                                    <div style="flex: 1;">
+                                        <span style="display: inline-block; background: #FF0000; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.75rem;">BREAKING</span>
+                                        <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem; font-weight: 600;"><a href="#" style="color: inherit; text-decoration: none;">President Barbie Announces Historic Dream Initiative</a></h3>
+                                        <p style="color: #666; line-height: 1.75; margin-bottom: 0.75rem;">The President unveiled a comprehensive plan to expand opportunities and ensure every doll can achieve their dreams through education, career development, and community support programs.</p>
+                                        <div style="display: flex; gap: 1.5rem; font-size: 0.875rem; color: #999;">
+                                            <span>The Doll House</span>
+                                            <span>2 hours ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article style="margin-bottom: 3rem; padding-bottom: 3rem; border-bottom: 1px solid #e0e0e0;">
+                                <div style="display: flex; gap: 2rem;">
+                                    <div style="flex-shrink: 0; width: 200px; height: 130px; background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); border-radius: 8px;"></div>
+                                    <div style="flex: 1;">
+                                        <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem; font-weight: 600;"><a href="#" style="color: inherit; text-decoration: none;">Vice President Ken Hosts International Doll Summit</a></h3>
+                                        <p style="color: #666; line-height: 1.75; margin-bottom: 0.75rem;">Delegates from over 50 countries gathered at The Doll House for discussions on global cooperation, sustainability, and shared prosperity for all dolls worldwide.</p>
+                                        <div style="display: flex; gap: 1.5rem; font-size: 0.875rem; color: #999;">
+                                            <span>Doll Diplomacy News</span>
+                                            <span>5 hours ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article style="margin-bottom: 3rem; padding-bottom: 3rem; border-bottom: 1px solid #e0e0e0;">
+                                <div style="display: flex; gap: 2rem;">
+                                    <div style="flex-shrink: 0; width: 200px; height: 130px; background: linear-gradient(135deg, #87CEEB 0%, #4682B4 100%); border-radius: 8px;"></div>
+                                    <div style="flex: 1;">
+                                        <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem; font-weight: 600;"><a href="#" style="color: inherit; text-decoration: none;">Cabinet Approves New Education Funding Package</a></h3>
+                                        <p style="color: #666; line-height: 1.75; margin-bottom: 0.75rem;">The Cabinet voted unanimously to allocate additional resources to schools, ensuring every young doll has access to quality education and enrichment programs.</p>
+                                        <div style="display: flex; gap: 1.5rem; font-size: 0.875rem; color: #999;">
+                                            <span>The Doll House</span>
+                                            <span>1 day ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article style="margin-bottom: 3rem; padding-bottom: 3rem; border-bottom: 1px solid #e0e0e0;">
+                                <div style="display: flex; gap: 2rem;">
+                                    <div style="flex-shrink: 0; width: 200px; height: 130px; background: linear-gradient(135deg, #E0BBE4 0%, #957DAD 100%); border-radius: 8px;"></div>
+                                    <div style="flex: 1;">
+                                        <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem; font-weight: 600;"><a href="#" style="color: inherit; text-decoration: none;">First Doll Skipper Launches Youth Empowerment Tour</a></h3>
+                                        <p style="color: #666; line-height: 1.75; margin-bottom: 0.75rem;">First Doll Skipper is visiting schools across the nation to inspire young dolls and promote her signature education and mentorship initiatives.</p>
+                                        <div style="display: flex; gap: 1.5rem; font-size: 0.875rem; color: #999;">
+                                            <span>Educational Weekly</span>
+                                            <span>1 day ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article style="margin-bottom: 3rem;">
+                                <div style="display: flex; gap: 2rem;">
+                                    <div style="flex-shrink: 0; width: 200px; height: 130px; background: linear-gradient(135deg, #98D8C8 0%, #5FB8A2 100%); border-radius: 8px;"></div>
+                                    <div style="flex: 1;">
+                                        <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem; font-weight: 600;"><a href="#" style="color: inherit; text-decoration: none;">Doll House Announces New Environmental Protections</a></h3>
+                                        <p style="color: #666; line-height: 1.75; margin-bottom: 0.75rem;">New policies aim to preserve natural beauty and combat climate change, ensuring a fabulous planet for future generations of dolls.</p>
+                                        <div style="display: flex; gap: 1.5rem; font-size: 0.875rem; color: #999;">
+                                            <span>Environmental Today</span>
+                                            <span>2 days ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div>
+                        <!-- Must Watch -->
+                        <div style="background: #f8f8f8; padding: 2rem; border-radius: 8px; margin-bottom: 3rem;">
+                            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 2px solid #ddd;">Must Watch</h3>
+
+                            <article style="margin-bottom: 2rem;">
+                                <div style="background: linear-gradient(135deg, #FFB6D9 0%, #FF69B4 100%); border-radius: 8px; padding-bottom: 56.25%; position: relative; margin-bottom: 1rem;">
+                                    <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">▶</div>
+                                </div>
+                                <h4 style="font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem;">President's Weekly Address</h4>
+                                <p style="font-size: 0.875rem; color: #666;">8:45</p>
+                            </article>
+
+                            <article style="margin-bottom: 2rem;">
+                                <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); border-radius: 8px; padding-bottom: 56.25%; position: relative; margin-bottom: 1rem;">
+                                    <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">▶</div>
+                                </div>
+                                <h4 style="font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem;">Behind the Scenes at The Doll House</h4>
+                                <p style="font-size: 0.875rem; color: #666;">12:20</p>
+                            </article>
+
+                            <article>
+                                <div style="background: linear-gradient(135deg, #87CEEB 0%, #4682B4 100%); border-radius: 8px; padding-bottom: 56.25%; position: relative; margin-bottom: 1rem;">
+                                    <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">▶</div>
+                                </div>
+                                <h4 style="font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem;">Daily Press Briefing Highlights</h4>
+                                <p style="font-size: 0.875rem; color: #666;">5:30</p>
+                            </article>
+                        </div>
+
+                        <!-- Trending Topics -->
+                        <div style="background: white; border: 2px solid #e0e0e0; padding: 2rem; border-radius: 8px;">
+                            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 2px solid #ddd;">Trending Topics</h3>
+
+                            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                                <div>
+                                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                        <span style="color: var(--color-secondary); font-weight: 700;">#1</span>
+                                        <span style="font-weight: 600;">#DreamInitiative</span>
+                                    </div>
+                                    <p style="font-size: 0.875rem; color: #666;">5.2K mentions</p>
+                                </div>
+
+                                <div>
+                                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                        <span style="color: var(--color-secondary); font-weight: 700;">#2</span>
+                                        <span style="font-weight: 600;">#DollHouseLive</span>
+                                    </div>
+                                    <p style="font-size: 0.875rem; color: #666;">3.8K mentions</p>
+                                </div>
+
+                                <div>
+                                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                        <span style="color: var(--color-secondary); font-weight: 700;">#3</span>
+                                        <span style="font-weight: 600;">#EducationForAll</span>
+                                    </div>
+                                    <p style="font-size: 0.875rem; color: #666;">2.9K mentions</p>
+                                </div>
+
+                                <div>
+                                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                        <span style="color: var(--color-secondary); font-weight: 700;">#4</span>
+                                        <span style="font-weight: 600;">#FirstDoll</span>
+                                    </div>
+                                    <p style="font-size: 0.875rem; color: #666;">2.4K mentions</p>
+                                </div>
+
+                                <div>
+                                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                        <span style="color: var(--color-secondary); font-weight: 700;">#5</span>
+                                        <span style="font-weight: 600;">#DollDiplomacy</span>
+                                    </div>
+                                    <p style="font-size: 0.875rem; color: #666;">1.8K mentions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay in the Know</h2>
+                    <p>Get the latest updates from President Doll and The Doll House</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h3 style="color: var(--color-secondary); font-family: var(--font-serif); margin: 0;">The Doll House</h3>
+                </div>
+
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3>News</h3>
+                        <ul>
+                            <li><a href="wire.html">Wire</a></li>
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Administration</h3>
+                        <ul>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../history/founders-museum.html">Founders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="government.html">Governance</a></li>
+                            <li><a href="../../history.html">History</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-social" id="footerSocialLinks"></div>
+
+                <div class="footer-address">
+                    <p>The Doll House<br>
+                    1600 Dreamhouse Lane<br>
+                    Malibu, CA 90265</p>
+                </div>
+
+                <div class="footer-legal">
+                    <a href="../legal/privacy.html">Privacy Policy</a>
+                    <a href="../legal/copyright.html">Copyright Policy</a>
+                    <a href="../legal/government.html">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Join Button -->
+    <div class="floating-join-btn" id="floatingJoinBtn">
+        <button class="join-close-btn" aria-label="Close join button" onclick="document.getElementById('floatingJoinBtn').style.display='none'; return false;">×</button>
+        <a href="#newsletter" class="join-now-link">Join Now</a>
+    </div>
+
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/utils.js"></script>
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

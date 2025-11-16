@@ -149,7 +149,7 @@
 
     <div class="announcement-banner">
         <div class="container">
-            <p class="announcement-text">Breaking: The Age of Dreams Has Officially Begun - Join Us in Making History!</p>
+            <p class="announcement-text">Making the White House Femme Again ✨ Protect the Dolls • Support Trans Joy • Choose Your Haus</p>
         </div>
     </div>
 
@@ -285,8 +285,8 @@
     <main id="main-content">
         <section class="achievements-header">
             <div class="container">
-                <h1>Wins and Achievements</h1>
-                <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto;">President Barbie's accomplishments: Delivering results for all dolls</p>
+                <h1>Liberation Wins & Achievements</h1>
+                <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto;">The Mother's accomplishments: Protecting trans dolls, building haus power, and advancing bimbo feminist politics</p>
             </div>
         </section>
 
@@ -294,12 +294,12 @@
             <div class="container">
                 <div class="filter-buttons">
                     <button class="filter-btn active" data-category="all">All Categories</button>
-                    <button class="filter-btn" data-category="economy">💰 Economy</button>
-                    <button class="filter-btn" data-category="foreign">🌍 Foreign Policy</button>
-                    <button class="filter-btn" data-category="energy">⚡ Energy</button>
-                    <button class="filter-btn" data-category="health">💪 Health</button>
-                    <button class="filter-btn" data-category="law">🛡️ Law & Order</button>
-                    <button class="filter-btn" data-category="bureaucracy">📉 Efficiency</button>
+                    <button class="filter-btn" data-category="trans">✨ Trans Liberation</button>
+                    <button class="filter-btn" data-category="sexworker">💖 Sex Worker Rights</button>
+                    <button class="filter-btn" data-category="haus">🏠 Haus & Community</button>
+                    <button class="filter-btn" data-category="abolition">🏴 Abolition</button>
+                    <button class="filter-btn" data-category="economy">💰 Economic Justice</button>
+                    <button class="filter-btn" data-category="bimbo">💅 Bimbo Feminism</button>
                 </div>
 
                 <!-- November -->
@@ -428,6 +428,9 @@
         </section>
     </main>
 
+    <!-- Footer Container -->
+    <div id="footerContainer"></div>
+
     <footer class="site-footer" id="contact">
         <div class="container">
             <div class="footer-top">
@@ -492,30 +495,26 @@
     <script src="../../assets/js/components.js"></script>
     <script src="../../assets/js/script.js"></script>
 
-    <script>
-        // Filter functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            const tableRows = document.querySelectorAll('.achievements-table tbody tr');
+        <script>
+        // Render header and footer with basePath for subdirectory
+        document.addEventListener('DOMContentLoaded', () => {
+            const headerContainer = document.querySelector('#headerContainer');
+            const footerContainer = document.querySelector('#footerContainer');
 
-            filterButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Remove active class from all buttons
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    this.classList.add('active');
+            if (headerContainer) {
+                Components.Header.render(headerContainer, { basePath: '../../' });
+                // Initialize header navigation after rendering
+                if (typeof initHeaderNavigation === 'function') {
+                    initHeaderNavigation();
+                }
+            }
 
-                    const category = this.dataset.category;
-
-                    // Show/hide rows based on category
-                    tableRows.forEach(row => {
-                        if (category === 'all' || row.dataset.category === category) {
-                            row.style.display = '';
-                        } else {
-                            row.style.display = 'none';
-                        }
-                    });
+            if (footerContainer) {
+                Components.Footer.render(footerContainer, {
+                    basePath: '../../',
+                    brandHref: '../../index.html'
                 });
-            });
+            }
         });
     </script>
 </body>

@@ -117,7 +117,7 @@
 
     <div class="announcement-banner">
         <div class="container">
-            <p class="announcement-text">Breaking: The Age of Dreams Has Officially Begun - Join Us in Making History!</p>
+            <p class="announcement-text">Making the White House Femme Again ✨ Protect the Dolls • Support Trans Joy • Choose Your Haus</p>
         </div>
     </div>
 
@@ -385,6 +385,9 @@
         </section>
     </main>
 
+    <!-- Footer Container -->
+    <div id="footerContainer"></div>
+
     <footer class="site-footer" id="contact">
         <div class="container">
             <div class="footer-top">
@@ -449,48 +452,26 @@
     <script src="../../assets/js/components.js"></script>
     <script src="../../assets/js/script.js"></script>
 
-    <script>
-        // Simple table sorting and search functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const table = document.getElementById('investmentsTable');
-            const tbody = document.getElementById('investmentsTableBody');
-            const searchInput = document.getElementById('investmentSearch');
-            const headers = table.querySelectorAll('th[data-sort]');
+        <script>
+        // Render header and footer with basePath for subdirectory
+        document.addEventListener('DOMContentLoaded', () => {
+            const headerContainer = document.querySelector('#headerContainer');
+            const footerContainer = document.querySelector('#footerContainer');
 
-            // Search functionality
-            searchInput.addEventListener('input', function() {
-                const searchTerm = this.value.toLowerCase();
-                const rows = tbody.querySelectorAll('tr');
+            if (headerContainer) {
+                Components.Header.render(headerContainer, { basePath: '../../' });
+                // Initialize header navigation after rendering
+                if (typeof initHeaderNavigation === 'function') {
+                    initHeaderNavigation();
+                }
+            }
 
-                rows.forEach(row => {
-                    const text = row.textContent.toLowerCase();
-                    row.style.display = text.includes(searchTerm) ? '' : 'none';
+            if (footerContainer) {
+                Components.Footer.render(footerContainer, {
+                    basePath: '../../',
+                    brandHref: '../../index.html'
                 });
-            });
-
-            // Sort functionality
-            headers.forEach(header => {
-                header.addEventListener('click', function() {
-                    const column = this.dataset.sort;
-                    const rows = Array.from(tbody.querySelectorAll('tr'));
-                    const index = Array.from(this.parentElement.children).indexOf(this);
-
-                    rows.sort((a, b) => {
-                        let aVal = a.children[index].textContent.trim();
-                        let bVal = b.children[index].textContent.trim();
-
-                        // Handle currency values
-                        if (column === 'amount') {
-                            aVal = parseFloat(aVal.replace(/[$BTM]/g, ''));
-                            bVal = parseFloat(bVal.replace(/[$BTM]/g, ''));
-                        }
-
-                        return aVal > bVal ? 1 : -1;
-                    });
-
-                    rows.forEach(row => tbody.appendChild(row));
-                });
-            });
+            }
         });
     </script>
 </body>

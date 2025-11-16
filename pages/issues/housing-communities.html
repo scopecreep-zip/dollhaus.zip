@@ -14,7 +14,7 @@
 
     <div class="announcement-banner">
         <div class="container">
-            <p class="announcement-text">Breaking: The Age of Dreams Has Officially Begun - Join Us in Making History!</p>
+            <p class="announcement-text">Making the White House Femme Again ✨ Protect the Dolls • Support Trans Joy • Choose Your Haus</p>
         </div>
     </div>
 
@@ -153,8 +153,8 @@
             <div class="issue-hero-overlay"></div>
             <div class="container">
                 <div class="issue-hero-content">
-                    <h1>Housing & Communities</h1>
-                    <p class="issue-hero-description">Ensuring every doll has access to a fabulous home and thriving community through affordable housing and neighborhood development.</p>
+                    <h1>Housing as a Human Right & Chosen Family Homes</h1>
+                    <p class="issue-hero-description">Guaranteeing housing for all trans people, especially those rejected by families - through haus collectives, community land trusts, and abolishing landlord exploitation.</p>
                 </div>
             </div>
         </section>
@@ -164,9 +164,9 @@
             <div class="container">
                 <div class="issue-overview-content">
                     <h2>Overview</h2>
-                    <p>President Barbie believes that every doll deserves a beautiful place to call home. Our housing initiative is focused on making dreamhouses accessible to all dolls, regardless of income level, while revitalizing neighborhoods and building strong, connected communities.</p>
-                    <p>We're investing in affordable housing development, providing down payment assistance for first-time homebuyers, and implementing smart urban planning that creates walkable, sustainable communities with access to parks, schools, and essential services.</p>
-                    <p>Through partnerships with local developers and community organizations, we're not just building houses - we're creating neighborhoods where dolls can thrive, connect with their neighbors, and build lasting memories.</p>
+                    <p>Housing is a human right, not a commodity for landlords to profit from. Trans women face staggering rates of homelessness - especially trans youth rejected by biological families and sex workers denied housing due to criminalization. We demand housing for ALL, prioritizing those most vulnerable: trans women of color, sex workers, disabled folks, and anyone rejected by blood family.</p>
+                    <p>We're building haus collective housing where chosen families can live together with legal recognition, community land trusts that remove housing from the speculative market, and anti-gentrification protections that keep QTPOC neighborhoods from being displaced by wealthy developers. Housing should not require proving "worthiness" to landlords or submitting to surveillance.</p>
+                    <p>Through mutual aid housing networks, rent strikes against exploitative landlords, and guaranteed housing programs, we're ensuring every trans person has a safe place to call home - whether in a haus with chosen family or independently, without discrimination based on gender identity, sex work, or income.</p>
                 </div>
             </div>
         </section>
@@ -177,34 +177,34 @@
                 <h2>Key Initiatives</h2>
                 <div class="initiatives-grid">
                     <div class="initiative-card">
+                        <span class="initiative-icon">✨</span>
+                        <h3>Trans Housing Guarantee</h3>
+                        <p>Guaranteed housing for all trans people, especially those rejected by families. No questions asked, no "proving worthiness" to landlords, no discrimination.</p>
+                    </div>
+                    <div class="initiative-card">
                         <span class="initiative-icon">🏠</span>
-                        <h3>Affordable Dreamhouses</h3>
-                        <p>Building and renovating affordable housing units to ensure every doll can afford a fabulous home.</p>
+                        <h3>Haus Collective Housing</h3>
+                        <p>Legal recognition and funding for ballroom-style haus collective housing where chosen families live together with shared resources and mutual support.</p>
                     </div>
                     <div class="initiative-card">
-                        <span class="initiative-icon">🌇</span>
-                        <h3>Community Development</h3>
-                        <p>Investing in infrastructure, parks, and public spaces that bring communities together and improve quality of life.</p>
+                        <span class="initiative-icon">🛡️</span>
+                        <h3>Sex Worker Housing Rights</h3>
+                        <p>End housing discrimination against sex workers. No evictions or denials based on profession. Sex work is work and deserves housing security.</p>
                     </div>
                     <div class="initiative-card">
-                        <span class="initiative-icon">🔨</span>
-                        <h3>Neighborhood Revitalization</h3>
-                        <p>Revitalizing struggling neighborhoods through strategic investment and community-led development projects.</p>
+                        <span class="initiative-icon">🌍</span>
+                        <h3>Community Land Trusts</h3>
+                        <p>Removing housing from speculative markets through community land trusts. QTPOC neighborhoods stay QTPOC, not gentrified by wealthy developers.</p>
                     </div>
                     <div class="initiative-card">
-                        <span class="initiative-icon">💰</span>
-                        <h3>Homebuyer Assistance</h3>
-                        <p>Providing grants and low-interest loans to help first-time buyers achieve the dream of homeownership.</p>
+                        <span class="initiative-icon">⚖️</span>
+                        <h3>Rent Strike Support</h3>
+                        <p>Legal defense and mutual aid for tenants organizing rent strikes against exploitative landlords. Abolish landlordism, guarantee housing for all.</p>
                     </div>
                     <div class="initiative-card">
-                        <span class="initiative-icon">🌳</span>
-                        <h3>Sustainable Design</h3>
-                        <p>Incorporating eco-friendly design and green spaces into all new housing developments.</p>
-                    </div>
-                    <div class="initiative-card">
-                        <span class="initiative-icon">🤝</span>
-                        <h3>Community Building</h3>
-                        <p>Supporting programs that strengthen neighborhood bonds and create inclusive community spaces.</p>
+                        <span class="initiative-icon">🏳️‍⚧️</span>
+                        <h3>Trans Youth Safe Housing</h3>
+                        <p>Emergency and permanent housing for trans youth rejected by biological families, with haus placement and chosen family support structures.</p>
                     </div>
                 </div>
             </div>
@@ -309,6 +309,9 @@
         </section>
     </main>
 
+    <!-- Footer Container -->
+    <div id="footerContainer"></div>
+
     <footer class="site-footer" id="contact">
         <div class="container">
             <div class="footer-top">
@@ -372,5 +375,27 @@
     <script src="../../assets/js/utils.js"></script>
     <script src="../../assets/js/components.js"></script>
     <script src="../../assets/js/script.js"></script>
+    <script>
+        // Render header and footer with basePath for subdirectory
+        document.addEventListener('DOMContentLoaded', () => {
+            const headerContainer = document.querySelector('#headerContainer');
+            const footerContainer = document.querySelector('#footerContainer');
+
+            if (headerContainer) {
+                Components.Header.render(headerContainer, { basePath: '../../' });
+                // Initialize header navigation after rendering
+                if (typeof initHeaderNavigation === 'function') {
+                    initHeaderNavigation();
+                }
+            }
+
+            if (footerContainer) {
+                Components.Footer.render(footerContainer, {
+                    basePath: '../../',
+                    brandHref: '../../index.html'
+                });
+            }
+        });
+    </script>
 </body>
 </html>

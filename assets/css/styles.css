@@ -194,6 +194,7 @@ button {
     padding: 0;
     gap: 0;
     max-width: 100%;
+    position: relative;
 }
 
 /* Hamburger Menu Toggle (FAR LEFT) */
@@ -253,8 +254,59 @@ button {
     line-height: 1;
 }
 
+.header-center-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.header-center-logo a {
+    pointer-events: all;
+    display: flex;
+    align-items: center;
+}
+
+.site-logo-image {
+    height: 150px;
+    width: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .site-logo-image {
+        height: 100px;
+    }
+}
+
 .utility-nav {
     padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-house-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 16px;
+    margin-left: 16px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header-house-image {
+    height: 55px;
+    width: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .header-house-image {
+        height: 40px;
+    }
 }
 
 /* Primary Navigation - Full Screen Overlay */
@@ -605,6 +657,9 @@ button {
     padding: 8px;
     border-radius: var(--radius-small);
     transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .search-toggle:hover {
@@ -1488,6 +1543,17 @@ button {
 .footer-logo h3 {
     font-size: 18px;
     letter-spacing: 1px;
+}
+
+.footer-house-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-house-image {
+    height: 120px;
+    width: auto;
+    display: inline-block;
 }
 
 .footer-newsletter-main h4 {

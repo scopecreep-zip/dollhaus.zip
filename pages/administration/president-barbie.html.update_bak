@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>President Barbie - The Doll House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Announcement Banner -->
+    <div class="announcement-banner">
+        <div class="container">
+            <p class="announcement-text">Making the White House Femme Again ✨ Protect the Dolls • Support Trans Joy • Choose Your Haus</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-inner">
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <div class="site-logo">
+                    <a href="../../index.html">President Doll</a>
+                </div>
+
+                <div class="utility-nav">
+                    <button class="search-toggle" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                            <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="social-links" id="headerSocialLinks"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="primary-nav" aria-label="Primary" id="primary-nav">
+            <div class="nav-overlay-header" id="navOverlayHeader">
+                <div class="nav-close-btn-wrapper">
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <span class="nav-close-text">Close</span>
+                </div>
+                <button class="nav-search" aria-label="Open search">
+                    <span>Search</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-search-header" id="navSearchHeader" style="display: none;">
+                <div class="nav-menu-btn-wrapper">
+                    <button class="nav-menu-btn" aria-label="Back to menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <span class="nav-menu-text">Menu</span>
+                </div>
+                <div class="nav-close-btn-wrapper nav-close-btn-wrapper-reverse">
+                    <span class="nav-close-text">Close</span>
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-search-container" id="navSearchContainer" style="display: none;">
+                <div class="nav-search-wrapper">
+                    <input type="search" class="nav-search-input" id="navSearchInput" placeholder="Search The Doll House..." aria-label="Search">
+                    <p class="nav-search-hint">Press Enter to search</p>
+                </div>
+            </div>
+            <div class="nav-overlay-content" id="navOverlayContent">
+                <ul class="nav-menu">
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">News</button>
+                        <ul class="submenu">
+                            <li><a href="../news/articles.html">Articles</a></li>
+                            <li><a href="../news/briefings-statements.html">Briefings & Statements</a></li>
+                            <li><a href="../news/fact-sheets.html">Fact Sheets</a></li>
+                            <li><a href="../news/presidential-actions.html">Presidential Actions</a></li>
+                            <li><a href="../news/remarks.html">Remarks</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Administration</button>
+                        <ul class="submenu">
+                            <li><a href="../administration/president-barbie.html">President Barbie</a></li>
+                            <li><a href="../administration/vp-ken.html">Vice President Ken</a></li>
+                            <li><a href="../administration/first-doll-skipper.html">First Doll Skipper</a></li>
+                            <li><a href="../administration/second-doll-teresa.html">Second Doll Teresa</a></li>
+                            <li><a href="../administration/cabinet.html">The Cabinet</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Media</button>
+                        <ul class="submenu">
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/live.html">Live News</a></li>
+                            <li><a href="../media/wire.html">Doll House Wire</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Priorities</button>
+                        <ul class="submenu">
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../priorities/investments.html">Investments</a></li>
+                            <li><a href="../priorities/achievements.html">Wins and Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">History</button>
+                        <ul class="submenu">
+                            <li><a href="../history/founders-museum.html">Founders Museum</a></li>
+                            <li><a href="../history/moments-that-made-us.html">Timeline</a></li>
+                            <li><a href="../legal/government.html">Government Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Get in Touch</button>
+                        <ul class="submenu">
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="profile-hero" style="background: linear-gradient(135deg, rgba(224, 33, 138, 0.9) 0%, rgba(199, 21, 133, 0.9) 100%), url('assets/images/placeholder-president.jpg') center/cover; min-height: 60vh; display: flex; align-items: center; color: white;">
+            <div class="container" style="max-width: 1200px;">
+                <div style="max-width: 800px;">
+                    <p style="font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px;">The Mother • Executive Branch Leader</p>
+                    <h1 style="font-size: clamp(48px, 6vw, 72px); margin-bottom: 24px; color: white;">President Barbie</h1>
+                    <p style="font-size: 22px; line-height: 1.6; margin: 0;">Mother of the Haus - leading through care not domination, mentorship not control, protection of the most vulnerable, and bimbo feminist politics proving glamour is power.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Biography Section -->
+        <section style="padding: var(--spacing-100) 0; background: var(--color-white);">
+            <div class="container" style="max-width: 1200px;">
+                <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 60px; align-items: start;">
+                    <div>
+                        <h2 style="color: var(--color-primary); margin-bottom: 32px;">About President Barbie</h2>
+
+                        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px;">President Barbie has dedicated her life to trans liberation, bimbo feminism, and protecting the most marginalized dolls in our community. From her early work with ballroom houses to championing sex worker rights and gender-affirming healthcare, she has consistently demonstrated that hyperfemininity and radical politics are not just compatible - they're powerful together.</p>
+
+                        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px;">Born with an innate understanding that glamour is political and intelligence comes in glitter packaging, President Barbie grew up believing that every trans woman - especially Black and Latina trans women - deserves safety, dignity, and celebration. This core commitment to protecting the dolls has shaped her entire political career and continues to drive her work as **The Mother** - our executive branch leader who governs through care, not domination.</p>
+
+                        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px;">Throughout her career, President Barbie has held positions that center marginalized voices: organizing with sex workers for decriminalization, building mutual aid networks for trans youth rejected by biological families, establishing community defense systems that don't rely on police, and creating haus structures that provide real family bonds and material support. Each experience has deepened her understanding that liberation requires centering those most vulnerable to state violence.</p>
+
+                        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px;">Her historic election as President marked a watershed moment: the first openly bimbo feminist leader, committed to proving you can be hyperfeminine AND politically fierce. Since taking office, President Barbie has worked tirelessly to advance an ambitious agenda focused on trans rights, sex worker liberation, chosen family recognition, and building antifascist community structures that protect us all.</p>
+
+                        <h3 style="color: var(--color-primary); margin-top: 48px; margin-bottom: 24px;">Political Awakening & Haus Mother Lineage</h3>
+
+                        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px;">President Barbie's political awakening came through the ballroom scene, where she witnessed firsthand how Black and Latina trans women created survival structures outside oppressive systems. She learned from legendary haus mothers who practiced decentralized governance, mutual aid, and community care decades before these terms entered mainstream political discourse.</p>
+
+                        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px;">She pursued education in Gender Studies, Queer Theory, and Community Organizing, learning from trans elders, sex worker rights activists, and abolitionist organizers. Her political philosophy centers bimbo feminism: the radical reclamation of hyperfemininity as political power, rejecting false binaries between intelligence and aesthetics, glamour and revolutionary action.</p>
+
+                        <h3 style="color: var(--color-primary); margin-top: 48px; margin-bottom: 24px;">Leading as The Mother</h3>
+
+                        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px;">As **The Mother** of our executive branch, President Barbie leads through the four pillars of haus governance: **Mentorship** (guiding younger dolls and community members), **Protection** (defending the most vulnerable from state violence), **Community Care** (prioritizing collective wellbeing over profit), and **Accountability** (answerable to the haus, not corporate donors).</p>
+
+                        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px;">Her leadership style rejects traditional authoritarian power in favor of care-based governance learned from ballroom culture. She makes decisions through consensus with The House (legislative branch) and The Elders (judicial branch), ensuring those most affected by policies have direct say in creating them. This is governance as chosen family - where the leader's role is to nurture, protect, and empower, not to dominate or control.</p>
+
+                        <h3 style="color: var(--color-primary); margin-top: 48px; margin-bottom: 24px;">Organizing & Liberation Work</h3>
+
+                        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px;">Before running for office, President Barbie spent years organizing with the most marginalized: establishing mutual aid networks for trans women facing homelessness, advocating for sex worker decriminalization, building community defense systems as alternatives to policing, and creating chosen family structures that provide real material support and care.</p>
+
+                        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px;">Her entry into electoral politics was driven by a clear mission: use institutional power to protect trans women, dismantle systems of oppression, and build governance structures rooted in ballroom culture's wisdom. She campaigned on an unapologetically radical platform: trans liberation, sex worker rights, prison abolition, and bimbo feminism as political praxis.</p>
+                    </div>
+
+                    <div>
+                        <div style="background: var(--color-cream); border: 2px solid var(--color-pale); border-radius: var(--radius-large); padding: 32px; position: sticky; top: 120px;">
+                            <h3 style="font-family: var(--font-sans); font-size: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 24px; color: var(--color-text-dark);">Quick Facts</h3>
+
+                            <div style="margin-bottom: 24px;">
+                                <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-dark); opacity: 0.7; margin-bottom: 4px; font-weight: 600;">Full Name</p>
+                                <p style="font-size: 16px; font-weight: 500; margin: 0;">Barbara Millicent Roberts</p>
+                            </div>
+
+                            <div style="margin-bottom: 24px;">
+                                <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-dark); opacity: 0.7; margin-bottom: 4px; font-weight: 600;">Born</p>
+                                <p style="font-size: 16px; font-weight: 500; margin: 0;">March 9, 1959</p>
+                            </div>
+
+                            <div style="margin-bottom: 24px;">
+                                <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-dark); opacity: 0.7; margin-bottom: 4px; font-weight: 600;">Birthplace</p>
+                                <p style="font-size: 16px; font-weight: 500; margin: 0;">Willows, Wisconsin</p>
+                            </div>
+
+                            <div style="margin-bottom: 24px;">
+                                <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-dark); opacity: 0.7; margin-bottom: 4px; font-weight: 600;">Spouse</p>
+                                <p style="font-size: 16px; font-weight: 500; margin: 0;">Ken Carson</p>
+                            </div>
+
+                            <div style="margin-bottom: 24px;">
+                                <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-dark); opacity: 0.7; margin-bottom: 4px; font-weight: 600;">Education</p>
+                                <p style="font-size: 16px; font-weight: 500; margin: 0;">Multiple Advanced Degrees</p>
+                            </div>
+
+                            <div>
+                                <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-dark); opacity: 0.7; margin-bottom: 4px; font-weight: 600;">Party Affiliation</p>
+                                <p style="font-size: 16px; font-weight: 500; margin: 0;">Liberation Haus Coalition</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Accomplishments -->
+        <section style="padding: var(--spacing-100) 0; background: var(--color-light);">
+            <div class="container" style="max-width: 1200px;">
+                <h2 style="color: var(--color-primary); text-align: center; margin-bottom: 60px;">Key Accomplishments</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                    <div style="background: var(--color-white); padding: 40px; border-radius: var(--radius-large); border: 2px solid var(--color-pale);">
+                        <h3 style="color: var(--color-primary); margin-bottom: 16px;">Trans Liberation & Healthcare</h3>
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0;">Guaranteed gender-affirming healthcare for all trans people with no gatekeeping, banned anti-trans legislation, and established trans-led oversight of all healthcare policy affecting trans communities.</p>
+                    </div>
+
+                    <div style="background: var(--color-white); padding: 40px; border-radius: var(--radius-large); border: 2px solid var(--color-pale);">
+                        <h3 style="color: var(--color-primary); margin-bottom: 16px;">Sex Worker Rights</h3>
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0;">Full decriminalization of sex work, labor protections for sex workers, and sex worker-led policy councils ensuring those most impacted lead the decisions affecting their lives.</p>
+                    </div>
+
+                    <div style="background: var(--color-white); padding: 40px; border-radius: var(--radius-large); border: 2px solid var(--color-pale);">
+                        <h3 style="color: var(--color-primary); margin-bottom: 16px;">Chosen Family Recognition</h3>
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0;">Legal recognition for haus structures with healthcare sharing, inheritance rights, and sanctuary protections. Ballroom culture governance models now have full legal status.</p>
+                    </div>
+
+                    <div style="background: var(--color-white); padding: 40px; border-radius: var(--radius-large); border: 2px solid var(--color-pale);">
+                        <h3 style="color: var(--color-primary); margin-bottom: 16px;">Bimbo Feminist Education</h3>
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0;">Launched programs teaching that hyperfemininity and intelligence are not opposites, centering trans women's histories, and celebrating glamour as political power rather than frivolity.</p>
+                    </div>
+
+                    <div style="background: var(--color-white); padding: 40px; border-radius: var(--radius-large); border: 2px solid var(--color-pale);">
+                        <h3 style="color: var(--color-primary); margin-bottom: 16px;">Community Defense Networks</h3>
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0;">Established mutual aid and community defense systems as alternatives to policing, protecting trans women from violence without relying on systems that harm us.</p>
+                    </div>
+
+                    <div style="background: var(--color-white); padding: 40px; border-radius: var(--radius-large); border: 2px solid var(--color-pale);">
+                        <h3 style="color: var(--color-primary); margin-bottom: 16px;">Trans Women of Color Centered</h3>
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0;">Ensured Black and Latina trans women hold leadership positions across government, honoring the ballroom culture pioneers who created the haus system we now follow.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Timeline -->
+        <section style="padding: var(--spacing-100) 0; background: var(--color-white);">
+            <div class="container" style="max-width: 900px;">
+                <h2 style="color: var(--color-primary); text-align: center; margin-bottom: 60px;">Career Timeline</h2>
+
+                <div style="position: relative; padding-left: 40px;">
+                    <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--color-pale);"></div>
+
+                    <div style="position: relative; margin-bottom: 48px; padding-left: 32px;">
+                        <div style="position: absolute; left: -46px; top: 6px; width: 20px; height: 20px; border-radius: 50%; background: var(--color-primary); border: 3px solid var(--color-white); box-shadow: 0 0 0 3px var(--color-primary);"></div>
+                        <p style="font-size: 14px; font-weight: 700; color: var(--color-primary); margin-bottom: 8px;">2025 - PRESENT</p>
+                        <h3 style="margin-bottom: 8px;">President of the United Dolls</h3>
+                        <p style="font-size: 16px; line-height: 1.6; color: var(--color-text-dark); opacity: 0.9; margin: 0;">Leading the nation through unprecedented challenges with vision and determination.</p>
+                    </div>
+
+                    <div style="position: relative; margin-bottom: 48px; padding-left: 32px;">
+                        <div style="position: absolute; left: -46px; top: 6px; width: 20px; height: 20px; border-radius: 50%; background: var(--color-primary); border: 3px solid var(--color-white); box-shadow: 0 0 0 3px var(--color-primary);"></div>
+                        <p style="font-size: 14px; font-weight: 700; color: var(--color-primary); margin-bottom: 8px;">2021 - 2025</p>
+                        <h3 style="margin-bottom: 8px;">United States Senator</h3>
+                        <p style="font-size: 16px; line-height: 1.6; color: var(--color-text-dark); opacity: 0.9; margin: 0;">Championed legislation for economic equality, education reform, and healthcare access.</p>
+                    </div>
+
+                    <div style="position: relative; margin-bottom: 48px; padding-left: 32px;">
+                        <div style="position: absolute; left: -46px; top: 6px; width: 20px; height: 20px; border-radius: 50%; background: var(--color-primary); border: 3px solid var(--color-white); box-shadow: 0 0 0 3px var(--color-primary);"></div>
+                        <p style="font-size: 14px; font-weight: 700; color: var(--color-primary); margin-bottom: 8px;">2017 - 2021</p>
+                        <h3 style="margin-bottom: 8px;">Secretary of State</h3>
+                        <p style="font-size: 16px; line-height: 1.6; color: var(--color-text-dark); opacity: 0.9; margin: 0;">Strengthened international alliances and promoted democracy and human rights globally.</p>
+                    </div>
+
+                    <div style="position: relative; margin-bottom: 48px; padding-left: 32px;">
+                        <div style="position: absolute; left: -46px; top: 6px; width: 20px; height: 20px; border-radius: 50%; background: var(--color-primary); border: 3px solid var(--color-white); box-shadow: 0 0 0 3px var(--color-primary);"></div>
+                        <p style="font-size: 14px; font-weight: 700; color: var(--color-primary); margin-bottom: 8px;">2010 - 2017</p>
+                        <h3 style="margin-bottom: 8px;">Tech Entrepreneur & CEO</h3>
+                        <p style="font-size: 16px; line-height: 1.6; color: var(--color-text-dark); opacity: 0.9; margin: 0;">Founded and led multiple successful technology companies, creating thousands of jobs.</p>
+                    </div>
+
+                    <div style="position: relative; margin-bottom: 48px; padding-left: 32px;">
+                        <div style="position: absolute; left: -46px; top: 6px; width: 20px; height: 20px; border-radius: 50%; background: var(--color-primary); border: 3px solid var(--color-white); box-shadow: 0 0 0 3px var(--color-primary);"></div>
+                        <p style="font-size: 14px; font-weight: 700; color: var(--color-primary); margin-bottom: 8px;">1990 - 2010</p>
+                        <h3 style="margin-bottom: 8px;">Diverse Professional Career</h3>
+                        <p style="font-size: 16px; line-height: 1.6; color: var(--color-text-dark); opacity: 0.9; margin: 0;">Served in over 150 different professions including astronaut, doctor, engineer, teacher, and more.</p>
+                    </div>
+
+                    <div style="position: relative; padding-left: 32px;">
+                        <div style="position: absolute; left: -46px; top: 6px; width: 20px; height: 20px; border-radius: 50%; background: var(--color-primary); border: 3px solid var(--color-white); box-shadow: 0 0 0 3px var(--color-primary);"></div>
+                        <p style="font-size: 14px; font-weight: 700; color: var(--color-primary); margin-bottom: 8px;">1959 - 1990</p>
+                        <h3 style="margin-bottom: 8px;">Early Life & Education</h3>
+                        <p style="font-size: 16px; line-height: 1.6; color: var(--color-text-dark); opacity: 0.9; margin: 0;">Pursued multiple advanced degrees while beginning pioneering work in various fields.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inspirational Quotes -->
+        <section style="padding: var(--spacing-100) 0; background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary-accent) 100%); color: white;">
+            <div class="container" style="max-width: 900px;">
+                <h2 style="color: white; text-align: center; margin-bottom: 60px;">In Her Own Words</h2>
+
+                <div style="display: grid; gap: 40px;">
+                    <blockquote style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); padding: 40px; border-radius: var(--radius-large); border-left: 4px solid var(--color-gold); margin: 0;">
+                        <p style="font-size: 22px; font-family: var(--font-serif); line-height: 1.6; margin-bottom: 16px;">"We are not just building policies; we are building dreams. Every doll deserves the opportunity to reach their full potential, and that is what this administration fights for every single day."</p>
+                        <footer style="font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Inaugural Address, 2025</footer>
+                    </blockquote>
+
+                    <blockquote style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); padding: 40px; border-radius: var(--radius-large); border-left: 4px solid var(--color-gold); margin: 0;">
+                        <p style="font-size: 22px; font-family: var(--font-serif); line-height: 1.6; margin-bottom: 16px;">"The question has never been whether we can achieve something, but whether we have the courage to try. I've learned that anything is possible when you believe in yourself and work hard."</p>
+                        <footer style="font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">State of the Union Address</footer>
+                    </blockquote>
+
+                    <blockquote style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); padding: 40px; border-radius: var(--radius-large); border-left: 4px solid var(--color-gold); margin: 0;">
+                        <p style="font-size: 22px; font-family: var(--font-serif); line-height: 1.6; margin-bottom: 16px;">"Our diversity is our greatest strength. When we embrace our differences and work together, there is nothing we cannot accomplish."</p>
+                        <footer style="font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">National Unity Speech</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery -->
+        <section style="padding: var(--spacing-100) 0; background: var(--color-cream);">
+            <div class="container" style="max-width: 1200px;">
+                <h2 style="color: var(--color-primary); text-align: center; margin-bottom: 60px;">Photo Gallery</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+                    <div style="aspect-ratio: 4/3; background: linear-gradient(135deg, var(--color-lavender) 0%, var(--color-pale) 100%); border-radius: var(--radius-large); overflow: hidden; box-shadow: var(--shadow-natural);">
+                        <img src="../../assets/images/placeholder-president.jpg" alt="President Barbie at official ceremony" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="aspect-ratio: 4/3; background: linear-gradient(135deg, var(--color-lavender) 0%, var(--color-pale) 100%); border-radius: var(--radius-large); overflow: hidden; box-shadow: var(--shadow-natural);">
+                        <img src="../../assets/images/placeholder-gallery-1.jpg" alt="President Barbie meeting with citizens" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="aspect-ratio: 4/3; background: linear-gradient(135deg, var(--color-lavender) 0%, var(--color-pale) 100%); border-radius: var(--radius-large); overflow: hidden; box-shadow: var(--shadow-natural);">
+                        <img src="../../assets/images/placeholder-gallery-2.jpg" alt="President Barbie signing legislation" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="aspect-ratio: 4/3; background: linear-gradient(135deg, var(--color-lavender) 0%, var(--color-pale) 100%); border-radius: var(--radius-large); overflow: hidden; box-shadow: var(--shadow-natural);">
+                        <img src="../../assets/images/placeholder-gallery-3.jpg" alt="President Barbie at international summit" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="aspect-ratio: 4/3; background: linear-gradient(135deg, var(--color-lavender) 0%, var(--color-pale) 100%); border-radius: var(--radius-large); overflow: hidden; box-shadow: var(--shadow-natural);">
+                        <img src="../../assets/images/placeholder-gallery-4.jpg" alt="President Barbie addressing the nation" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="aspect-ratio: 4/3; background: linear-gradient(135deg, var(--color-lavender) 0%, var(--color-pale) 100%); border-radius: var(--radius-large); overflow: hidden; box-shadow: var(--shadow-natural);">
+                        <img src="../../assets/images/placeholder-cabinet.jpg" alt="President Barbie with cabinet members" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay Connected</h2>
+                    <p>Get the latest updates from President Barbie and The Doll House</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h3 style="color: var(--color-secondary); font-family: var(--font-serif); margin: 0;">The Doll House</h3>
+                </div>
+
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3>News</h3>
+                        <ul>
+                            <li><a href="../media/wire.html">Wire</a></li>
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Administration</h3>
+                        <ul>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../history/founders-museum.html">Founders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="../../index.html#governance">Governance</a></li>
+                            <li><a href="../../history.html">History</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-social" id="footerSocialLinks"></div>
+
+                <div class="footer-address">
+                    <p>The Doll House<br>
+                    1600 Dreamhouse Lane<br>
+                    Malibu, CA 90265</p>
+                </div>
+
+                <div class="footer-legal">
+                    <a href="../legal/privacy.html">Privacy Policy</a>
+                    <a href="../legal/copyright.html">Copyright Policy</a>
+                    <a href="../legal/government.html">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Join Button -->
+    <div class="floating-join-btn" id="floatingJoinBtn">
+        <button class="join-close-btn" aria-label="Close join button" onclick="document.getElementById('floatingJoinBtn').style.display='none'; return false;">×</button>
+        <a href="#newsletter" class="join-now-link">Join Now</a>
+    </div>
+
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/utils.js"></script>
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

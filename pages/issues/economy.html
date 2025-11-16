@@ -14,7 +14,7 @@
 
     <div class="announcement-banner">
         <div class="container">
-            <p class="announcement-text">Breaking: The Age of Dreams Has Officially Begun - Join Us in Making History!</p>
+            <p class="announcement-text">Making the White House Femme Again ✨ Protect the Dolls • Support Trans Joy • Choose Your Haus</p>
         </div>
     </div>
 
@@ -153,8 +153,8 @@
             <div class="issue-hero-overlay"></div>
             <div class="container">
                 <div class="issue-hero-content">
-                    <h1>Economy</h1>
-                    <p class="issue-hero-description">Building a strong, inclusive economy that creates opportunities for every doll to pursue their dream career and achieve financial success.</p>
+                    <h1>Economic Justice for Trans & Marginalized Communities</h1>
+                    <p class="issue-hero-description">Building an economy centered on trans women, sex workers, and BIPOC folks - prioritizing reparations, worker cooperatives, and mutual aid over corporate profits.</p>
                 </div>
             </div>
         </section>
@@ -164,9 +164,9 @@
             <div class="container">
                 <div class="issue-overview-content">
                     <h2>Overview</h2>
-                    <p>President Barbie's economic vision is simple: every doll deserves the opportunity to succeed. We're creating an economy that works for everyone, not just those at the top. Through strategic investments in job creation, entrepreneurship support, and wage equality initiatives, we're building prosperity that reaches every corner of Dreamhouse Nation.</p>
-                    <p>Our administration is committed to removing barriers to economic success, supporting small businesses, and ensuring that hard work pays off fairly. We believe in the power of dolls to innovate, create, and build businesses that transform communities.</p>
-                    <p>From fashion designers to scientists, from entrepreneurs to educators, we're ensuring that every doll has access to the resources, capital, and opportunities needed to turn their dreams into reality.</p>
+                    <p>Economic justice means centering those most harmed by capitalism: trans women facing employment discrimination, sex workers criminalized for their labor, BIPOC communities denied generational wealth. We reject trickle-down economics for reparations, mutual aid, and worker ownership. Trans women deserve economic security without being forced into survival sex work - and sex workers deserve full labor rights and decriminalization.</p>
+                    <p>Our administration prioritizes worker cooperatives over corporations, Universal Basic Income over wage slavery, and wealth redistribution over billionaire accumulation. We believe economic power belongs in the hands of workers, not bosses - especially trans women, sex workers, and BIPOC folks who've been systematically excluded from wealth building.</p>
+                    <p>From mutual aid networks to sex worker collectives, from trans job guarantees to reparations programs, we're building an economy that meets material needs through solidarity, not exploitation. This is bimbo feminist economics: we can care about lipstick AND labor rights, glamour AND guaranteed income.</p>
                 </div>
             </div>
         </section>
@@ -177,34 +177,34 @@
                 <h2>Key Initiatives</h2>
                 <div class="initiatives-grid">
                     <div class="initiative-card">
-                        <span class="initiative-icon">💼</span>
-                        <h3>Job Creation</h3>
-                        <p>Generating millions of new career opportunities across all sectors, with a focus on emerging industries and sustainable growth.</p>
+                        <span class="initiative-icon">✨</span>
+                        <h3>Trans Job Guarantee</h3>
+                        <p>Guaranteed living-wage employment for all trans people, ending employment discrimination and ensuring economic security without coercion into survival sex work.</p>
                     </div>
                     <div class="initiative-card">
-                        <span class="initiative-icon">🌟</span>
-                        <h3>Dream Careers</h3>
-                        <p>Supporting dolls in pursuing their passion careers through training programs, mentorship, and career development resources.</p>
+                        <span class="initiative-icon">💖</span>
+                        <h3>Sex Worker Labor Rights</h3>
+                        <p>Full decriminalization, union organizing, healthcare benefits, and retirement plans for sex workers. Labor rights without criminalization or Nordic model harm.</p>
                     </div>
                     <div class="initiative-card">
-                        <span class="initiative-icon">🚀</span>
-                        <h3>Entrepreneurship</h3>
-                        <p>Providing funding, resources, and support for doll entrepreneurs to start and grow successful businesses.</p>
+                        <span class="initiative-icon">🏠</span>
+                        <h3>Universal Basic Income</h3>
+                        <p>Guaranteed income for all, funded by wealth redistribution from billionaires. Economic security is a right, not contingent on wage labor exploitation.</p>
                     </div>
                     <div class="initiative-card">
                         <span class="initiative-icon">⚖️</span>
-                        <h3>Wage Equality</h3>
-                        <p>Ensuring equal pay for equal work and closing wage gaps across all demographics and industries.</p>
+                        <h3>Reparations Programs</h3>
+                        <p>Direct cash reparations for Black Americans, Indigenous sovereignty funding, and reparations for trans people denied economic opportunities due to discrimination.</p>
                     </div>
                     <div class="initiative-card">
-                        <span class="initiative-icon">📈</span>
-                        <h3>Economic Empowerment</h3>
-                        <p>Providing financial literacy education and wealth-building tools to help all dolls achieve financial security.</p>
+                        <span class="initiative-icon">🤝</span>
+                        <h3>Worker Cooperatives</h3>
+                        <p>Funding for worker-owned businesses, especially trans-led co-ops, sex worker collectives, and BIPOC mutual aid economies. Workers control production, not bosses.</p>
                     </div>
                     <div class="initiative-card">
-                        <span class="initiative-icon">🏪</span>
-                        <h3>Small Business Support</h3>
-                        <p>Offering grants, loans, and technical assistance to help small businesses thrive and create local jobs.</p>
+                        <span class="initiative-icon">💰</span>
+                        <h3>Wealth Redistribution</h3>
+                        <p>Progressive wealth tax on billionaires, ending corporate welfare, and redirecting funds to mutual aid networks serving trans communities and marginalized folks.</p>
                     </div>
                 </div>
             </div>
@@ -309,6 +309,9 @@
         </section>
     </main>
 
+    <!-- Footer Container -->
+    <div id="footerContainer"></div>
+
     <footer class="site-footer" id="contact">
         <div class="container">
             <div class="footer-top">
@@ -372,5 +375,27 @@
     <script src="../../assets/js/utils.js"></script>
     <script src="../../assets/js/components.js"></script>
     <script src="../../assets/js/script.js"></script>
+    <script>
+        // Render header and footer with basePath for subdirectory
+        document.addEventListener('DOMContentLoaded', () => {
+            const headerContainer = document.querySelector('#headerContainer');
+            const footerContainer = document.querySelector('#footerContainer');
+
+            if (headerContainer) {
+                Components.Header.render(headerContainer, { basePath: '../../' });
+                // Initialize header navigation after rendering
+                if (typeof initHeaderNavigation === 'function') {
+                    initHeaderNavigation();
+                }
+            }
+
+            if (footerContainer) {
+                Components.Footer.render(footerContainer, {
+                    basePath: '../../',
+                    brandHref: '../../index.html'
+                });
+            }
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speeches & Remarks - The Doll House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Announcement Banner -->
+    <div class="announcement-banner">
+        <div class="container">
+            <p class="announcement-text">Making the White House Femme Again ✨ Protect the Dolls • Support Trans Joy • Choose Your Haus</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-inner">
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <div class="site-logo">
+                    <a href="../../index.html">President Doll</a>
+                </div>
+
+                <div class="utility-nav">
+                    <button class="search-toggle" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                            <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="social-links" id="headerSocialLinks"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="primary-nav" aria-label="Primary" id="primary-nav">
+            <div class="nav-overlay-header" id="navOverlayHeader">
+                <div class="nav-close-btn-wrapper">
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <span class="nav-close-text">Close</span>
+                </div>
+                <button class="nav-search" aria-label="Open search">
+                    <span>Search</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-search-header" id="navSearchHeader" style="display: none;">
+                <div class="nav-menu-btn-wrapper">
+                    <button class="nav-menu-btn" aria-label="Back to menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <span class="nav-menu-text">Menu</span>
+                </div>
+                <div class="nav-close-btn-wrapper nav-close-btn-wrapper-reverse">
+                    <span class="nav-close-text">Close</span>
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-search-container" id="navSearchContainer" style="display: none;">
+                <div class="nav-search-wrapper">
+                    <input type="search" class="nav-search-input" id="navSearchInput" placeholder="Search The Doll House..." aria-label="Search">
+                    <p class="nav-search-hint">Press Enter to search</p>
+                </div>
+            </div>
+            <div class="nav-overlay-content" id="navOverlayContent">
+                <ul class="nav-menu">
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">News</button>
+                        <ul class="submenu">
+                            <li><a href="../news/articles.html">Articles</a></li>
+                            <li><a href="../news/briefings-statements.html">Briefings & Statements</a></li>
+                            <li><a href="../news/fact-sheets.html">Fact Sheets</a></li>
+                            <li><a href="../news/presidential-actions.html">Presidential Actions</a></li>
+                            <li><a href="../news/remarks.html">Remarks</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Administration</button>
+                        <ul class="submenu">
+                            <li><a href="../administration/president-barbie.html">President Doll</a></li>
+                            <li><a href="../administration/vp-ken.html">Vice President Ken</a></li>
+                            <li><a href="../administration/first-doll-skipper.html">First Doll Skipper</a></li>
+                            <li><a href="../administration/second-doll-teresa.html">Second Doll Teresa</a></li>
+                            <li><a href="../administration/cabinet.html">The Cabinet</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Media</button>
+                        <ul class="submenu">
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/live.html">Live News</a></li>
+                            <li><a href="../media/wire.html">Doll House Wire</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Priorities</button>
+                        <ul class="submenu">
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../priorities/investments.html">Investments</a></li>
+                            <li><a href="../priorities/achievements.html">Wins and Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">History</button>
+                        <ul class="submenu">
+                            <li><a href="../history/founders-museum.html">Founders Museum</a></li>
+                            <li><a href="../history/moments-that-made-us.html">Timeline</a></li>
+                            <li><a href="../legal/government.html">Government Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Get in Touch</button>
+                        <ul class="submenu">
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Speeches & Remarks</h1>
+            </div>
+        </section>
+
+        <!-- Remarks List -->
+        <section class="news-list-section">
+            <div class="container">
+                <div class="news-list">
+                    <!-- Remark 1 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">Speech</span>
+                            <span class="news-date">November 14, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Remarks by President Barbie at the Dream Summit 2025</a>
+                        </h2>
+                        <p style="margin-top: 8px; font-size: 14px; color: var(--color-text-dark); opacity: 0.7;">
+                            <strong>Location:</strong> Malibu Convention Center, Malibu, CA
+                        </p>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">
+                            President Barbie delivers keynote address at the annual Dream Summit, outlining her vision for expanding opportunities and ensuring every doll can achieve their aspirations.
+                        </p>
+                    </article>
+
+                    <!-- Remark 2 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">Remarks</span>
+                            <span class="news-date">November 12, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Remarks at Cabinet Meeting on Infrastructure Investment</a>
+                        </h2>
+                        <p style="margin-top: 8px; font-size: 14px; color: var(--color-text-dark); opacity: 0.7;">
+                            <strong>Location:</strong> The Doll House, Malibu, CA
+                        </p>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">
+                            President Barbie discusses progress on infrastructure modernization and the Dreamhouse for All initiative with cabinet members.
+                        </p>
+                    </article>
+
+                    <!-- Remark 3 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">Speech</span>
+                            <span class="news-date">November 10, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Remarks at Dream Academy Opening Ceremony</a>
+                        </h2>
+                        <p style="margin-top: 8px; font-size: 14px; color: var(--color-text-dark); opacity: 0.7;">
+                            <strong>Location:</strong> Dream Academy Campus, Los Angeles, CA
+                        </p>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">
+                            President Barbie celebrates the opening of the first Dream Academy, emphasizing the transformative power of education and career training.
+                        </p>
+                    </article>
+
+                    <!-- Remark 4 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">Address</span>
+                            <span class="news-date">November 8, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Address at International Doll Relations Conference</a>
+                        </h2>
+                        <p style="margin-top: 8px; font-size: 14px; color: var(--color-text-dark); opacity: 0.7;">
+                            <strong>Location:</strong> United Dolls Headquarters, New York, NY
+                        </p>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">
+                            President Barbie addresses global leaders on cooperation, climate action, and shared prosperity for dolls worldwide.
+                        </p>
+                    </article>
+
+                    <!-- Remark 5 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">Remarks</span>
+                            <span class="news-date">November 6, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Remarks at Fashion Freedom Week Launch Event</a>
+                        </h2>
+                        <p style="margin-top: 8px; font-size: 14px; color: var(--color-text-dark); opacity: 0.7;">
+                            <strong>Location:</strong> Fashion District, New York, NY
+                        </p>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">
+                            President Barbie kicks off Fashion Freedom Week, celebrating diversity in style and self-expression across all doll communities.
+                        </p>
+                    </article>
+
+                    <!-- Remark 6 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">Speech</span>
+                            <span class="news-date">November 4, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Remarks to Dream Ventures Entrepreneurs</a>
+                        </h2>
+                        <p style="margin-top: 8px; font-size: 14px; color: var(--color-text-dark); opacity: 0.7;">
+                            <strong>Location:</strong> Innovation Hub, San Francisco, CA
+                        </p>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">
+                            President Barbie meets with small business owners and entrepreneurs supported by the Dream Ventures program, hearing their success stories.
+                        </p>
+                    </article>
+
+                    <!-- Remark 7 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">Address</span>
+                            <span class="news-date">November 2, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Address at Young Dreamers Youth Summit</a>
+                        </h2>
+                        <p style="margin-top: 8px; font-size: 14px; color: var(--color-text-dark); opacity: 0.7;">
+                            <strong>Location:</strong> Youth Center, Chicago, IL
+                        </p>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">
+                            President Barbie inspires young dolls at the Youth Summit, encouraging them to pursue their dreams and make a difference in their communities.
+                        </p>
+                    </article>
+
+                    <!-- Remark 8 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">Remarks</span>
+                            <span class="news-date">October 31, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Remarks at STEM Education Initiative Launch</a>
+                        </h2>
+                        <p style="margin-top: 8px; font-size: 14px; color: var(--color-text-dark); opacity: 0.7;">
+                            <strong>Location:</strong> Science Museum, Houston, TX
+                        </p>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">
+                            President Barbie and First Doll Skipper announce expansion of STEM education programs to schools nationwide.
+                        </p>
+                    </article>
+
+                    <!-- Remark 9 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">Speech</span>
+                            <span class="news-date">October 29, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Remarks at Universal Dreamcare Enrollment Event</a>
+                        </h2>
+                        <p style="margin-top: 8px; font-size: 14px; color: var(--color-text-dark); opacity: 0.7;">
+                            <strong>Location:</strong> Community Health Center, Philadelphia, PA
+                        </p>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">
+                            President Barbie celebrates milestone enrollment in Universal Dreamcare program and discusses expanding healthcare access.
+                        </p>
+                    </article>
+
+                    <!-- Remark 10 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">Address</span>
+                            <span class="news-date">October 27, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Address at Climate Action Conference</a>
+                        </h2>
+                        <p style="margin-top: 8px; font-size: 14px; color: var(--color-text-dark); opacity: 0.7;">
+                            <strong>Location:</strong> Environmental Summit, Seattle, WA
+                        </p>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">
+                            President Barbie outlines bold climate action plan and commits to achieving carbon neutrality ahead of schedule.
+                        </p>
+                    </article>
+
+                    <!-- Remark 11 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">Remarks</span>
+                            <span class="news-date">October 25, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Remarks at Diversity and Inclusion Week Opening</a>
+                        </h2>
+                        <p style="margin-top: 8px; font-size: 14px; color: var(--color-text-dark); opacity: 0.7;">
+                            <strong>Location:</strong> Cultural Center, Atlanta, GA
+                        </p>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">
+                            President Barbie and Second Doll Teresa kick off week-long celebration honoring diversity across all doll communities.
+                        </p>
+                    </article>
+
+                    <!-- Remark 12 -->
+                    <article class="news-item">
+                        <div class="news-meta">
+                            <span class="news-category">Speech</span>
+                            <span class="news-date">October 23, 2025</span>
+                        </div>
+                        <h2 class="news-title">
+                            <a href="#">Remarks to Workers at Manufacturing Plant Visit</a>
+                        </h2>
+                        <p style="margin-top: 8px; font-size: 14px; color: var(--color-text-dark); opacity: 0.7;">
+                            <strong>Location:</strong> Dreamhouse Manufacturing, Detroit, MI
+                        </p>
+                        <p style="margin-top: 12px; color: var(--color-text-dark); opacity: 0.8;">
+                            President Barbie meets with workers at manufacturing facility, discussing jobs, fair wages, and economic opportunity.
+                        </p>
+                    </article>
+                </div>
+
+                <!-- Pagination -->
+                <nav class="pagination" aria-label="Remarks pagination">
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">4</button>
+                    <button class="page-btn">5</button>
+                    <span class="page-ellipsis">...</span>
+                    <button class="page-btn">22</button>
+                    <button class="page-btn">23</button>
+                    <button class="page-btn">Next →</button>
+                </nav>
+                <p style="text-align: center; margin-top: 20px; color: var(--color-text-dark); opacity: 0.7;">
+                    Showing page 1 of 23 (228 speeches and remarks)
+                </p>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay in the Know</h2>
+                    <p>Get the latest updates from President Doll and The Doll House</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h3 style="color: var(--color-secondary); font-family: var(--font-serif); margin: 0;">The Doll House</h3>
+                </div>
+
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3>News</h3>
+                        <ul>
+                            <li><a href="../media/wire.html">Wire</a></li>
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Administration</h3>
+                        <ul>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../history/founders-museum.html">Founders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="../../index.html#governance">Governance</a></li>
+                            <li><a href="../../history.html">History</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-social" id="footerSocialLinks"></div>
+
+                <div class="footer-address">
+                    <p>The Doll House<br>
+                    1600 Dreamhouse Lane<br>
+                    Malibu, CA 90265</p>
+                </div>
+
+                <div class="footer-legal">
+                    <a href="../legal/privacy.html">Privacy Policy</a>
+                    <a href="../legal/copyright.html">Copyright Policy</a>
+                    <a href="../legal/government.html">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Join Button -->
+    <div class="floating-join-btn" id="floatingJoinBtn">
+        <button class="join-close-btn" aria-label="Close join button" onclick="document.getElementById('floatingJoinBtn').style.display='none'; return false;">×</button>
+        <a href="#newsletter" class="join-now-link">Join Now</a>
+    </div>
+
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/utils.js"></script>
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

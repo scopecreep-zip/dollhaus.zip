@@ -8,17 +8,19 @@
 // Hamburger Menu Toggle (Upper Left)
 // =============================================================================
 
-const menuToggle = Utils.DOM.select('.menu-toggle');
-const primaryNav = Utils.DOM.select('.primary-nav');
-const menuLinks = Utils.DOM.selectAll('.menu-link');
-const navCloseBtns = Utils.DOM.selectAll('.nav-close-btn');
-const navSearchBtn = Utils.DOM.select('.nav-search');
-const navSearchContainer = Utils.DOM.select('#navSearchContainer');
-const navSearchInput = Utils.DOM.select('.nav-search-input');
-const navOverlayHeader = Utils.DOM.select('#navOverlayHeader');
-const navSearchHeader = Utils.DOM.select('#navSearchHeader');
-const navOverlayContent = Utils.DOM.select('#navOverlayContent');
-const navMenuBtn = Utils.DOM.select('.nav-menu-btn');
+// Initialize header navigation after header is rendered
+function initHeaderNavigation() {
+    const menuToggle = Utils.DOM.select('.menu-toggle');
+    const primaryNav = Utils.DOM.select('.primary-nav');
+    const menuLinks = Utils.DOM.selectAll('.menu-link');
+    const navCloseBtns = Utils.DOM.selectAll('.nav-close-btn');
+    const navSearchBtn = Utils.DOM.select('.nav-search');
+    const navSearchContainer = Utils.DOM.select('#navSearchContainer');
+    const navSearchInput = Utils.DOM.select('.nav-search-input');
+    const navOverlayHeader = Utils.DOM.select('#navOverlayHeader');
+    const navSearchHeader = Utils.DOM.select('#navSearchHeader');
+    const navOverlayContent = Utils.DOM.select('#navOverlayContent');
+    const navMenuBtn = Utils.DOM.select('.nav-menu-btn');
 
 // Function to close menu
 function closeMenu() {
@@ -145,6 +147,7 @@ menuLinks.forEach(link => {
         }
     });
 });
+}
 
 // =============================================================================
 // Hero Carousel (using Component)
@@ -329,19 +332,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize governance document reader
     initGovernanceDocument();
-
-    // Render footer using Component
-    const footerContainer = Utils.DOM.select('#footerContainer');
-    if (footerContainer) {
-        Components.Footer.render(footerContainer);
-    }
-
-    // Render social links using Component
-    const headerSocialContainer = Utils.DOM.select('#headerSocialLinks');
-
-    if (headerSocialContainer) {
-        Components.SocialLinks.render(headerSocialContainer);
-    }
 
     // Floating Join Button Close Functionality
     const floatingJoinBtn = Utils.DOM.select('#floatingJoinBtn');

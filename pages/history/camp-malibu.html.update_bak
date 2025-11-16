@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camp Malibu - The Doll House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Announcement Banner -->
+    <div class="announcement-banner">
+        <div class="container">
+            <p class="announcement-text">The Presidential Retreat - Where Leaders Recharge and History is Made</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-inner">
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <div class="site-logo">
+                    <a href="../../index.html">President Doll</a>
+                </div>
+
+                <div class="utility-nav">
+                    <button class="search-toggle" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                            <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="social-links" id="headerSocialLinks"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="primary-nav" aria-label="Primary" id="primary-nav">
+            <div class="nav-overlay-header" id="navOverlayHeader">
+                <div class="nav-close-btn-wrapper">
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <span class="nav-close-text">Close</span>
+                </div>
+                <button class="nav-search" aria-label="Open search">
+                    <span>Search</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-search-header" id="navSearchHeader" style="display: none;">
+                <div class="nav-menu-btn-wrapper">
+                    <button class="nav-menu-btn" aria-label="Back to menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <span class="nav-menu-text">Menu</span>
+                </div>
+                <div class="nav-close-btn-wrapper nav-close-btn-wrapper-reverse">
+                    <span class="nav-close-text">Close</span>
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-search-container" id="navSearchContainer" style="display: none;">
+                <div class="nav-search-wrapper">
+                    <input type="search" class="nav-search-input" id="navSearchInput" placeholder="Search The Doll House..." aria-label="Search">
+                    <p class="nav-search-hint">Press Enter to search</p>
+                </div>
+            </div>
+            <div class="nav-overlay-content" id="navOverlayContent">
+                <ul class="nav-menu">
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">News</button>
+                        <ul class="submenu">
+                            <li><a href="../news/articles.html">Articles</a></li>
+                            <li><a href="../news/briefings-statements.html">Briefings & Statements</a></li>
+                            <li><a href="../news/fact-sheets.html">Fact Sheets</a></li>
+                            <li><a href="../news/presidential-actions.html">Presidential Actions</a></li>
+                            <li><a href="../news/remarks.html">Remarks</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Administration</button>
+                        <ul class="submenu">
+                            <li><a href="../administration/president-barbie.html">President Doll</a></li>
+                            <li><a href="../administration/vp-ken.html">Vice President Ken</a></li>
+                            <li><a href="../administration/first-doll-skipper.html">First Doll Skipper</a></li>
+                            <li><a href="../administration/second-doll-teresa.html">Second Doll Teresa</a></li>
+                            <li><a href="../administration/cabinet.html">The Cabinet</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Media</button>
+                        <ul class="submenu">
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/live.html">Live News</a></li>
+                            <li><a href="../media/wire.html">Doll House Wire</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Priorities</button>
+                        <ul class="submenu">
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../priorities/investments.html">Investments</a></li>
+                            <li><a href="../priorities/achievements.html">Wins and Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">History</button>
+                        <ul class="submenu">
+                            <li><a href="../history/founders-museum.html">Founders Museum</a></li>
+                            <li><a href="camp-malibu.html">Camp Malibu</a></li>
+                            <li><a href="../legal/government.html">Government Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Get in Touch</button>
+                        <ul class="submenu">
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section style="background: linear-gradient(135deg, #0891b2 0%, #87CEEB 50%, #FFD700 100%); padding: 6rem 0; color: white; text-align: center;">
+            <div class="container">
+                <div style="font-size: 6rem; margin-bottom: 1rem;">🏖️</div>
+                <h1 style="font-size: 3.5rem; font-family: var(--font-serif); margin-bottom: 1rem; color: white;">Camp Malibu</h1>
+                <p style="font-size: 1.5rem; max-width: 800px; margin: 0 auto; opacity: 0.95;">The Presidential Retreat in the Santa Monica Mountains</p>
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; text-align: center; font-family: var(--font-serif);">A Sanctuary for Leadership</h2>
+                    <p style="font-size: 1.25rem; line-height: 1.75; text-align: center; color: #666; margin-bottom: 3rem;">Nestled in the picturesque Santa Monica Mountains overlooking the Pacific Ocean, Camp Malibu serves as the official presidential retreat—a place where leaders can escape the pressures of office, host intimate diplomatic meetings, and find inspiration in nature's beauty.</p>
+
+                    <div style="background: linear-gradient(135deg, #87CEEB 0%, #0891b2 100%); padding: 3rem; border-radius: 12px; color: white;">
+                        <div style="text-align: center; margin-bottom: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🌊</div>
+                            <h3 style="font-size: 2rem; font-family: var(--font-serif);">Location & Setting</h3>
+                        </div>
+                        <p style="font-size: 1.125rem; line-height: 1.75; opacity: 0.95; text-align: center;">Located 65 miles northwest of The Doll House, Camp Malibu sits on 125 acres of pristine wilderness with breathtaking ocean views, private beaches, hiking trails, and year-round perfect weather. The location was chosen for its natural beauty, security, and proximity to the capital.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- History -->
+        <section style="padding: 4rem 0; background: #f8f8f8;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem; font-family: var(--font-serif);">A Rich History</h2>
+
+                <div style="max-width: 1000px; margin: 0 auto;">
+                    <div style="border-left: 4px solid #0891b2; padding-left: 2rem; margin-left: 1rem;">
+                        <article style="margin-bottom: 3rem; background: white; padding: 2rem; border-radius: 8px;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <div style="width: 3rem; height: 3rem; background: #0891b2; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; flex-shrink: 0;">1</div>
+                                <h3 style="font-size: 1.5rem; color: #0891b2; margin: 0;">1978 - Establishment</h3>
+                            </div>
+                            <p style="line-height: 1.75; color: #666;">Camp Malibu was established as the official presidential retreat, modeled after the concept of a private sanctuary where leaders could work and relax away from public scrutiny. The site was selected after a nationwide search for the perfect coastal location.</p>
+                        </article>
+
+                        <article style="margin-bottom: 3rem; background: white; padding: 2rem; border-radius: 8px;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <div style="width: 3rem; height: 3rem; background: #7c3aed; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; flex-shrink: 0;">2</div>
+                                <h3 style="font-size: 1.5rem; color: #7c3aed; margin: 0;">1985 - First Summit Meeting</h3>
+                            </div>
+                            <p style="line-height: 1.75; color: #666;">The retreat hosted its first international summit, bringing together world leaders in an informal setting that fostered open dialogue and led to breakthrough diplomatic agreements. The "Camp Malibu Spirit" became synonymous with productive diplomacy.</p>
+                        </article>
+
+                        <article style="margin-bottom: 3rem; background: white; padding: 2rem; border-radius: 8px;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <div style="width: 3rem; height: 3rem; background: #059669; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; flex-shrink: 0;">3</div>
+                                <h3 style="font-size: 1.5rem; color: #059669; margin: 0;">2005 - Eco-Modernization</h3>
+                            </div>
+                            <p style="line-height: 1.75; color: #666;">Major renovations transformed Camp Malibu into a model of sustainable luxury, incorporating solar power, water recycling systems, and organic gardens while maintaining its rustic charm and natural beauty.</p>
+                        </article>
+
+                        <article style="background: white; padding: 2rem; border-radius: 8px;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <div style="width: 3rem; height: 3rem; background: #FF1493; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; flex-shrink: 0;">4</div>
+                                <h3 style="font-size: 1.5rem; color: #FF1493; margin: 0;">Present Day - A Working Retreat</h3>
+                            </div>
+                            <p style="line-height: 1.75; color: #666;">Today, Camp Malibu continues to serve as a vital presidential resource, hosting an average of 40 visits per year including family retreats, working weekends, and high-level diplomatic meetings.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem; font-family: var(--font-serif);">Facilities & Amenities</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+                    <!-- Aspen Lodge -->
+                    <article style="background: linear-gradient(to bottom, #8b4513 0%, #d2691e 100%); color: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">🏡</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; text-align: center; font-family: var(--font-serif);">Aspen Lodge</h3>
+                        <p style="line-height: 1.75; opacity: 0.95; font-size: 0.95rem;">The main presidential residence features 4 bedrooms, a full kitchen, living areas, and a wraparound deck with panoramic ocean views. Designed for comfort and privacy with rustic elegance.</p>
+                    </article>
+
+                    <!-- Conference Center -->
+                    <article style="background: linear-gradient(to bottom, #1e3a8a 0%, #3b82f6 100%); color: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">🤝</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; text-align: center; font-family: var(--font-serif);">Laurel Conference Center</h3>
+                        <p style="line-height: 1.75; opacity: 0.95; font-size: 0.95rem;">A state-of-the-art meeting facility with video conferencing, secure communications, and comfortable seating for up to 50 people. Site of numerous historic negotiations.</p>
+                    </article>
+
+                    <!-- Guest Cabins -->
+                    <article style="background: linear-gradient(to bottom, #059669 0%, #10b981 100%); color: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">🛏️</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; text-align: center; font-family: var(--font-serif);">Guest Cabins</h3>
+                        <p style="line-height: 1.75; opacity: 0.95; font-size: 0.95rem;">Six private cabins accommodate visiting dignitaries, family members, and senior advisors. Each features modern amenities in a cozy, natural setting.</p>
+                    </article>
+
+                    <!-- Recreation Facilities -->
+                    <article style="background: linear-gradient(to bottom, #FFD700 0%, #FFA500 100%); color: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">🎾</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; text-align: center; font-family: var(--font-serif);">Recreation Center</h3>
+                        <p style="line-height: 1.75; opacity: 0.95; font-size: 0.95rem;">Tennis courts, swimming pool, fitness center, and movie theater provide relaxation and entertainment. The facility also includes a spa and yoga studio.</p>
+                    </article>
+
+                    <!-- Chapel -->
+                    <article style="background: linear-gradient(to bottom, #7c3aed 0%, #a855f7 100%); color: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">⛪</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; text-align: center; font-family: var(--font-serif);">Evergreen Chapel</h3>
+                        <p style="line-height: 1.75; opacity: 0.95; font-size: 0.95rem;">A non-denominational chapel nestled among the trees, offering a peaceful space for reflection, meditation, and private services.</p>
+                    </article>
+
+                    <!-- Hiking Trails -->
+                    <article style="background: linear-gradient(to bottom, #ea580c 0%, #fb923c 100%); color: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">🥾</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; text-align: center; font-family: var(--font-serif);">Nature Trails</h3>
+                        <p style="line-height: 1.75; opacity: 0.95; font-size: 0.95rem;">Over 15 miles of hiking trails wind through the property, offering stunning coastal views and opportunities to observe local wildlife in their natural habitat.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities -->
+        <section style="padding: 4rem 0; background: #f8f8f8;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 1.5rem; font-family: var(--font-serif);">Presidential Activities</h2>
+                <p style="text-align: center; font-size: 1.125rem; color: #666; margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">How presidents use Camp Malibu to recharge and reconnect</p>
+
+                <div style="max-width: 900px; margin: 0 auto; display: grid; gap: 1.5rem;">
+                    <div style="background: white; padding: 2rem; border-radius: 8px; display: flex; align-items: start; gap: 1.5rem;">
+                        <div style="font-size: 2.5rem; flex-shrink: 0;">🏃</div>
+                        <div>
+                            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #333;">Outdoor Recreation</h3>
+                            <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">Presidents enjoy hiking, swimming, tennis, and beach activities. The retreat's natural setting encourages physical fitness and mental clarity.</p>
+                        </div>
+                    </div>
+
+                    <div style="background: white; padding: 2rem; border-radius: 8px; display: flex; align-items: start; gap: 1.5rem;">
+                        <div style="font-size: 2.5rem; flex-shrink: 0;">💼</div>
+                        <div>
+                            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #333;">Working Retreats</h3>
+                            <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">The informal setting facilitates productive meetings with cabinet members, advisors, and foreign leaders, often leading to breakthroughs impossible in formal settings.</p>
+                        </div>
+                    </div>
+
+                    <div style="background: white; padding: 2rem; border-radius: 8px; display: flex; align-items: start; gap: 1.5rem;">
+                        <div style="font-size: 2.5rem; flex-shrink: 0;">👨‍👩‍👧‍👦</div>
+                        <div>
+                            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #333;">Family Time</h3>
+                            <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">Presidents use Camp Malibu to disconnect from the pressures of office and reconnect with family, hosting birthday celebrations, holidays, and quality time together.</p>
+                        </div>
+                    </div>
+
+                    <div style="background: white; padding: 2rem; border-radius: 8px; display: flex; align-items: start; gap: 1.5rem;">
+                        <div style="font-size: 2.5rem; flex-shrink: 0;">🌅</div>
+                        <div>
+                            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #333;">Rest & Reflection</h3>
+                            <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">The peaceful environment provides space for contemplation, strategic thinking, and the mental restoration essential for effective leadership.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diplomatic Use -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem; font-family: var(--font-serif);">Historic Diplomatic Summits</h2>
+
+                <div style="max-width: 900px; margin: 0 auto; display: grid; gap: 2rem;">
+                    <article style="background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%); padding: 2.5rem; border-radius: 12px; color: white;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; font-family: var(--font-serif);">The Malibu Accords (1992)</h3>
+                        <p style="line-height: 1.75; opacity: 0.95;">A groundbreaking peace agreement between longtime rival doll nations was negotiated over three days at Camp Malibu. The informal setting helped break down barriers and foster trust between leaders.</p>
+                    </article>
+
+                    <article style="background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%); padding: 2.5rem; border-radius: 12px; color: white;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; font-family: var(--font-serif);">Climate Leadership Summit (2015)</h3>
+                        <p style="line-height: 1.75; opacity: 0.95;">President Barbie hosted world leaders to discuss environmental cooperation. The summit's success led to major international agreements on climate action and sustainable development.</p>
+                    </article>
+
+                    <article style="background: linear-gradient(135deg, #059669 0%, #10b981 100%); padding: 2.5rem; border-radius: 12px; color: white;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; font-family: var(--font-serif);">Technology & Innovation Dialogue (2022)</h3>
+                        <p style="line-height: 1.75; opacity: 0.95;">A gathering of tech leaders and government officials crafted frameworks for responsible AI development, data privacy, and digital rights that have shaped global policy.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Security & Privacy -->
+        <section style="padding: 4rem 0; background: linear-gradient(135deg, #FFB6D9 0%, #87CEEB 100%);">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 2rem; color: white; font-family: var(--font-serif);">Security & Privacy</h2>
+                    <p style="font-size: 1.125rem; line-height: 1.75; color: white; margin-bottom: 2rem; opacity: 0.95;">While Camp Malibu appears to be a relaxed wilderness retreat, it features comprehensive security measures including Secret Service protection, secure communications infrastructure, and no-fly zones. The exact location remains classified for security purposes.</p>
+                    <div style="background: white; padding: 2.5rem; border-radius: 12px; margin-top: 2rem;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #333;">Access Policy</h3>
+                        <p style="line-height: 1.75; color: #666;">Camp Malibu is not open to public tours to maintain its security and peaceful atmosphere. However, the President occasionally releases photos and videos to share glimpses of the retreat with the nation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- By The Numbers -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem; font-family: var(--font-serif);">Camp Malibu by the Numbers</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto;">
+                    <div style="background: #f8f8f8; padding: 2rem; border-radius: 8px; text-align: center;">
+                        <div style="font-size: 3rem; color: #0891b2; margin-bottom: 0.5rem; font-weight: 700;">125</div>
+                        <p style="color: #666;">Acres</p>
+                    </div>
+                    <div style="background: #f8f8f8; padding: 2rem; border-radius: 8px; text-align: center;">
+                        <div style="font-size: 3rem; color: #0891b2; margin-bottom: 0.5rem; font-weight: 700;">15</div>
+                        <p style="color: #666;">Miles of Trails</p>
+                    </div>
+                    <div style="background: #f8f8f8; padding: 2rem; border-radius: 8px; text-align: center;">
+                        <div style="font-size: 3rem; color: #0891b2; margin-bottom: 0.5rem; font-weight: 700;">12</div>
+                        <p style="color: #666;">Buildings</p>
+                    </div>
+                    <div style="background: #f8f8f8; padding: 2rem; border-radius: 8px; text-align: center;">
+                        <div style="font-size: 3rem; color: #0891b2; margin-bottom: 0.5rem; font-weight: 700;">46</div>
+                        <p style="color: #666;">Years of Service</p>
+                    </div>
+                    <div style="background: #f8f8f8; padding: 2rem; border-radius: 8px; text-align: center;">
+                        <div style="font-size: 3rem; color: #0891b2; margin-bottom: 0.5rem; font-weight: 700;">40+</div>
+                        <p style="color: #666;">Annual Visits</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legacy -->
+        <section style="padding: 4rem 0; background: #f8f8f8;">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; font-family: var(--font-serif);">A Living Legacy</h2>
+                    <p style="font-size: 1.125rem; line-height: 1.75; color: #666; margin-bottom: 2rem;">Camp Malibu represents an essential balance in presidential life—the need for both public service and private restoration. Every president who has used this retreat has found it invaluable for clear thinking, genuine relationships, and the renewal necessary for effective leadership.</p>
+                    <blockquote style="border-left: 4px solid #0891b2; padding-left: 2rem; margin: 3rem auto; font-style: italic; color: #333; max-width: 700px; text-align: left;">
+                        "Camp Malibu is where the pressures of the presidency fade into the sound of ocean waves, and what remains is clarity, purpose, and the strength to lead with renewed vision."
+                        <footer style="margin-top: 1rem; font-style: normal; color: #666; font-size: 0.95rem;">- President Barbie</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay in the Know</h2>
+                    <p>Get the latest updates from President Doll and The Doll House</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h3 style="color: var(--color-secondary); font-family: var(--font-serif); margin: 0;">The Doll House</h3>
+                </div>
+
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3>News</h3>
+                        <ul>
+                            <li><a href="wire.html">Wire</a></li>
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Administration</h3>
+                        <ul>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../history/founders-museum.html">Founders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="government.html">Governance</a></li>
+                            <li><a href="../../history.html">History</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-social" id="footerSocialLinks"></div>
+
+                <div class="footer-address">
+                    <p>The Doll House<br>
+                    1600 Dreamhouse Lane<br>
+                    Malibu, CA 90265</p>
+                </div>
+
+                <div class="footer-legal">
+                    <a href="../legal/privacy.html">Privacy Policy</a>
+                    <a href="../legal/copyright.html">Copyright Policy</a>
+                    <a href="../legal/government.html">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Join Button -->
+    <div class="floating-join-btn" id="floatingJoinBtn">
+        <button class="join-close-btn" aria-label="Close join button" onclick="document.getElementById('floatingJoinBtn').style.display='none'; return false;">×</button>
+        <a href="#newsletter" class="join-now-link">Join Now</a>
+    </div>
+
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/utils.js"></script>
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

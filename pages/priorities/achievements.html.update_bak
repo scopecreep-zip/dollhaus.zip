@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wins and Achievements - The Doll House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <style>
+        .achievements-header {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+            color: white;
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        .achievements-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .timeline-section {
+            padding: 3rem 0;
+        }
+        .timeline-month {
+            margin-bottom: 3rem;
+        }
+        .month-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .month-title {
+            font-size: 1.75rem;
+            color: var(--color-primary);
+            font-family: var(--font-serif);
+        }
+        .month-line {
+            flex: 1;
+            height: 2px;
+            background: var(--color-border);
+        }
+        .achievements-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .achievements-table thead {
+            background: var(--color-background);
+        }
+        .achievements-table th {
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+            color: var(--color-text);
+            border-bottom: 2px solid var(--color-border);
+        }
+        .achievements-table td {
+            padding: 1.25rem 1rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+        .achievements-table tbody tr {
+            transition: all 0.2s ease;
+        }
+        .achievements-table tbody tr:hover {
+            background: var(--color-background);
+            transform: scale(1.01);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .category-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: var(--color-secondary);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .category-tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .category-economy { background: #2ecc71; }
+        .category-border { background: #e74c3c; }
+        .category-foreign { background: #3498db; }
+        .category-energy { background: #f39c12; }
+        .category-law { background: #9b59b6; }
+        .category-health { background: #1abc9c; }
+        .category-bureaucracy { background: #34495e; }
+        .category-other { background: #95a5a6; }
+
+        .highlight-cell {
+            font-weight: 500;
+            color: var(--color-text);
+        }
+        .impact-cell {
+            color: var(--color-accent);
+            font-weight: 600;
+        }
+        .filter-buttons {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--color-background);
+            border-radius: 12px;
+        }
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            background: white;
+            border: 2px solid var(--color-border);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: var(--font-sans);
+            font-weight: 500;
+        }
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--color-primary);
+            color: white;
+            border-color: var(--color-primary);
+        }
+        @media (max-width: 768px) {
+            .achievements-table {
+                font-size: 0.85rem;
+            }
+            .achievements-table th,
+            .achievements-table td {
+                padding: 0.75rem 0.5rem;
+            }
+            .category-tag {
+                font-size: 0.75rem;
+                padding: 0.35rem 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div class="announcement-banner">
+        <div class="container">
+            <p class="announcement-text">Making the White House Femme Again ✨ Protect the Dolls • Support Trans Joy • Choose Your Haus</p>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-inner">
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <div class="site-logo">
+                    <a href="../../index.html">President Doll</a>
+                </div>
+
+                <div class="utility-nav">
+                    <button class="search-toggle" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                            <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="social-links" id="headerSocialLinks"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="primary-nav" aria-label="Primary" id="primary-nav">
+            <div class="nav-overlay-header" id="navOverlayHeader">
+                <div class="nav-close-btn-wrapper">
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <span class="nav-close-text">Close</span>
+                </div>
+                <button class="nav-search" aria-label="Open search">
+                    <span>Search</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-search-header" id="navSearchHeader" style="display: none;">
+                <div class="nav-menu-btn-wrapper">
+                    <button class="nav-menu-btn" aria-label="Back to menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <span class="nav-menu-text">Menu</span>
+                </div>
+                <div class="nav-close-btn-wrapper nav-close-btn-wrapper-reverse">
+                    <span class="nav-close-text">Close</span>
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-search-container" id="navSearchContainer" style="display: none;">
+                <div class="nav-search-wrapper">
+                    <input type="search" class="nav-search-input" id="navSearchInput" placeholder="Search The Doll House..." aria-label="Search">
+                    <p class="nav-search-hint">Press Enter to search</p>
+                </div>
+            </div>
+            <div class="nav-overlay-content" id="navOverlayContent">
+                <ul class="nav-menu">
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">News</button>
+                        <ul class="submenu">
+                            <li><a href="../news/articles.html">Articles</a></li>
+                            <li><a href="../news/briefings-statements.html">Briefings & Statements</a></li>
+                            <li><a href="../news/fact-sheets.html">Fact Sheets</a></li>
+                            <li><a href="../news/presidential-actions.html">Presidential Actions</a></li>
+                            <li><a href="../news/remarks.html">Remarks</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Administration</button>
+                        <ul class="submenu">
+                            <li><a href="../administration/president-barbie.html">President Doll</a></li>
+                            <li><a href="../administration/vp-ken.html">Vice President Ken</a></li>
+                            <li><a href="../administration/first-doll-skipper.html">First Doll Skipper</a></li>
+                            <li><a href="../administration/second-doll-teresa.html">Second Doll Teresa</a></li>
+                            <li><a href="../administration/cabinet.html">The Cabinet</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Media</button>
+                        <ul class="submenu">
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/live.html">Live News</a></li>
+                            <li><a href="../media/wire.html">Doll House Wire</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Priorities</button>
+                        <ul class="submenu">
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../priorities/investments.html">Investments</a></li>
+                            <li><a href="../priorities/achievements.html">Wins and Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">History</button>
+                        <ul class="submenu">
+                            <li><a href="../history/founders-museum.html">Founders Museum</a></li>
+                            <li><a href="../history/moments-that-made-us.html">Timeline</a></li>
+                            <li><a href="../legal/government.html">Government Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Get in Touch</button>
+                        <ul class="submenu">
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="achievements-header">
+            <div class="container">
+                <h1>Liberation Wins & Achievements</h1>
+                <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto;">The Mother's accomplishments: Protecting trans dolls, building haus power, and advancing bimbo feminist politics</p>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">All Categories</button>
+                    <button class="filter-btn" data-category="trans">✨ Trans Liberation</button>
+                    <button class="filter-btn" data-category="sexworker">💖 Sex Worker Rights</button>
+                    <button class="filter-btn" data-category="haus">🏠 Haus & Community</button>
+                    <button class="filter-btn" data-category="abolition">🏴 Abolition</button>
+                    <button class="filter-btn" data-category="economy">💰 Economic Justice</button>
+                    <button class="filter-btn" data-category="bimbo">💅 Bimbo Feminism</button>
+                </div>
+
+                <!-- November -->
+                <div class="timeline-month">
+                    <div class="month-header">
+                        <h2 class="month-title">November 2025</h2>
+                        <div class="month-line"></div>
+                    </div>
+                    <table class="achievements-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 20%;">Category</th>
+                                <th style="width: 45%;">Highlight Achievement</th>
+                                <th style="width: 35%;">Impact Snapshot</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-category="economy">
+                                <td><span class="category-tag category-economy">💰 Economy</span></td>
+                                <td class="highlight-cell">Dream Initiative launches nationwide</td>
+                                <td class="impact-cell">50,000 new jobs created</td>
+                            </tr>
+                            <tr data-category="foreign">
+                                <td><span class="category-tag category-foreign">🌍 Foreign Policy</span></td>
+                                <td class="highlight-cell">International Doll Summit concludes</td>
+                                <td class="impact-cell">15 partnership agreements signed</td>
+                            </tr>
+                            <tr data-category="energy">
+                                <td><span class="category-tag category-energy">⚡ Energy</span></td>
+                                <td class="highlight-cell">Sparkle Power Plant opens</td>
+                                <td class="impact-cell">100% renewable energy</td>
+                            </tr>
+                            <tr data-category="health">
+                                <td><span class="category-tag category-health">💪 Health</span></td>
+                                <td class="highlight-cell">Wellness programs expanded</td>
+                                <td class="impact-cell">2M dolls enrolled</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- October -->
+                <div class="timeline-month">
+                    <div class="month-header">
+                        <h2 class="month-title">October 2025</h2>
+                        <div class="month-line"></div>
+                    </div>
+                    <table class="achievements-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 20%;">Category</th>
+                                <th style="width: 45%;">Highlight Achievement</th>
+                                <th style="width: 35%;">Impact Snapshot</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-category="economy">
+                                <td><span class="category-tag category-economy">💰 Economy</span></td>
+                                <td class="highlight-cell">Fashion Freedom Act signed</td>
+                                <td class="impact-cell">$500B in new investment</td>
+                            </tr>
+                            <tr data-category="law">
+                                <td><span class="category-tag category-law">🛡️ Law & Order</span></td>
+                                <td class="highlight-cell">Community safety program launched</td>
+                                <td class="impact-cell">Crime down 35%</td>
+                            </tr>
+                            <tr data-category="bureaucracy">
+                                <td><span class="category-tag category-bureaucracy">📉 Efficiency</span></td>
+                                <td class="highlight-cell">Government streamlining initiative</td>
+                                <td class="impact-cell">500 regulations removed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- September -->
+                <div class="timeline-month">
+                    <div class="month-header">
+                        <h2 class="month-title">September 2025</h2>
+                        <div class="month-line"></div>
+                    </div>
+                    <table class="achievements-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 20%;">Category</th>
+                                <th style="width: 45%;">Highlight Achievement</th>
+                                <th style="width: 35%;">Impact Snapshot</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-category="economy">
+                                <td><span class="category-tag category-economy">💰 Economy</span></td>
+                                <td class="highlight-cell">Unemployment reaches all-time low</td>
+                                <td class="impact-cell">98.5% employment rate</td>
+                            </tr>
+                            <tr data-category="foreign">
+                                <td><span class="category-tag category-foreign">🌍 Foreign Policy</span></td>
+                                <td class="highlight-cell">Trade agreement with European Dolls</td>
+                                <td class="impact-cell">$200B annual trade value</td>
+                            </tr>
+                            <tr data-category="energy">
+                                <td><span class="category-tag category-energy">⚡ Energy</span></td>
+                                <td class="highlight-cell">Glitter Energy expansion approved</td>
+                                <td class="impact-cell">50% increase in capacity</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay in the Know</h2>
+                    <p>Get the latest updates from President Doll and The Doll House</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h3 style="color: var(--color-secondary); font-family: var(--font-serif); margin: 0;">The Doll House</h3>
+                </div>
+
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3>News</h3>
+                        <ul>
+                            <li><a href="wire.html">Wire</a></li>
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Administration</h3>
+                        <ul>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../history/founders-museum.html">Founders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="government.html">Governance</a></li>
+                            <li><a href="../../history.html">History</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-social" id="footerSocialLinks"></div>
+
+                <div class="footer-address">
+                    <p>The Doll House<br>
+                    1600 Dreamhouse Lane<br>
+                    Malibu, CA 90265</p>
+                </div>
+
+                <div class="footer-legal">
+                    <a href="../legal/privacy.html">Privacy Policy</a>
+                    <a href="../legal/copyright.html">Copyright Policy</a>
+                    <a href="../legal/government.html">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-join-btn" id="floatingJoinBtn">
+        <button class="join-close-btn" aria-label="Close join button" onclick="document.getElementById('floatingJoinBtn').style.display='none'; return false;">×</button>
+        <a href="#newsletter" class="join-now-link">Join Now</a>
+    </div>
+
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/utils.js"></script>
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/script.js"></script>
+
+    <script>
+        // Filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const tableRows = document.querySelectorAll('.achievements-table tbody tr');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const category = this.dataset.category;
+
+                    // Show/hide rows based on category
+                    tableRows.forEach(row => {
+                        if (category === 'all' || row.dataset.category === category) {
+                            row.style.display = '';
+                        } else {
+                            row.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

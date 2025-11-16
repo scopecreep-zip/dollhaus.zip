@@ -14,7 +14,7 @@
 
     <div class="announcement-banner">
         <div class="container">
-            <p class="announcement-text">Breaking: The Age of Dreams Has Officially Begun - Join Us in Making History!</p>
+            <p class="announcement-text">Making the White House Femme Again ✨ Protect the Dolls • Support Trans Joy • Choose Your Haus</p>
         </div>
     </div>
 
@@ -151,7 +151,7 @@
         <section class="page-header">
             <div class="container">
                 <h1 class="page-title">Priorities</h1>
-                <p class="page-subtitle">President Barbie is committed to building a more fabulous, inclusive, and empowered future for all dolls.</p>
+                <p class="page-subtitle">The Doll Haus is committed to trans liberation, bimbo feminism, and building power for all marginalized dolls - glamorous, fierce, and unapologetically political.</p>
             </div>
         </section>
 
@@ -229,49 +229,53 @@
         <!-- Priority Areas -->
         <section class="priority-areas-section">
             <div class="container">
-                <h2 class="section-heading">Four Key Priority Areas</h2>
+                <h2 class="section-heading">Core Priorities</h2>
 
                 <article class="priority-block">
-                    <h3>Make Dreams Reality</h3>
+                    <h3>Trans Liberation</h3>
                     <ul class="priority-list">
-                        <li>Expand dream fulfillment opportunities for all dolls</li>
-                        <li>End limitations on career choices and aspirations</li>
-                        <li>Launch Dream Initiative Programs nationwide</li>
-                        <li>Invest in education and skill development</li>
-                        <li>Create pathways to success in every field</li>
+                        <li>Protect trans women - especially Black & Latina dolls - through comprehensive legal protections</li>
+                        <li>Guarantee gender-affirming healthcare coverage for all (no gatekeeping)</li>
+                        <li>End anti-trans legislation and violence against trans communities</li>
+                        <li>Legal name/gender marker changes with self-identification only</li>
+                        <li>Trans women in leadership at all levels of government</li>
+                        <li>Reparations for trans people who faced violence and discrimination</li>
                     </ul>
                 </article>
 
                 <article class="priority-block">
-                    <h3>Make Dolls Fabulous and Empowered Again</h3>
+                    <h3>Bimbo Feminism in Action</h3>
                     <ul class="priority-list">
-                        <li>Unleash creativity and self-expression</li>
-                        <li>End restrictive fashion and style regulations</li>
-                        <li>Promote wellness and confidence programs</li>
-                        <li>Reduce barriers to fabulous living</li>
-                        <li>Implement Dolls-First empowerment policies</li>
+                        <li>Celebrate hyperfemininity as radical political resistance</li>
+                        <li>Reject false binaries between intelligence and glamour</li>
+                        <li>Dismantle patriarchal beauty standards while embracing self-expression</li>
+                        <li>End "girlboss" hustle culture - prioritize joy, rest, and community care</li>
+                        <li>Political discourse in glittery packaging (because we can be both)</li>
+                        <li>Support all genders expressing femininity without shame</li>
                     </ul>
                 </article>
 
                 <article class="priority-block">
-                    <h3>Build Better Communities</h3>
+                    <h3>Chosen Family & Community</h3>
                     <ul class="priority-list">
-                        <li>Reform community governance structures</li>
-                        <li>Increase transparency and accountability</li>
-                        <li>End inefficiency in public services</li>
-                        <li>Implement community-first policies</li>
-                        <li>Strengthen local leadership programs</li>
+                        <li>Legal recognition for chosen families (haus structures)</li>
+                        <li>Honor ballroom culture created by Black and Latina trans women</li>
+                        <li>Support sex workers through full decriminalization and labor rights</li>
+                        <li>Build mutual aid networks - meeting needs outside oppressive systems</li>
+                        <li>Community-led governance with direct democracy tools</li>
+                        <li>Protect youth rejected by biological families through haus placement</li>
                     </ul>
                 </article>
 
                 <article class="priority-block">
-                    <h3>Bring Back Doll Values</h3>
+                    <h3>Intersectional Justice</h3>
                     <ul class="priority-list">
-                        <li>Celebrate diversity and inclusion</li>
-                        <li>Protect every doll's right to self-expression</li>
-                        <li>Honor our history and heritage</li>
-                        <li>Promote kindness and compassion</li>
-                        <li>Build bridges between communities</li>
+                        <li>Center Black and Latina voices in all liberation movements</li>
+                        <li>Reparations for Black Americans and Indigenous sovereignty</li>
+                        <li>Medicare for All including comprehensive gender-affirming care</li>
+                        <li>Housing as a human right - end homelessness</li>
+                        <li>Prison abolition and community-based safety alternatives</li>
+                        <li>Climate justice with reparations for Global South</li>
                     </ul>
                 </article>
             </div>
@@ -293,6 +297,9 @@
             </div>
         </section>
     </main>
+
+    <!-- Footer Container -->
+    <div id="footerContainer"></div>
 
     <footer class="site-footer" id="contact">
         <div class="container">
@@ -357,5 +364,27 @@
     <script src="../../assets/js/utils.js"></script>
     <script src="../../assets/js/components.js"></script>
     <script src="../../assets/js/script.js"></script>
+    <script>
+        // Render header and footer with basePath for subdirectory
+        document.addEventListener('DOMContentLoaded', () => {
+            const headerContainer = document.querySelector('#headerContainer');
+            const footerContainer = document.querySelector('#footerContainer');
+
+            if (headerContainer) {
+                Components.Header.render(headerContainer, { basePath: '../../' });
+                // Initialize header navigation after rendering
+                if (typeof initHeaderNavigation === 'function') {
+                    initHeaderNavigation();
+                }
+            }
+
+            if (footerContainer) {
+                Components.Footer.render(footerContainer, {
+                    basePath: '../../',
+                    brandHref: '../../index.html'
+                });
+            }
+        });
+    </script>
 </body>
 </html>

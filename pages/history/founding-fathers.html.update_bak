@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Founding Dolls - The Doll House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Announcement Banner -->
+    <div class="announcement-banner">
+        <div class="container">
+            <p class="announcement-text">Honoring the Visionaries Who Made Dreams Possible</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-inner">
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <div class="site-logo">
+                    <a href="../../index.html">President Doll</a>
+                </div>
+
+                <div class="utility-nav">
+                    <button class="search-toggle" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                            <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="social-links" id="headerSocialLinks"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="primary-nav" aria-label="Primary" id="primary-nav">
+            <div class="nav-overlay-header" id="navOverlayHeader">
+                <div class="nav-close-btn-wrapper">
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <span class="nav-close-text">Close</span>
+                </div>
+                <button class="nav-search" aria-label="Open search">
+                    <span>Search</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-search-header" id="navSearchHeader" style="display: none;">
+                <div class="nav-menu-btn-wrapper">
+                    <button class="nav-menu-btn" aria-label="Back to menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <span class="nav-menu-text">Menu</span>
+                </div>
+                <div class="nav-close-btn-wrapper nav-close-btn-wrapper-reverse">
+                    <span class="nav-close-text">Close</span>
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-search-container" id="navSearchContainer" style="display: none;">
+                <div class="nav-search-wrapper">
+                    <input type="search" class="nav-search-input" id="navSearchInput" placeholder="Search The Doll House..." aria-label="Search">
+                    <p class="nav-search-hint">Press Enter to search</p>
+                </div>
+            </div>
+            <div class="nav-overlay-content" id="navOverlayContent">
+                <ul class="nav-menu">
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">News</button>
+                        <ul class="submenu">
+                            <li><a href="../news/articles.html">Articles</a></li>
+                            <li><a href="../news/briefings-statements.html">Briefings & Statements</a></li>
+                            <li><a href="../news/fact-sheets.html">Fact Sheets</a></li>
+                            <li><a href="../news/presidential-actions.html">Presidential Actions</a></li>
+                            <li><a href="../news/remarks.html">Remarks</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Administration</button>
+                        <ul class="submenu">
+                            <li><a href="../administration/president-barbie.html">President Doll</a></li>
+                            <li><a href="../administration/vp-ken.html">Vice President Ken</a></li>
+                            <li><a href="../administration/first-doll-skipper.html">First Doll Skipper</a></li>
+                            <li><a href="../administration/second-doll-teresa.html">Second Doll Teresa</a></li>
+                            <li><a href="../administration/cabinet.html">The Cabinet</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Media</button>
+                        <ul class="submenu">
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/live.html">Live News</a></li>
+                            <li><a href="../media/wire.html">Doll House Wire</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Priorities</button>
+                        <ul class="submenu">
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../priorities/investments.html">Investments</a></li>
+                            <li><a href="../priorities/achievements.html">Wins and Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">History</button>
+                        <ul class="submenu">
+                            <li><a href="../history/founders-museum.html">Founders Museum</a></li>
+                            <li><a href="founding-fathers.html">Founding Dolls</a></li>
+                            <li><a href="../legal/government.html">Government Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Get in Touch</button>
+                        <ul class="submenu">
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section style="background: linear-gradient(135deg, #8b4513 0%, #d2691e 50%, #FFD700 100%); padding: 6rem 0; color: white; text-align: center;">
+            <div class="container">
+                <div style="font-size: 6rem; margin-bottom: 1rem;">📜</div>
+                <h1 style="font-size: 3.5rem; font-family: var(--font-serif); margin-bottom: 1rem; color: white;">The Founding Dolls</h1>
+                <p style="font-size: 1.5rem; max-width: 800px; margin: 0 auto; opacity: 0.95;">Visionaries Who Built a Legacy of Dreams and Possibilities</p>
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; font-family: var(--font-serif);">Their Vision Changed the World</h2>
+                    <p style="font-size: 1.25rem; line-height: 1.75; color: #666; margin-bottom: 2rem;">The Founding Dolls were pioneers who dared to imagine something revolutionary: a doll that represented not just childhood, but aspiration, achievement, and limitless potential. Their courage and creativity launched a cultural phenomenon that continues to inspire generations.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ruth Handler Profile -->
+        <section style="padding: 4rem 0; background: #f8f8f8;">
+            <div class="container">
+                <article style="max-width: 1100px; margin: 0 auto; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.1);">
+                    <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 0;">
+                        <div style="background: linear-gradient(135deg, #FF1493 0%, #FFB6D9 100%); padding: 3rem; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center;">
+                            <div style="font-size: 6rem; margin-bottom: 1rem;">👑</div>
+                            <h3 style="font-size: 2.5rem; font-family: var(--font-serif); margin-bottom: 0.5rem;">Ruth Handler</h3>
+                            <p style="font-size: 1.125rem; opacity: 0.95;">1916 - 2002</p>
+                            <p style="font-size: 1rem; margin-top: 1rem; opacity: 0.9;">Co-Founder, Mattel Inc.<br>Creator of Barbie</p>
+                        </div>
+                        <div style="padding: 3rem;">
+                            <h4 style="font-size: 1.75rem; color: #FF1493; margin-bottom: 1.5rem;">The Visionary Founder</h4>
+                            <p style="line-height: 1.75; color: #666; margin-bottom: 1.5rem;">Ruth Handler revolutionized the toy industry by creating the first adult-figured fashion doll. Inspired by watching her daughter Barbara play, she envisioned a doll that would allow children to imagine their future selves rather than practice motherhood.</p>
+                            <p style="line-height: 1.75; color: #666; margin-bottom: 1.5rem;">Despite initial resistance from male executives who didn't understand the concept, Ruth persevered. On March 9, 1959, Barbie debuted at the American International Toy Fair in New York, forever changing how children play and dream.</p>
+                            <h5 style="font-size: 1.25rem; margin-bottom: 1rem; color: #333;">Key Contributions:</h5>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
+                                <li style="padding: 0.5rem 0; color: #666; border-bottom: 1px solid #f0f0f0;">✓ Conceived and developed the Barbie doll (1959)</li>
+                                <li style="padding: 0.5rem 0; color: #666; border-bottom: 1px solid #f0f0f0;">✓ Co-founded Mattel with husband Elliot Handler (1945)</li>
+                                <li style="padding: 0.5rem 0; color: #666; border-bottom: 1px solid #f0f0f0;">✓ Pioneered television advertising for toys</li>
+                                <li style="padding: 0.5rem 0; color: #666; border-bottom: 1px solid #f0f0f0;">✓ Built Mattel into the world's largest toy company</li>
+                                <li style="padding: 0.5rem 0; color: #666;">✓ Inducted into the Toy Industry Hall of Fame (1989)</li>
+                            </ul>
+                            <blockquote style="border-left: 4px solid #FF1493; padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #333;">
+                                "My whole philosophy of Barbie was that through the doll, the little girl could be anything she wanted to be. Barbie always represented the fact that a woman has choices."
+                            </blockquote>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Original Design Team -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem; font-family: var(--font-serif);">The Original Design Team</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; max-width: 1200px; margin: 0 auto;">
+                    <!-- Jack Ryan -->
+                    <article style="background: linear-gradient(to bottom, #f8f8f8 0%, white 30%); border-radius: 12px; padding: 2.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                        <div style="text-align: center; margin-bottom: 1.5rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🔧</div>
+                            <h3 style="font-size: 1.5rem; color: #0891b2; margin-bottom: 0.5rem;">Jack Ryan</h3>
+                            <p style="font-size: 0.95rem; color: #999;">Chief Designer</p>
+                        </div>
+                        <p style="line-height: 1.75; color: #666; margin-bottom: 1rem;">Engineered the doll's revolutionary body mechanics and created the first prototypes. His innovative design allowed for interchangeable clothing and posable limbs.</p>
+                        <div style="background: #f0f0f0; padding: 1rem; border-radius: 6px; font-size: 0.9rem; color: #666;">
+                            <strong>Legacy:</strong> Holds over 1,000 patents, revolutionized toy engineering
+                        </div>
+                    </article>
+
+                    <!-- Charlotte Johnson -->
+                    <article style="background: linear-gradient(to bottom, #f8f8f8 0%, white 30%); border-radius: 12px; padding: 2.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                        <div style="text-align: center; margin-bottom: 1.5rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">👗</div>
+                            <h3 style="font-size: 1.5rem; color: #7c3aed; margin-bottom: 0.5rem;">Charlotte Johnson</h3>
+                            <p style="font-size: 0.95rem; color: #999;">Fashion Designer</p>
+                        </div>
+                        <p style="line-height: 1.75; color: #666; margin-bottom: 1rem;">Created the original Barbie wardrobe with meticulous attention to detail, using real fashion trends and couture techniques on a miniature scale.</p>
+                        <div style="background: #f0f0f0; padding: 1rem; border-radius: 6px; font-size: 0.9rem; color: #666;">
+                            <strong>Legacy:</strong> Designed over 1 billion garments, established doll fashion standards
+                        </div>
+                    </article>
+
+                    <!-- Elliot Handler -->
+                    <article style="background: linear-gradient(to bottom, #f8f8f8 0%, white 30%); border-radius: 12px; padding: 2.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                        <div style="text-align: center; margin-bottom: 1.5rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">💼</div>
+                            <h3 style="font-size: 1.5rem; color: #059669; margin-bottom: 0.5rem;">Elliot Handler</h3>
+                            <p style="font-size: 0.95rem; color: #999;">Co-Founder & President</p>
+                        </div>
+                        <p style="line-height: 1.75; color: #666; margin-bottom: 1rem;">Ruth's husband and business partner who supported her vision and helped build the infrastructure to manufacture and distribute Barbie worldwide.</p>
+                        <div style="background: #f0f0f0; padding: 1rem; border-radius: 6px; font-size: 0.9rem; color: #666;">
+                            <strong>Legacy:</strong> Built Mattel into a global powerhouse, pioneered toy marketing
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Their Shared Vision -->
+        <section style="padding: 4rem 0; background: linear-gradient(135deg, #FFB6D9 0%, #E0BBE4 100%);">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 2rem; color: white; font-family: var(--font-serif);">Their Shared Vision</h2>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                        <div style="background: white; padding: 2rem; border-radius: 8px;">
+                            <div style="font-size: 3rem; margin-bottom: 1rem;">💫</div>
+                            <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: #333;">Empowerment</h3>
+                            <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">Create a doll that inspired children to imagine unlimited career possibilities and future achievements.</p>
+                        </div>
+
+                        <div style="background: white; padding: 2rem; border-radius: 8px;">
+                            <div style="font-size: 3rem; margin-bottom: 1rem;">🎨</div>
+                            <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: #333;">Innovation</h3>
+                            <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">Push boundaries in toy design, manufacturing, and marketing to create something never seen before.</p>
+                        </div>
+
+                        <div style="background: white; padding: 2rem; border-radius: 8px;">
+                            <div style="font-size: 3rem; margin-bottom: 1rem;">🌍</div>
+                            <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: #333;">Inclusivity</h3>
+                            <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">Develop a brand that would eventually represent dolls from all backgrounds, cultures, and walks of life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legacy Impact -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem; font-family: var(--font-serif);">Their Enduring Legacy</h2>
+
+                    <div style="display: grid; gap: 2rem;">
+                        <div style="background: #f8f8f8; padding: 2.5rem; border-radius: 8px; border-left: 6px solid #FF1493;">
+                            <h3 style="font-size: 1.5rem; color: #FF1493; margin-bottom: 1rem;">Cultural Impact</h3>
+                            <p style="line-height: 1.75; color: #666;">The Founding Dolls created more than a toy—they created a cultural icon. Barbie has been a NASA astronaut, a presidential candidate, a doctor, an engineer, and hundreds of other careers, showing generations that they could pursue any dream.</p>
+                        </div>
+
+                        <div style="background: #f8f8f8; padding: 2.5rem; border-radius: 8px; border-left: 6px solid #7c3aed;">
+                            <h3 style="font-size: 1.5rem; color: #7c3aed; margin-bottom: 1rem;">Business Innovation</h3>
+                            <p style="line-height: 1.75; color: #666;">Ruth Handler pioneered television advertising for toys, creating innovative marketing campaigns that changed the industry. She demonstrated that toys could be aspirational products marketed directly to children.</p>
+                        </div>
+
+                        <div style="background: #f8f8f8; padding: 2.5rem; border-radius: 8px; border-left: 6px solid #059669;">
+                            <h3 style="font-size: 1.5rem; color: #059669; margin-bottom: 1rem;">Social Progress</h3>
+                            <p style="line-height: 1.75; color: #666;">By creating a doll with adult features and career aspirations, the founders challenged traditional gender roles and helped normalize the idea of women in professional careers, decades before it became mainstream.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline of Achievements -->
+        <section style="padding: 4rem 0; background: #f8f8f8;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem; font-family: var(--font-serif);">Timeline of Innovation</h2>
+
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div style="border-left: 4px solid var(--color-secondary); padding-left: 2rem; margin-left: 1rem;">
+                        <div style="margin-bottom: 3rem; position: relative;">
+                            <div style="position: absolute; left: -2.6rem; width: 1.5rem; height: 1.5rem; background: #1e3a8a; border-radius: 50%; border: 4px solid white;"></div>
+                            <h3 style="font-size: 1.5rem; color: #1e3a8a; margin-bottom: 0.5rem;">1945</h3>
+                            <p style="line-height: 1.75; color: #666;">Ruth and Elliot Handler co-found Mattel in a garage workshop, beginning their entrepreneurial journey.</p>
+                        </div>
+
+                        <div style="margin-bottom: 3rem; position: relative;">
+                            <div style="position: absolute; left: -2.6rem; width: 1.5rem; height: 1.5rem; background: #7c3aed; border-radius: 50%; border: 4px solid white;"></div>
+                            <h3 style="font-size: 1.5rem; color: #7c3aed; margin-bottom: 0.5rem;">1955</h3>
+                            <p style="line-height: 1.75; color: #666;">Ruth observes her daughter Barbara playing with paper dolls and conceives the idea for an adult-figured doll.</p>
+                        </div>
+
+                        <div style="margin-bottom: 3rem; position: relative;">
+                            <div style="position: absolute; left: -2.6rem; width: 1.5rem; height: 1.5rem; background: #FF1493; border-radius: 50%; border: 4px solid white;"></div>
+                            <h3 style="font-size: 1.5rem; color: #FF1493; margin-bottom: 0.5rem;">March 9, 1959</h3>
+                            <p style="line-height: 1.75; color: #666;">Barbie debuts at the American International Toy Fair in New York City, launching a revolution in children's toys.</p>
+                        </div>
+
+                        <div style="margin-bottom: 3rem; position: relative;">
+                            <div style="position: absolute; left: -2.6rem; width: 1.5rem; height: 1.5rem; background: #059669; border-radius: 50%; border: 4px solid white;"></div>
+                            <h3 style="font-size: 1.5rem; color: #059669; margin-bottom: 0.5rem;">1965</h3>
+                            <p style="line-height: 1.75; color: #666;">Mattel goes public, with Barbie sales driving unprecedented growth in the toy industry.</p>
+                        </div>
+
+                        <div style="position: relative;">
+                            <div style="position: absolute; left: -2.6rem; width: 1.5rem; height: 1.5rem; background: #FFD700; border-radius: 50%; border: 4px solid white;"></div>
+                            <h3 style="font-size: 1.5rem; color: #ea580c; margin-bottom: 0.5rem;">1989</h3>
+                            <p style="line-height: 1.75; color: #666;">Ruth Handler inducted into the Toy Industry Hall of Fame, cementing her legacy as one of the most influential toy designers in history.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section style="padding: 4rem 0; background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%); color: white; text-align: center;">
+            <div class="container">
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div style="font-size: 4rem; margin-bottom: 1.5rem; opacity: 0.9;">✨</div>
+                    <blockquote style="font-size: 2rem; font-family: var(--font-serif); line-height: 1.5; margin-bottom: 1.5rem;">
+                        "The dream that became Barbie has changed the way the world plays."
+                    </blockquote>
+                    <p style="font-size: 1.125rem; opacity: 0.9;">- Ruth Handler</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learn More -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; font-family: var(--font-serif);">Explore More</h2>
+                    <p style="font-size: 1.125rem; line-height: 1.75; margin-bottom: 2rem; color: #666;">Discover more about the vision and legacy of our Founding Dolls</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="founders-museum.html" style="display: inline-block; padding: 1rem 2rem; background: var(--color-secondary); color: white; text-decoration: none; border-radius: 6px; font-weight: 600;">Visit the Museum</a>
+                        <a href="moments-that-made-us.html" style="display: inline-block; padding: 1rem 2rem; background: white; color: var(--color-secondary); text-decoration: none; border-radius: 6px; font-weight: 600; border: 2px solid var(--color-secondary);">Historical Moments</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay in the Know</h2>
+                    <p>Get the latest updates from President Doll and The Doll House</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h3 style="color: var(--color-secondary); font-family: var(--font-serif); margin: 0;">The Doll House</h3>
+                </div>
+
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3>News</h3>
+                        <ul>
+                            <li><a href="wire.html">Wire</a></li>
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Administration</h3>
+                        <ul>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../history/founders-museum.html">Founders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="government.html">Governance</a></li>
+                            <li><a href="../../history.html">History</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-social" id="footerSocialLinks"></div>
+
+                <div class="footer-address">
+                    <p>The Doll House<br>
+                    1600 Dreamhouse Lane<br>
+                    Malibu, CA 90265</p>
+                </div>
+
+                <div class="footer-legal">
+                    <a href="../legal/privacy.html">Privacy Policy</a>
+                    <a href="../legal/copyright.html">Copyright Policy</a>
+                    <a href="../legal/government.html">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Join Button -->
+    <div class="floating-join-btn" id="floatingJoinBtn">
+        <button class="join-close-btn" aria-label="Close join button" onclick="document.getElementById('floatingJoinBtn').style.display='none'; return false;">×</button>
+        <a href="#newsletter" class="join-now-link">Join Now</a>
+    </div>
+
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/utils.js"></script>
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

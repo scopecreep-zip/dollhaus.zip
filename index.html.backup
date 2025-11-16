@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Doll Haus - President Doll</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Announcement Banner -->
+    <div class="announcement-banner">
+        <div class="container">
+            <p class="announcement-text">Making the White House Femme Again ✨ Protect the Dolls • Support Trans Joy • Choose Your Haus</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-inner">
+                <!-- Hamburger Menu Toggle (LEFT) -->
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <!-- Logo (CENTER) -->
+                <div class="site-logo">
+                    <a href="./">
+                        <img src="assets/images/thedollhaus white.png" alt="The Doll Haus" class="site-logo-image">
+                    </a>
+                </div>
+
+                <!-- Utility Navigation (RIGHT) -->
+                <div class="utility-nav">
+                    <button class="search-toggle" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                            <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="social-links" id="headerSocialLinks">
+                        <!-- Social links will be rendered by Components.SocialLinks -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Full-Screen Navigation Overlay -->
+        <nav class="primary-nav" aria-label="Primary" id="primary-nav">
+            <div class="nav-overlay-header" id="navOverlayHeader">
+                <div class="nav-close-btn-wrapper">
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <span class="nav-close-text">Close</span>
+                </div>
+                <button class="nav-search" aria-label="Open search">
+                    <span>Search</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Search Mode Header (hidden by default) -->
+            <div class="nav-search-header" id="navSearchHeader" style="display: none;">
+                <div class="nav-menu-btn-wrapper">
+                    <button class="nav-menu-btn" aria-label="Back to menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <span class="nav-menu-text">Menu</span>
+                </div>
+                <div class="nav-close-btn-wrapper nav-close-btn-wrapper-reverse">
+                    <span class="nav-close-text">Close</span>
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-search-container" id="navSearchContainer" style="display: none;">
+                <div class="nav-search-wrapper">
+                    <input type="search" class="nav-search-input" id="navSearchInput" placeholder="Search The Doll Haus..." aria-label="Search">
+                    <p class="nav-search-hint">Press Enter to search</p>
+                </div>
+            </div>
+            <div class="nav-overlay-content" id="navOverlayContent">
+                <ul class="nav-menu">
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">News</button>
+                        <ul class="submenu">
+                            <li><a href="pages/news/articles.html">Articles</a></li>
+                            <li><a href="pages/news/briefings-statements.html">Briefings & Statements</a></li>
+                            <li><a href="pages/news/fact-sheets.html">Fact Sheets</a></li>
+                            <li><a href="pages/news/presidential-actions.html">Presidential Actions</a></li>
+                            <li><a href="pages/news/remarks.html">Remarks</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Administration</button>
+                        <ul class="submenu">
+                            <li><a href="pages/administration/president-barbie.html">President Barbie</a></li>
+                            <li><a href="pages/administration/vp-ken.html">Vice President Ken</a></li>
+                            <li><a href="pages/administration/first-doll-skipper.html">First Doll Skipper</a></li>
+                            <li><a href="pages/administration/second-doll-teresa.html">Second Doll Teresa</a></li>
+                            <li><a href="pages/administration/cabinet.html">The Cabinet</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Media</button>
+                        <ul class="submenu">
+                            <li><a href="pages/media/videos.html">Video Library</a></li>
+                            <li><a href="pages/media/gallery.html">Gallery</a></li>
+                            <li><a href="pages/media/live.html">Live News</a></li>
+                            <li><a href="pages/media/wire.html">Doll House Wire</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Priorities</button>
+                        <ul class="submenu">
+                            <li><a href="pages/priorities/priorities.html">Issues</a></li>
+                            <li><a href="pages/priorities/investments.html">Investments</a></li>
+                            <li><a href="pages/priorities/achievements.html">Wins and Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">History</button>
+                        <ul class="submenu">
+                            <li><a href="pages/history/founders-museum.html">Founders Museum</a></li>
+                            <li><a href="pages/history/moments-that-made-us.html">Timeline</a></li>
+                            <li><a href="pages/legal/government.html">Government Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Get in Touch</button>
+                        <ul class="submenu">
+                            <li><a href="pages/contact/contact.html">Contact</a></li>
+                            <li><a href="pages/contact/visit.html">Visit</a></li>
+                            <li><a href="pages/contact/internships.html">Internships</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Carousel -->
+        <section class="hero-carousel">
+            <div class="carousel-slides">
+                <div class="carousel-slide active" style="background-image: url('placeholder-hero.jpg');">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <div class="container">
+                            <h2 class="slide-title">Hyperfemme & Politically Fierce</h2>
+                            <p class="slide-text">Bimbo feminism meets radical politics - intelligence, glamour, and unapologetic trans joy</p>
+                            <a href="#priorities" class="slide-cta">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide" style="background-image: url('placeholder-gallery-1.jpg');">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <div class="container">
+                            <h2 class="slide-title">Protect the Dolls</h2>
+                            <p class="slide-text">Honoring Black & Latina trans women who created ballroom, voguing, and the language of resilience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide" style="background-image: url('placeholder-gallery-2.jpg');">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <div class="container">
+                            <h2 class="slide-title">Chosen Family, Real Power</h2>
+                            <p class="slide-text">The Haus provides shelter, community, and leadership - this is how we survive and thrive</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control prev" aria-label="Previous slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <button class="carousel-control next" aria-label="Next slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="carousel-indicators">
+                <button class="indicator active" data-slide="0" aria-label="Slide 1"></button>
+                <button class="indicator" data-slide="1" aria-label="Slide 2"></button>
+                <button class="indicator" data-slide="2" aria-label="Slide 3"></button>
+            </div>
+        </section>
+
+        <!-- Administration Grid -->
+        <section class="administration-section" id="administration">
+            <div class="container">
+                <div class="admin-grid">
+                    <article class="admin-card">
+                        <a href="pages/administration/the-mother.html" class="admin-link">
+                            <div class="admin-image-wrapper">
+                                <img src="assets/images/placeholder-president.jpg" alt="The Mother" loading="lazy">
+                            </div>
+                            <div class="admin-info">
+                                <h3 class="admin-name">The Mother</h3>
+                                <p class="admin-title">Executive Branch - Leadership Through Care</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="admin-card">
+                        <a href="pages/administration/the-house.html" class="admin-link">
+                            <div class="admin-image-wrapper">
+                                <img src="assets/images/placeholder-vp.jpg" alt="The House" loading="lazy">
+                            </div>
+                            <div class="admin-info">
+                                <h3 class="admin-name">The House</h3>
+                                <p class="admin-title">Legislative Branch - Trans Women, Sex Workers, BIPOC Leading</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="admin-card">
+                        <a href="pages/administration/the-elders.html" class="admin-link">
+                            <div class="admin-image-wrapper">
+                                <img src="assets/images/placeholder-first-doll.jpg" alt="The Elders" loading="lazy">
+                            </div>
+                            <div class="admin-info">
+                                <h3 class="admin-name">The Elders</h3>
+                                <p class="admin-title">Judicial Branch - Wisdom Through Lived Experience</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="admin-card">
+                        <a href="pages/administration/haus-council.html" class="admin-link">
+                            <div class="admin-image-wrapper">
+                                <img src="assets/images/placeholder-cabinet.jpg" alt="Haus Council" loading="lazy">
+                            </div>
+                            <div class="admin-info">
+                                <h3 class="admin-name">Haus Council</h3>
+                                <p class="admin-title">Mothers & Fathers - Community Care Leaders</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Sections -->
+        <section class="featured-content">
+            <div class="container">
+                <!-- Executive Actions -->
+                <article class="featured-block" id="news">
+                    <div class="featured-image">
+                        <img src="assets/images/placeholder-gallery-3.jpg" alt="Executive Actions" loading="lazy">
+                    </div>
+                    <div class="featured-text">
+                        <h2>Executive Actions</h2>
+                        <p>President Doll is taking radical action to protect trans women, support sex workers, defend LGBTQ+ rights, and center Black and Latina voices in our movement.</p>
+                        <a href="pages/news/presidential-actions.html" class="text-link">View All Actions →</a>
+                    </div>
+                </article>
+
+                <!-- News -->
+                <article class="featured-block featured-reverse">
+                    <div class="featured-image">
+                        <img src="assets/images/placeholder-gallery-4.jpg" alt="Latest News" loading="lazy">
+                    </div>
+                    <div class="featured-text">
+                        <h2>News</h2>
+                        <p>Stay up to date with the latest announcements, briefings, and statements from The Doll Haus - where bimbo feminism meets political resistance.</p>
+                        <a href="pages/news.html" class="text-link">Read the Latest →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Priorities Text Block -->
+        <section class="priorities-section" id="priorities">
+            <div class="container">
+                <div class="priorities-content">
+                    <h2>Our Priorities</h2>
+                    <p class="priorities-text">The Doll Haus is committed to <strong>trans liberation</strong> - protecting trans women (especially Black & Latina dolls), guaranteeing gender-affirming healthcare, and ensuring safety and dignity for all trans people. We practice <strong>bimbo feminism</strong>: hyperfemininity as radical resistance, proving that glamour and intelligence aren't opposites, and that being politically fierce looks fabulous in pink. We support sex workers' rights, honor ballroom culture and chosen family structures, reject hustle culture for authentic joy, and build coalitions with all marginalized communities. We're pro-BLM, pro-choice, and unapologetically leftist - because being a doll means being politically powerful.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Governance & Policy Section -->
+        <section class="governance-section" id="governance">
+            <div class="container">
+                <h2 class="section-heading">Governance & Policy by the Haus</h2>
+                <!-- Document Reader Component will be initialized here -->
+                <div id="governance-document"></div>
+            </div>
+        </section>
+
+        <!-- Gallery & Videos -->
+        <section class="media-section" id="media">
+            <div class="container">
+                <div class="media-grid">
+                    <article class="media-block">
+                        <a href="pages/media/gallery.html" class="media-link">
+                            <div class="media-image">
+                                <img src="assets/images/placeholder-gallery-1.jpg" alt="Gallery" loading="lazy">
+                            </div>
+                            <h3>Gallery</h3>
+                        </a>
+                    </article>
+                    <article class="media-block">
+                        <a href="pages/media/videos.html" class="media-link">
+                            <div class="media-image">
+                                <img src="assets/images/placeholder-gallery-2.jpg" alt="Videos" loading="lazy">
+                            </div>
+                            <h3>Videos</h3>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h2>Stay in the know</h2>
+                        <p>Get direct updates from The Doll Haus in your inbox - bimbo feminism, trans joy, and radical politics delivered with glitter.</p>
+                    </div>
+                    <form class="newsletter-form" action="#" method="post">
+                        <label for="email" class="visually-hidden">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Email address" required>
+                        <button type="submit">SIGN UP</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Container -->
+    <div id="footerContainer">
+        <!-- Temporary: Footer will be rendered by Components.Footer -->
+        <!-- If footer doesn't appear, there may be a JS error - check browser console -->
+    </div>
+
+    <!-- Floating Join Button (Bottom Left) -->
+    <div class="floating-join-btn" id="floatingJoinBtn">
+        <button class="join-close-btn" aria-label="Close join button" onclick="document.getElementById('floatingJoinBtn').style.display='none'; return false;">×</button>
+        <a href="#newsletter" class="join-now-link">Join Now</a>
+    </div>
+
+    <!-- Load modules in order: config, utils, components, then main script -->
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

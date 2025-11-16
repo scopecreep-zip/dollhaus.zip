@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Convertible One - The Doll House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Announcement Banner -->
+    <div class="announcement-banner">
+        <div class="container">
+            <p class="announcement-text">The Most Fabulous Way to Fly - Dream Convertible One</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-inner">
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <div class="site-logo">
+                    <a href="../../index.html">President Doll</a>
+                </div>
+
+                <div class="utility-nav">
+                    <button class="search-toggle" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                            <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="social-links" id="headerSocialLinks"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="primary-nav" aria-label="Primary" id="primary-nav">
+            <div class="nav-overlay-header" id="navOverlayHeader">
+                <div class="nav-close-btn-wrapper">
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <span class="nav-close-text">Close</span>
+                </div>
+                <button class="nav-search" aria-label="Open search">
+                    <span>Search</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-search-header" id="navSearchHeader" style="display: none;">
+                <div class="nav-menu-btn-wrapper">
+                    <button class="nav-menu-btn" aria-label="Back to menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <span class="nav-menu-text">Menu</span>
+                </div>
+                <div class="nav-close-btn-wrapper nav-close-btn-wrapper-reverse">
+                    <span class="nav-close-text">Close</span>
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-search-container" id="navSearchContainer" style="display: none;">
+                <div class="nav-search-wrapper">
+                    <input type="search" class="nav-search-input" id="navSearchInput" placeholder="Search The Doll House..." aria-label="Search">
+                    <p class="nav-search-hint">Press Enter to search</p>
+                </div>
+            </div>
+            <div class="nav-overlay-content" id="navOverlayContent">
+                <ul class="nav-menu">
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">News</button>
+                        <ul class="submenu">
+                            <li><a href="../news/articles.html">Articles</a></li>
+                            <li><a href="../news/briefings-statements.html">Briefings & Statements</a></li>
+                            <li><a href="../news/fact-sheets.html">Fact Sheets</a></li>
+                            <li><a href="../news/presidential-actions.html">Presidential Actions</a></li>
+                            <li><a href="../news/remarks.html">Remarks</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Administration</button>
+                        <ul class="submenu">
+                            <li><a href="../administration/president-barbie.html">President Doll</a></li>
+                            <li><a href="../administration/vp-ken.html">Vice President Ken</a></li>
+                            <li><a href="../administration/first-doll-skipper.html">First Doll Skipper</a></li>
+                            <li><a href="../administration/second-doll-teresa.html">Second Doll Teresa</a></li>
+                            <li><a href="../administration/cabinet.html">The Cabinet</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Media</button>
+                        <ul class="submenu">
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/live.html">Live News</a></li>
+                            <li><a href="../media/wire.html">Doll House Wire</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Priorities</button>
+                        <ul class="submenu">
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../priorities/investments.html">Investments</a></li>
+                            <li><a href="../priorities/achievements.html">Wins and Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">History</button>
+                        <ul class="submenu">
+                            <li><a href="../history/founders-museum.html">Founders Museum</a></li>
+                            <li><a href="dream-convertible-one.html">Dream Convertible One</a></li>
+                            <li><a href="../legal/government.html">Government Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Get in Touch</button>
+                        <ul class="submenu">
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section style="background: linear-gradient(135deg, #1e3a8a 0%, #FF1493 50%, #FFD700 100%); padding: 6rem 0; color: white; text-align: center; position: relative; overflow: hidden;">
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 600\"><path d=\"M0 300 Q 300 200 600 300 T 1200 300\" stroke=\"rgba(255,255,255,0.1)\" stroke-width=\"2\" fill=\"none\"/></svg>') repeat-x; opacity: 0.3;"></div>
+            <div class="container" style="position: relative; z-index: 1;">
+                <div style="font-size: 6rem; margin-bottom: 1rem;">✈️</div>
+                <h1 style="font-size: 3.5rem; font-family: var(--font-serif); margin-bottom: 1rem; color: white;">Dream Convertible One</h1>
+                <p style="font-size: 1.5rem; max-width: 800px; margin: 0 auto; opacity: 0.95;">The Flying Pink Palace - Presidential Transportation Excellence</p>
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; text-align: center; font-family: var(--font-serif);">A Symbol of Leadership</h2>
+                    <p style="font-size: 1.25rem; line-height: 1.75; text-align: center; color: #666; margin-bottom: 3rem;">Dream Convertible One is the official air transport for the President of the United Dolls. More than just an aircraft, it represents the strength, elegance, and global reach of doll leadership.</p>
+
+                    <div style="background: linear-gradient(135deg, #FFB6D9 0%, #FF1493 100%); padding: 3rem; border-radius: 12px; color: white;">
+                        <div style="text-align: center; margin-bottom: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🎀</div>
+                            <h3 style="font-size: 2rem; font-family: var(--font-serif);">The Call Sign</h3>
+                        </div>
+                        <p style="font-size: 1.125rem; line-height: 1.75; opacity: 0.95; text-align: center;">The aircraft is officially designated "Dream Convertible One" whenever the President is on board. At all other times, it uses the standard Air Force call sign. This tradition ensures the world always knows when our Commander-in-Chief is traveling.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Specifications -->
+        <section style="padding: 4rem 0; background: #f8f8f8;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem; font-family: var(--font-serif);">Technical Excellence</h2>
+
+                <div style="max-width: 1100px; margin: 0 auto; display: grid; gap: 2rem;">
+                    <div style="background: white; border-radius: 12px; padding: 3rem; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+                        <h3 style="font-size: 1.75rem; color: #1e3a8a; margin-bottom: 2rem;">Aircraft Specifications</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                            <div>
+                                <h4 style="font-size: 1.125rem; color: #FF1493; margin-bottom: 0.5rem;">Model</h4>
+                                <p style="color: #666;">Modified Boeing 747-8 Dreamliner</p>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1.125rem; color: #FF1493; margin-bottom: 0.5rem;">Length</h4>
+                                <p style="color: #666;">250 feet (76.3 meters)</p>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1.125rem; color: #FF1493; margin-bottom: 0.5rem;">Wingspan</h4>
+                                <p style="color: #666;">225 feet (68.6 meters)</p>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1.125rem; color: #FF1493; margin-bottom: 0.5rem;">Max Speed</h4>
+                                <p style="color: #666;">650 mph (Mach 0.84)</p>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1.125rem; color: #FF1493; margin-bottom: 0.5rem;">Range</h4>
+                                <p style="color: #666;">8,000 miles (12,875 km)</p>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1.125rem; color: #FF1493; margin-bottom: 0.5rem;">Ceiling</h4>
+                                <p style="color: #666;">45,100 feet (13,747 meters)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: white; border-radius: 12px; padding: 3rem; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+                        <h3 style="font-size: 1.75rem; color: #7c3aed; margin-bottom: 2rem;">Capacity & Features</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                            <div>
+                                <h4 style="font-size: 1.125rem; color: #FF1493; margin-bottom: 0.5rem;">Total Area</h4>
+                                <p style="color: #666;">4,000 square feet across 3 levels</p>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1.125rem; color: #FF1493; margin-bottom: 0.5rem;">Passenger Capacity</h4>
+                                <p style="color: #666;">76 passengers + crew of 26</p>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1.125rem; color: #FF1493; margin-bottom: 0.5rem;">Fuel Capacity</h4>
+                                <p style="color: #666;">53,611 gallons (203,000 liters)</p>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1.125rem; color: #FF1493; margin-bottom: 0.5rem;">Galleys</h4>
+                                <p style="color: #666;">2 full kitchens, serve 100 meals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interior Features -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem; font-family: var(--font-serif);">The Flying Dreamhouse Interior</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+                    <!-- Presidential Suite -->
+                    <article style="background: linear-gradient(to bottom, #FF1493 0%, #FFB6D9 100%); color: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">👑</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; text-align: center; font-family: var(--font-serif);">Presidential Suite</h3>
+                        <p style="line-height: 1.75; opacity: 0.95; font-size: 0.95rem;">A private office, bedroom, and bathroom decorated in signature pink and gold. Features a queen-sized bed, shower, and personal wardrobe space. The office includes secure communication systems and a personal workspace.</p>
+                    </article>
+
+                    <!-- Situation Room -->
+                    <article style="background: linear-gradient(to bottom, #1e3a8a 0%, #3b82f6 100%); color: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">🖥️</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; text-align: center; font-family: var(--font-serif);">Airborne Situation Room</h3>
+                        <p style="line-height: 1.75; opacity: 0.95; font-size: 0.95rem;">A secure conference room with encrypted communications allowing the President to command military operations, conduct crisis management, and hold classified meetings from anywhere in the world.</p>
+                    </article>
+
+                    <!-- Medical Suite -->
+                    <article style="background: linear-gradient(to bottom, #dc2626 0%, #ef4444 100%); color: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">⚕️</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; text-align: center; font-family: var(--font-serif);">Medical Suite</h3>
+                        <p style="line-height: 1.75; opacity: 0.95; font-size: 0.95rem;">A fully equipped medical facility with an operating room, pharmacy, and emergency equipment. Staffed by a flight surgeon and medical team capable of handling any medical emergency at 40,000 feet.</p>
+                    </article>
+
+                    <!-- Conference Room -->
+                    <article style="background: linear-gradient(to bottom, #059669 0%, #10b981 100%); color: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">📊</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; text-align: center; font-family: var(--font-serif);">Main Conference Room</h3>
+                        <p style="line-height: 1.75; opacity: 0.95; font-size: 0.95rem;">Seats up to 20 senior staff and advisors. Equipped with video conferencing, satellite communications, and presentation systems for mid-flight briefings and strategy sessions.</p>
+                    </article>
+
+                    <!-- Press Area -->
+                    <article style="background: linear-gradient(to bottom, #7c3aed 0%, #a855f7 100%); color: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">📰</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; text-align: center; font-family: var(--font-serif);">Press Section</h3>
+                        <p style="line-height: 1.75; opacity: 0.95; font-size: 0.95rem;">Accommodates 13 journalists who travel with the President. Features workspace, power outlets, and satellite internet for filing stories from anywhere in the world.</p>
+                    </article>
+
+                    <!-- Guest Seating -->
+                    <article style="background: linear-gradient(to bottom, #ea580c 0%, #fb923c 100%); color: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">💺</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; text-align: center; font-family: var(--font-serif);">Guest & Staff Areas</h3>
+                        <p style="line-height: 1.75; opacity: 0.95; font-size: 0.95rem;">Multiple seating areas for staff, security, and guests with lie-flat seats, entertainment systems, and comfortable amenities for long-haul international flights.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Security & Technology -->
+        <section style="padding: 4rem 0; background: #f8f8f8;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem; font-family: var(--font-serif);">Advanced Security & Communications</h2>
+
+                <div style="max-width: 900px; margin: 0 auto; display: grid; gap: 2rem;">
+                    <div style="background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                        <h3 style="font-size: 1.5rem; color: #1e3a8a; margin-bottom: 1.5rem;">🛡️ Security Systems</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #f0f0f0; color: #666;">✓ Electronic countermeasures against missile threats</li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #f0f0f0; color: #666;">✓ Electromagnetic pulse (EMP) protection</li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #f0f0f0; color: #666;">✓ Classified defensive systems</li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #f0f0f0; color: #666;">✓ Hardened against nuclear radiation</li>
+                            <li style="padding: 0.75rem 0; color: #666;">✓ 24/7 Secret Service protection detail</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                        <h3 style="font-size: 1.5rem; color: #7c3aed; margin-bottom: 1.5rem;">📡 Communications</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #f0f0f0; color: #666;">✓ Secure satellite communications worldwide</li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #f0f0f0; color: #666;">✓ 87 telephones and 19 televisions</li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #f0f0f0; color: #666;">✓ Encrypted video conferencing systems</li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #f0f0f0; color: #666;">✓ Advanced radar and navigation systems</li>
+                            <li style="padding: 0.75rem 0; color: #666;">✓ Unlimited range with aerial refueling capability</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Historic Missions -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem; font-family: var(--font-serif);">Historic Missions</h2>
+
+                <div style="max-width: 900px; margin: 0 auto; display: grid; gap: 2rem;">
+                    <div style="background: #f8f8f8; padding: 2rem; border-radius: 8px; border-left: 6px solid #FF1493;">
+                        <h3 style="font-size: 1.25rem; color: #FF1493; margin-bottom: 0.75rem;">First International Peace Summit (1995)</h3>
+                        <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">President Barbie used Dream Convertible One to shuttle between world capitals in 72 hours, negotiating a historic peace agreement between rival doll nations.</p>
+                    </div>
+
+                    <div style="background: #f8f8f8; padding: 2rem; border-radius: 8px; border-left: 6px solid #7c3aed;">
+                        <h3 style="font-size: 1.25rem; color: #7c3aed; margin-bottom: 0.75rem;">Humanitarian Relief Mission (2010)</h3>
+                        <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">Delivered critical supplies and Presidential support to disaster-stricken regions, demonstrating American compassion and rapid response capability.</p>
+                    </div>
+
+                    <div style="background: #f8f8f8; padding: 2rem; border-radius: 8px; border-left: 6px solid #059669;">
+                        <h3 style="font-size: 1.25rem; color: #059669; margin-bottom: 0.75rem;">Global Climate Summit Tour (2023)</h3>
+                        <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">A 15-nation tour promoting environmental cooperation, using sustainable aviation fuel to demonstrate commitment to green technology.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Fleet -->
+        <section style="padding: 4rem 0; background: linear-gradient(135deg, #1e3a8a 0%, #FF1493 100%); color: white;">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 2rem; font-family: var(--font-serif);">Presidential Fleet</h2>
+                    <p style="font-size: 1.125rem; line-height: 1.75; margin-bottom: 3rem; opacity: 0.95;">Dream Convertible One is actually two identical aircraft, ensuring one is always mission-ready. The fleet also includes backup aircraft and support planes that carry press, staff, and equipment.</p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                        <div>
+                            <div style="font-size: 3rem; margin-bottom: 0.5rem;">✈️</div>
+                            <p style="font-size: 1.125rem; margin-bottom: 0.25rem;">2</p>
+                            <p style="font-size: 0.9rem; opacity: 0.9;">Primary Aircraft</p>
+                        </div>
+                        <div>
+                            <div style="font-size: 3rem; margin-bottom: 0.5rem;">🚁</div>
+                            <p style="font-size: 1.125rem; margin-bottom: 0.25rem;">4</p>
+                            <p style="font-size: 0.9rem; opacity: 0.9;">Support Helicopters</p>
+                        </div>
+                        <div>
+                            <div style="font-size: 3rem; margin-bottom: 0.5rem;">📦</div>
+                            <p style="font-size: 1.125rem; margin-bottom: 0.25rem;">3</p>
+                            <p style="font-size: 0.9rem; opacity: 0.9;">Cargo Planes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cost & Maintenance -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; font-family: var(--font-serif);">A Symbol Worth Protecting</h2>
+                    <p style="font-size: 1.125rem; line-height: 1.75; margin-bottom: 2rem; color: #666;">Dream Convertible One represents more than transportation—it's a mobile command center, a symbol of American power, and a testament to our commitment to protecting our leaders while they protect us.</p>
+                    <div style="background: #f8f8f8; padding: 2rem; border-radius: 8px;">
+                        <p style="color: #666; font-size: 0.95rem; line-height: 1.75;">The aircraft requires constant maintenance and security upgrades. A dedicated team of engineers, technicians, and security professionals works around the clock to ensure Dream Convertible One is always ready to fly at a moment's notice.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay in the Know</h2>
+                    <p>Get the latest updates from President Doll and The Doll House</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h3 style="color: var(--color-secondary); font-family: var(--font-serif); margin: 0;">The Doll House</h3>
+                </div>
+
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3>News</h3>
+                        <ul>
+                            <li><a href="wire.html">Wire</a></li>
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Administration</h3>
+                        <ul>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../history/founders-museum.html">Founders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="government.html">Governance</a></li>
+                            <li><a href="../../history.html">History</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-social" id="footerSocialLinks"></div>
+
+                <div class="footer-address">
+                    <p>The Doll House<br>
+                    1600 Dreamhouse Lane<br>
+                    Malibu, CA 90265</p>
+                </div>
+
+                <div class="footer-legal">
+                    <a href="../legal/privacy.html">Privacy Policy</a>
+                    <a href="../legal/copyright.html">Copyright Policy</a>
+                    <a href="../legal/government.html">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Join Button -->
+    <div class="floating-join-btn" id="floatingJoinBtn">
+        <button class="join-close-btn" aria-label="Close join button" onclick="document.getElementById('floatingJoinBtn').style.display='none'; return false;">×</button>
+        <a href="#newsletter" class="join-now-link">Join Now</a>
+    </div>
+
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/utils.js"></script>
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

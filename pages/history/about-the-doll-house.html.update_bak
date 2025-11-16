@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About The Doll House - The Doll House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Announcement Banner -->
+    <div class="announcement-banner">
+        <div class="container">
+            <p class="announcement-text">Tour The Doll House - Where Dreams Become Policy</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-inner">
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <div class="site-logo">
+                    <a href="../../index.html">President Doll</a>
+                </div>
+
+                <div class="utility-nav">
+                    <button class="search-toggle" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                            <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="social-links" id="headerSocialLinks"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="primary-nav" aria-label="Primary" id="primary-nav">
+            <div class="nav-overlay-header" id="navOverlayHeader">
+                <div class="nav-close-btn-wrapper">
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <span class="nav-close-text">Close</span>
+                </div>
+                <button class="nav-search" aria-label="Open search">
+                    <span>Search</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-search-header" id="navSearchHeader" style="display: none;">
+                <div class="nav-menu-btn-wrapper">
+                    <button class="nav-menu-btn" aria-label="Back to menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <span class="nav-menu-text">Menu</span>
+                </div>
+                <div class="nav-close-btn-wrapper nav-close-btn-wrapper-reverse">
+                    <span class="nav-close-text">Close</span>
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-search-container" id="navSearchContainer" style="display: none;">
+                <div class="nav-search-wrapper">
+                    <input type="search" class="nav-search-input" id="navSearchInput" placeholder="Search The Doll House..." aria-label="Search">
+                    <p class="nav-search-hint">Press Enter to search</p>
+                </div>
+            </div>
+            <div class="nav-overlay-content" id="navOverlayContent">
+                <ul class="nav-menu">
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">News</button>
+                        <ul class="submenu">
+                            <li><a href="../news/articles.html">Articles</a></li>
+                            <li><a href="../news/briefings-statements.html">Briefings & Statements</a></li>
+                            <li><a href="../news/fact-sheets.html">Fact Sheets</a></li>
+                            <li><a href="../news/presidential-actions.html">Presidential Actions</a></li>
+                            <li><a href="../news/remarks.html">Remarks</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Administration</button>
+                        <ul class="submenu">
+                            <li><a href="../administration/president-barbie.html">President Doll</a></li>
+                            <li><a href="../administration/vp-ken.html">Vice President Ken</a></li>
+                            <li><a href="../administration/first-doll-skipper.html">First Doll Skipper</a></li>
+                            <li><a href="../administration/second-doll-teresa.html">Second Doll Teresa</a></li>
+                            <li><a href="../administration/cabinet.html">The Cabinet</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Media</button>
+                        <ul class="submenu">
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/live.html">Live News</a></li>
+                            <li><a href="../media/wire.html">Doll House Wire</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Priorities</button>
+                        <ul class="submenu">
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../priorities/investments.html">Investments</a></li>
+                            <li><a href="../priorities/achievements.html">Wins and Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">History</button>
+                        <ul class="submenu">
+                            <li><a href="../history/founders-museum.html">Founders Museum</a></li>
+                            <li><a href="about-the-doll-house.html">About The Doll House</a></li>
+                            <li><a href="../legal/government.html">Government Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Get in Touch</button>
+                        <ul class="submenu">
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section style="background: linear-gradient(135deg, #FFB6D9 0%, #FF69B4 50%, #FFD700 100%); padding: 6rem 0; color: white; text-align: center;">
+            <div class="container">
+                <div style="font-size: 6rem; margin-bottom: 1rem;">🏠</div>
+                <h1 style="font-size: 3.5rem; font-family: var(--font-serif); margin-bottom: 1rem; color: white;">The Haus: A History of Ballroom Culture</h1>
+                <p style="font-size: 1.5rem; max-width: 800px; margin: 0 auto; opacity: 0.95;">How Black & Latina Trans Women Created the Governance Model We Follow Today</p>
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; text-align: center; font-family: var(--font-serif);">Survival Structures Created by Trans Women</h2>
+                    <p style="font-size: 1.25rem; line-height: 1.75; text-align: center; color: #666; margin-bottom: 2rem;">Ballroom culture wasn't just about dance and fashion—it was a revolutionary system of governance, mutual aid, and chosen family created by Black and Latina trans women who were excluded from white mainstream society. These "houses" (or "haus" in ballroom spelling) became models for how marginalized communities could survive, thrive, and build power outside oppressive systems.</p>
+                    <div style="background: linear-gradient(135deg, #FFB6D9 0%, #FFD700 100%); padding: 3rem; border-radius: 12px; text-align: center; color: white;">
+                        <h3 style="font-size: 2rem; margin-bottom: 1rem; font-family: var(--font-serif);">Our Governance Honors These Pioneers</h3>
+                        <p style="font-size: 1.125rem; line-height: 1.75; opacity: 0.95;">The three branches of our government—The Mother (Executive), The House (Legislative), and The Elders (Judicial)—are directly inspired by ballroom house structures: Mother/Father leaders, children members, sibling support networks, and elder wisdom keepers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Building History -->
+        <section style="padding: 4rem 0; background: #f8f8f8;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem; font-family: var(--font-serif);">The Origins of Ballroom Houses</h2>
+
+                <div style="max-width: 1100px; margin: 0 auto; display: grid; gap: 3rem;">
+                    <article style="background: white; border-radius: 12px; padding: 3rem; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+                        <h3 style="font-size: 1.75rem; color: #FF1493; margin-bottom: 1.5rem;">House of LaBeija (1972) - The First Ballroom House</h3>
+                        <p style="line-height: 1.75; color: #666; margin-bottom: 1rem;"><strong>Crystal LaBeija</strong>, a Black drag queen, walked out of a white-dominated drag competition in 1967 after being passed over for a white contestant despite her superior performance. This act of resistance against white supremacy in queer spaces planted the seed for ballroom culture as we know it.</p>
+                        <p style="line-height: 1.75; color: #666; margin-bottom: 1rem;">In 1972, Crystal and <strong>Lottie LaBeija</strong> founded the <strong>House of LaBeija</strong>—the first ballroom house. This wasn't just a dance troupe or social club. It was a revolutionary structure providing:</p>
+                        <ul style="line-height: 1.75; color: #666; margin-left: 2rem;">
+                            <li>Chosen family for Black and Latina LGBTQ+ youth rejected by biological families</li>
+                            <li>Mutual aid: shared housing, clothes, food, survival resources</li>
+                            <li>Mentorship from "mothers" and "fathers" to "children" members</li>
+                            <li>Community defense against police harassment and street violence</li>
+                            <li>Cultural preservation and joy amid oppression</li>
+                        </ul>
+                    </article>
+
+                    <article style="background: white; border-radius: 12px; padding: 3rem; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+                        <h3 style="font-size: 1.75rem; color: #7c3aed; margin-bottom: 1.5rem;">The Haus System: Governance Model</h3>
+                        <div style="border-left: 4px solid #7c3aed; padding-left: 2rem; margin-left: 1rem;">
+                            <div style="margin-bottom: 2rem;">
+                                <h4 style="font-size: 1.25rem; color: #333; margin-bottom: 0.5rem;">Mother/Father - Leadership Through Care</h4>
+                                <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">House mothers and fathers led through mentorship, protection, and community care—not domination. They guided younger members, provided housing and resources, and defended the house against external threats.</p>
+                            </div>
+                            <div style="margin-bottom: 2rem;">
+                                <h4 style="font-size: 1.25rem; color: #333; margin-bottom: 0.5rem;">Children - Equal Members with Voice</h4>
+                                <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">House "children" weren't subordinates—they were full members with input into house decisions. This horizontal structure prevented authoritarian control.</p>
+                            </div>
+                            <div style="margin-bottom: 2rem;">
+                                <h4 style="font-size: 1.25rem; color: #333; margin-bottom: 0.5rem;">2010 - Sustainability Upgrade</h4>
+                                <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">Installed solar panels, geothermal heating, and rainwater collection systems—making it the greenest government building in the nation.</p>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1.25rem; color: #333; margin-bottom: 0.5rem;">2020 - Technology Modernization</h4>
+                                <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">Integrated smart home technology, advanced security systems, and fiber optic communications throughout.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Floor Overview -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem; font-family: var(--font-serif);">The State Floor</h2>
+                <p style="text-align: center; font-size: 1.125rem; color: #666; margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">Where official ceremonies, state dinners, and historic moments unfold</p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+                    <!-- Oval Office -->
+                    <article style="background: linear-gradient(to bottom, #1e3a8a 0%, #3b82f6 100%); color: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">🪑</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; text-align: center; font-family: var(--font-serif);">The Oval Office</h3>
+                        <p style="line-height: 1.75; opacity: 0.95; font-size: 0.95rem;">The President's primary workspace, featuring the Resolute Desk (a miniature replica gifted by Queen Barbie of England), floor-to-ceiling windows, and pink carpeting with the Presidential Seal.</p>
+                    </article>
+
+                    <!-- Blue Room -->
+                    <article style="background: linear-gradient(to bottom, #0891b2 0%, #06b6d4 100%); color: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">💎</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; text-align: center; font-family: var(--font-serif);">The Blue Room</h3>
+                        <p style="line-height: 1.75; opacity: 0.95; font-size: 0.95rem;">The formal reception room where the President greets visiting heads of state and dignitaries. Features an elliptical shape and stunning crystal chandelier.</p>
+                    </article>
+
+                    <!-- Rose Garden -->
+                    <article style="background: linear-gradient(to bottom, #FF1493 0%, #FFB6D9 100%); color: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">🌹</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; text-align: center; font-family: var(--font-serif);">The Rose Garden</h3>
+                        <p style="line-height: 1.75; opacity: 0.95; font-size: 0.95rem;">An outdoor space adjacent to the Oval Office, used for ceremonies, press conferences, and state arrival ceremonies. Blooms year-round in perpetual spring.</p>
+                    </article>
+
+                    <!-- State Dining Room -->
+                    <article style="background: linear-gradient(to bottom, #FFD700 0%, #FFA500 100%); color: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">🍽️</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; text-align: center; font-family: var(--font-serif);">State Dining Room</h3>
+                        <p style="line-height: 1.75; opacity: 0.95; font-size: 0.95rem;">Seats up to 140 guests for official state dinners. Features gold-leaf ceiling details, historic paintings, and the finest china service in the nation.</p>
+                    </article>
+
+                    <!-- East Room -->
+                    <article style="background: linear-gradient(to bottom, #7c3aed 0%, #a855f7 100%); color: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">🎭</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; text-align: center; font-family: var(--font-serif);">The East Room</h3>
+                        <p style="line-height: 1.75; opacity: 0.95; font-size: 0.95rem;">The largest room in the Doll House, used for press conferences, award ceremonies, and performances. Has hosted countless historic moments.</p>
+                    </article>
+
+                    <!-- Cabinet Room -->
+                    <article style="background: linear-gradient(to bottom, #059669 0%, #10b981 100%); color: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">🤝</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; text-align: center; font-family: var(--font-serif);">The Cabinet Room</h3>
+                        <p style="line-height: 1.75; opacity: 0.95; font-size: 0.95rem;">Where the President meets with Cabinet members and senior advisors. Features a custom mahogany table with assigned seats bearing nameplates.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Private Residence -->
+        <section style="padding: 4rem 0; background: linear-gradient(135deg, #E0BBE4 0%, #957DAD 100%);">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: white; font-family: var(--font-serif);">The Executive Residence</h2>
+                    <p style="font-size: 1.125rem; line-height: 1.75; color: white; margin-bottom: 2rem; opacity: 0.95;">The second and third floors serve as the private living quarters for the President and First Family. These spaces include bedrooms, a fully equipped kitchen, a home theater, a gym, and a rooftop garden with panoramic views of Malibu.</p>
+                    <div style="background: white; padding: 2.5rem; border-radius: 12px; margin-top: 2rem;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #333;">Presidential Amenities</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                            <div>
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏊</div>
+                                <p style="color: #666; font-size: 0.95rem;">Infinity Pool</p>
+                            </div>
+                            <div>
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎬</div>
+                                <p style="color: #666; font-size: 0.95rem;">Private Theater</p>
+                            </div>
+                            <div>
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">💪</div>
+                                <p style="color: #666; font-size: 0.95rem;">State-of-Art Gym</p>
+                            </div>
+                            <div>
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">📚</div>
+                                <p style="color: #666; font-size: 0.95rem;">Presidential Library</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Famous Events -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem; font-family: var(--font-serif);">Historic Events Hosted</h2>
+
+                <div style="max-width: 900px; margin: 0 auto; display: grid; gap: 2rem;">
+                    <div style="background: #f8f8f8; padding: 2rem; border-radius: 8px; border-left: 6px solid #FF1493;">
+                        <h3 style="font-size: 1.25rem; color: #FF1493; margin-bottom: 0.75rem;">Annual Easter Dream Hunt (Since 1968)</h3>
+                        <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">Children from across the nation participate in the famous Easter celebration on the South Lawn, featuring egg hunts, entertainment, and Presidential meet-and-greets.</p>
+                    </div>
+
+                    <div style="background: #f8f8f8; padding: 2rem; border-radius: 8px; border-left: 6px solid #7c3aed;">
+                        <h3 style="font-size: 1.25rem; color: #7c3aed; margin-bottom: 0.75rem;">State of the Dream Address</h3>
+                        <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">The President's annual address to the nation is broadcast from the East Room, outlining policy priorities and the vision for the coming year.</p>
+                    </div>
+
+                    <div style="background: #f8f8f8; padding: 2rem; border-radius: 8px; border-left: 6px solid #059669;">
+                        <h3 style="font-size: 1.25rem; color: #059669; margin-bottom: 0.75rem;">International Summit Meetings</h3>
+                        <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">The Doll House has hosted peace negotiations, trade agreements, and diplomatic summits that shaped global relations between doll nations.</p>
+                    </div>
+
+                    <div style="background: #f8f8f8; padding: 2rem; border-radius: 8px; border-left: 6px solid #FFD700;">
+                        <h3 style="font-size: 1.25rem; color: #ea580c; margin-bottom: 0.75rem;">Medal of Fabulousness Ceremonies</h3>
+                        <p style="line-height: 1.75; color: #666; font-size: 0.95rem;">The nation's highest civilian honor is presented in the East Room to dolls who have made extraordinary contributions to society.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- By The Numbers -->
+        <section style="padding: 4rem 0; background: #f8f8f8;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem; font-family: var(--font-serif);">The Doll House by the Numbers</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto;">
+                    <div style="background: white; padding: 2rem; border-radius: 8px; text-align: center;">
+                        <div style="font-size: 3rem; color: #FF1493; margin-bottom: 0.5rem; font-weight: 700;">132</div>
+                        <p style="color: #666;">Total Rooms</p>
+                    </div>
+                    <div style="background: white; padding: 2rem; border-radius: 8px; text-align: center;">
+                        <div style="font-size: 3rem; color: #FF1493; margin-bottom: 0.5rem; font-weight: 700;">55,000</div>
+                        <p style="color: #666;">Square Feet</p>
+                    </div>
+                    <div style="background: white; padding: 2rem; border-radius: 8px; text-align: center;">
+                        <div style="font-size: 3rem; color: #FF1493; margin-bottom: 0.5rem; font-weight: 700;">412</div>
+                        <p style="color: #666;">Doors</p>
+                    </div>
+                    <div style="background: white; padding: 2rem; border-radius: 8px; text-align: center;">
+                        <div style="font-size: 3rem; color: #FF1493; margin-bottom: 0.5rem; font-weight: 700;">18</div>
+                        <p style="color: #666;">Acres of Land</p>
+                    </div>
+                    <div style="background: white; padding: 2rem; border-radius: 8px; text-align: center;">
+                        <div style="font-size: 3rem; color: #FF1493; margin-bottom: 0.5rem; font-weight: 700;">96</div>
+                        <p style="color: #666;">Full-Time Staff</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visit Information -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; font-family: var(--font-serif);">Tour The Doll House</h2>
+                    <p style="font-size: 1.125rem; line-height: 1.75; margin-bottom: 2rem; color: #666;">Public tours are available Tuesday through Saturday. Advance reservations are required and can be made through your Member of Congress or online.</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="visit.html" style="display: inline-block; padding: 1rem 2rem; background: var(--color-secondary); color: white; text-decoration: none; border-radius: 6px; font-weight: 600;">Book a Tour</a>
+                        <a href="gallery.html" style="display: inline-block; padding: 1rem 2rem; background: white; color: var(--color-secondary); text-decoration: none; border-radius: 6px; font-weight: 600; border: 2px solid var(--color-secondary);">Virtual Tour</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay in the Know</h2>
+                    <p>Get the latest updates from President Doll and The Doll House</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h3 style="color: var(--color-secondary); font-family: var(--font-serif); margin: 0;">The Doll House</h3>
+                </div>
+
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3>News</h3>
+                        <ul>
+                            <li><a href="wire.html">Wire</a></li>
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Administration</h3>
+                        <ul>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../history/founders-museum.html">Founders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="government.html">Governance</a></li>
+                            <li><a href="../../history.html">History</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-social" id="footerSocialLinks"></div>
+
+                <div class="footer-address">
+                    <p>The Doll House<br>
+                    1600 Dreamhouse Lane<br>
+                    Malibu, CA 90265</p>
+                </div>
+
+                <div class="footer-legal">
+                    <a href="../legal/privacy.html">Privacy Policy</a>
+                    <a href="../legal/copyright.html">Copyright Policy</a>
+                    <a href="../legal/government.html">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Join Button -->
+    <div class="floating-join-btn" id="floatingJoinBtn">
+        <button class="join-close-btn" aria-label="Close join button" onclick="document.getElementById('floatingJoinBtn').style.display='none'; return false;">×</button>
+        <a href="#newsletter" class="join-now-link">Join Now</a>
+    </div>
+
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/utils.js"></script>
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

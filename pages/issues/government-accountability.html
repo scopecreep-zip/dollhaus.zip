@@ -14,7 +14,7 @@
 
     <div class="announcement-banner">
         <div class="container">
-            <p class="announcement-text">Breaking: The Age of Dreams Has Officially Begun - Join Us in Making History!</p>
+            <p class="announcement-text">Making the White House Femme Again ✨ Protect the Dolls • Support Trans Joy • Choose Your Haus</p>
         </div>
     </div>
 
@@ -164,9 +164,9 @@
             <div class="container">
                 <div class="issue-overview-content">
                     <h2>Overview</h2>
-                    <p>President Barbie believes that government must work for the people, not the other way around. Our administration is committed to radical transparency, eliminating wasteful bureaucracy, and making government services accessible and efficient for every doll.</p>
-                    <p>We're implementing cutting-edge digital tools to streamline processes, publishing detailed reports on government spending, and creating clear channels for dolls to provide feedback and hold their government accountable. Every decision we make is guided by the principle that we serve at the pleasure of the people.</p>
-                    <p>Through regular town halls, accessible data portals, and responsive customer service, we're building a government that truly represents and serves all dolls with transparency and effectiveness.</p>
+                    <p>The Doll Haus believes government must <strong>protect trans women first</strong> and serve all marginalized communities with radical transparency. We're building power structures that center those most vulnerable - trans dolls (especially Black & Latina), sex workers, and BIPOC folks - because when the most marginalized are safe, everyone is safer.</p>
+                    <p>We practice <strong>bimbo feminism</strong> in governance: proving you can be glamorous AND politically fierce, intelligent AND hyperfeminine, demanding AND caring. Our accountability isn't about corporate efficiency - it's about community oversight, direct democracy, and ensuring those in power serve or step down.</p>
+                    <p>Through community assemblies, participatory budgeting, mutual aid networks, and chosen family structures, we're building governance that protects the dolls while looking absolutely fabulous doing it.</p>
                 </div>
             </div>
         </section>
@@ -177,34 +177,34 @@
                 <h2>Key Initiatives</h2>
                 <div class="initiatives-grid">
                     <div class="initiative-card">
-                        <span class="initiative-icon">📊</span>
-                        <h3>Open Data Portal</h3>
-                        <p>Making all government data publicly accessible through user-friendly digital platforms and transparency dashboards.</p>
+                        <span class="initiative-icon">✨</span>
+                        <h3>Trans-Centered Policy</h3>
+                        <p>Every policy decision starts with: "How does this protect trans women?" Centering the most marginalized ensures justice for all.</p>
                     </div>
                     <div class="initiative-card">
-                        <span class="initiative-icon">⚡</span>
-                        <h3>Efficiency Reforms</h3>
-                        <p>Streamlining government processes to reduce wait times and eliminate unnecessary bureaucratic hurdles.</p>
+                        <span class="initiative-icon">💅</span>
+                        <h3>Bimbo Feminism Framework</h3>
+                        <p>Governance that's glamorous AND radical - proving intelligence and hyperfemininity aren't opposites.</p>
                     </div>
                     <div class="initiative-card">
-                        <span class="initiative-icon">✂️</span>
-                        <h3>Red Tape Reduction</h3>
-                        <p>Cutting unnecessary regulations that slow down services and make it harder for dolls to interact with government.</p>
+                        <span class="initiative-icon">🏠</span>
+                        <h3>Chosen Family Recognition</h3>
+                        <p>Legal status for haus structures - because ballroom culture taught us how to govern through care, not control.</p>
                     </div>
                     <div class="initiative-card">
-                        <span class="initiative-icon">📱</span>
-                        <h3>Digital Services</h3>
-                        <p>Modernizing doll services with mobile apps and online portals for 24/7 access to government resources.</p>
+                        <span class="initiative-icon">🤝</span>
+                        <h3>Community Assemblies</h3>
+                        <p>Direct democracy tools - participatory budgeting, immediate recall elections, and community veto power.</p>
                     </div>
                     <div class="initiative-card">
                         <span class="initiative-icon">💰</span>
-                        <h3>Budget Transparency</h3>
-                        <p>Publishing detailed budget information and allowing dolls to track how their tax dollars are being spent.</p>
+                        <h3>Total Transparency</h3>
+                        <p>All meetings livestreamed, all budgets public, all votes recorded - because secrecy enables oppression.</p>
                     </div>
                     <div class="initiative-card">
-                        <span class="initiative-icon">🗣️</span>
-                        <h3>Citizen Feedback</h3>
-                        <p>Creating multiple channels for dolls to provide input, report issues, and shape government policies.</p>
+                        <span class="initiative-icon">💖</span>
+                        <h3>Mutual Aid Networks</h3>
+                        <p>Meeting community needs outside state control - food, housing, healthcare, childcare through solidarity not charity.</p>
                     </div>
                 </div>
             </div>
@@ -309,6 +309,9 @@
         </section>
     </main>
 
+    <!-- Footer Container -->
+    <div id="footerContainer"></div>
+
     <footer class="site-footer" id="contact">
         <div class="container">
             <div class="footer-top">
@@ -372,5 +375,27 @@
     <script src="../../assets/js/utils.js"></script>
     <script src="../../assets/js/components.js"></script>
     <script src="../../assets/js/script.js"></script>
+    <script>
+        // Render header and footer with basePath for subdirectory
+        document.addEventListener('DOMContentLoaded', () => {
+            const headerContainer = document.querySelector('#headerContainer');
+            const footerContainer = document.querySelector('#footerContainer');
+
+            if (headerContainer) {
+                Components.Header.render(headerContainer, { basePath: '../../' });
+                // Initialize header navigation after rendering
+                if (typeof initHeaderNavigation === 'function') {
+                    initHeaderNavigation();
+                }
+            }
+
+            if (footerContainer) {
+                Components.Footer.render(footerContainer, {
+                    basePath: '../../',
+                    brandHref: '../../index.html'
+                });
+            }
+        });
+    </script>
 </body>
 </html>

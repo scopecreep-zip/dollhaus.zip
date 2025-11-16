@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economy - The Doll House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div class="announcement-banner">
+        <div class="container">
+            <p class="announcement-text">Making the White House Femme Again ✨ Protect the Dolls • Support Trans Joy • Choose Your Haus</p>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-inner">
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <div class="site-logo">
+                    <a href="../../index.html">President Doll</a>
+                </div>
+
+                <div class="utility-nav">
+                    <button class="search-toggle" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                            <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="social-links" id="headerSocialLinks"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="primary-nav" aria-label="Primary" id="primary-nav">
+            <div class="nav-overlay-header" id="navOverlayHeader">
+                <div class="nav-close-btn-wrapper">
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <span class="nav-close-text">Close</span>
+                </div>
+                <button class="nav-search" aria-label="Open search">
+                    <span>Search</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-search-header" id="navSearchHeader" style="display: none;">
+                <div class="nav-menu-btn-wrapper">
+                    <button class="nav-menu-btn" aria-label="Back to menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <span class="nav-menu-text">Menu</span>
+                </div>
+                <div class="nav-close-btn-wrapper nav-close-btn-wrapper-reverse">
+                    <span class="nav-close-text">Close</span>
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-search-container" id="navSearchContainer" style="display: none;">
+                <div class="nav-search-wrapper">
+                    <input type="search" class="nav-search-input" id="navSearchInput" placeholder="Search The Doll House..." aria-label="Search">
+                    <p class="nav-search-hint">Press Enter to search</p>
+                </div>
+            </div>
+            <div class="nav-overlay-content" id="navOverlayContent">
+                <ul class="nav-menu">
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">News</button>
+                        <ul class="submenu">
+                            <li><a href="../news/articles.html">Articles</a></li>
+                            <li><a href="../news/briefings-statements.html">Briefings & Statements</a></li>
+                            <li><a href="../news/fact-sheets.html">Fact Sheets</a></li>
+                            <li><a href="../news/presidential-actions.html">Presidential Actions</a></li>
+                            <li><a href="../news/remarks.html">Remarks</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Administration</button>
+                        <ul class="submenu">
+                            <li><a href="../administration/president-barbie.html">President Doll</a></li>
+                            <li><a href="../administration/vp-ken.html">Vice President Ken</a></li>
+                            <li><a href="../administration/first-doll-skipper.html">First Doll Skipper</a></li>
+                            <li><a href="../administration/second-doll-teresa.html">Second Doll Teresa</a></li>
+                            <li><a href="../administration/cabinet.html">The Cabinet</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Media</button>
+                        <ul class="submenu">
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/live.html">Live News</a></li>
+                            <li><a href="../media/wire.html">Doll House Wire</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Priorities</button>
+                        <ul class="submenu">
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../priorities/investments.html">Investments</a></li>
+                            <li><a href="../priorities/achievements.html">Wins and Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">History</button>
+                        <ul class="submenu">
+                            <li><a href="../history/founders-museum.html">Founders Museum</a></li>
+                            <li><a href="../history/moments-that-made-us.html">Timeline</a></li>
+                            <li><a href="../legal/government.html">Government Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Get in Touch</button>
+                        <ul class="submenu">
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="issue-hero" style="background-image: url('assets/images/placeholder-hero.jpg');">
+            <div class="issue-hero-overlay"></div>
+            <div class="container">
+                <div class="issue-hero-content">
+                    <h1>Economic Justice for Trans & Marginalized Communities</h1>
+                    <p class="issue-hero-description">Building an economy centered on trans women, sex workers, and BIPOC folks - prioritizing reparations, worker cooperatives, and mutual aid over corporate profits.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section class="issue-overview-section">
+            <div class="container">
+                <div class="issue-overview-content">
+                    <h2>Overview</h2>
+                    <p>Economic justice means centering those most harmed by capitalism: trans women facing employment discrimination, sex workers criminalized for their labor, BIPOC communities denied generational wealth. We reject trickle-down economics for reparations, mutual aid, and worker ownership. Trans women deserve economic security without being forced into survival sex work - and sex workers deserve full labor rights and decriminalization.</p>
+                    <p>Our administration prioritizes worker cooperatives over corporations, Universal Basic Income over wage slavery, and wealth redistribution over billionaire accumulation. We believe economic power belongs in the hands of workers, not bosses - especially trans women, sex workers, and BIPOC folks who've been systematically excluded from wealth building.</p>
+                    <p>From mutual aid networks to sex worker collectives, from trans job guarantees to reparations programs, we're building an economy that meets material needs through solidarity, not exploitation. This is bimbo feminist economics: we can care about lipstick AND labor rights, glamour AND guaranteed income.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Initiatives -->
+        <section class="initiatives-section">
+            <div class="container">
+                <h2>Key Initiatives</h2>
+                <div class="initiatives-grid">
+                    <div class="initiative-card">
+                        <span class="initiative-icon">✨</span>
+                        <h3>Trans Job Guarantee</h3>
+                        <p>Guaranteed living-wage employment for all trans people, ending employment discrimination and ensuring economic security without coercion into survival sex work.</p>
+                    </div>
+                    <div class="initiative-card">
+                        <span class="initiative-icon">💖</span>
+                        <h3>Sex Worker Labor Rights</h3>
+                        <p>Full decriminalization, union organizing, healthcare benefits, and retirement plans for sex workers. Labor rights without criminalization or Nordic model harm.</p>
+                    </div>
+                    <div class="initiative-card">
+                        <span class="initiative-icon">🏠</span>
+                        <h3>Universal Basic Income</h3>
+                        <p>Guaranteed income for all, funded by wealth redistribution from billionaires. Economic security is a right, not contingent on wage labor exploitation.</p>
+                    </div>
+                    <div class="initiative-card">
+                        <span class="initiative-icon">⚖️</span>
+                        <h3>Reparations Programs</h3>
+                        <p>Direct cash reparations for Black Americans, Indigenous sovereignty funding, and reparations for trans people denied economic opportunities due to discrimination.</p>
+                    </div>
+                    <div class="initiative-card">
+                        <span class="initiative-icon">🤝</span>
+                        <h3>Worker Cooperatives</h3>
+                        <p>Funding for worker-owned businesses, especially trans-led co-ops, sex worker collectives, and BIPOC mutual aid economies. Workers control production, not bosses.</p>
+                    </div>
+                    <div class="initiative-card">
+                        <span class="initiative-icon">💰</span>
+                        <h3>Wealth Redistribution</h3>
+                        <p>Progressive wealth tax on billionaires, ending corporate welfare, and redirecting funds to mutual aid networks serving trans communities and marginalized folks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Statistics -->
+        <section class="impact-stats-section">
+            <div class="container">
+                <h2>Impact by the Numbers</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">5M+</span>
+                        <span class="stat-label">Jobs Created</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">250K</span>
+                        <span class="stat-label">New Businesses</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">$50B</span>
+                        <span class="stat-label">Small Business Funding</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Employment Rate</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related News -->
+        <section class="related-news-section">
+            <div class="container">
+                <h2>Related News</h2>
+                <div class="related-news-grid">
+                    <article class="related-news-card">
+                        <a href="#" class="related-news-link">
+                            <div class="related-news-content">
+                                <p class="related-news-date">December 18, 2024</p>
+                                <h3>New Wage Equality Act Signed Into Law</h3>
+                                <p class="related-news-excerpt">Historic legislation ensures equal pay for equal work across all industries and demographics.</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="related-news-card">
+                        <a href="#" class="related-news-link">
+                            <div class="related-news-content">
+                                <p class="related-news-date">December 12, 2024</p>
+                                <h3>Small Business Grants Reach Record High</h3>
+                                <p class="related-news-excerpt">Administration announces largest-ever funding round for doll entrepreneurs nationwide.</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="related-news-card">
+                        <a href="#" class="related-news-link">
+                            <div class="related-news-content">
+                                <p class="related-news-date">December 8, 2024</p>
+                                <h3>Dream Career Program Celebrates Success</h3>
+                                <p class="related-news-excerpt">Thousands of dolls have found their passion careers through innovative training initiative.</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery -->
+        <section class="photo-gallery-section">
+            <div class="container">
+                <h2>In Action</h2>
+                <div class="photo-gallery-grid">
+                    <div class="photo-gallery-item">
+                        <img src="../../assets/images/placeholder-gallery-1.jpg" alt="Small Business Summit">
+                    </div>
+                    <div class="photo-gallery-item">
+                        <img src="../../assets/images/placeholder-gallery-2.jpg" alt="Career Training Center">
+                    </div>
+                    <div class="photo-gallery-item">
+                        <img src="../../assets/images/placeholder-gallery-3.jpg" alt="Entrepreneurship Fair">
+                    </div>
+                    <div class="photo-gallery-item">
+                        <img src="../../assets/images/placeholder-gallery-4.jpg" alt="Economic Forum">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay in the Know</h2>
+                    <p>Get the latest updates from President Doll and The Doll House</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h3 style="color: var(--color-secondary); font-family: var(--font-serif); margin: 0;">The Doll House</h3>
+                </div>
+
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3>News</h3>
+                        <ul>
+                            <li><a href="wire.html">Wire</a></li>
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Administration</h3>
+                        <ul>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../history/founders-museum.html">Founders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="government.html">Governance</a></li>
+                            <li><a href="../../history.html">History</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-social" id="footerSocialLinks"></div>
+
+                <div class="footer-address">
+                    <p>The Doll House<br>
+                    1600 Dreamhouse Lane<br>
+                    Malibu, CA 90265</p>
+                </div>
+
+                <div class="footer-legal">
+                    <a href="../legal/privacy.html">Privacy Policy</a>
+                    <a href="../legal/copyright.html">Copyright Policy</a>
+                    <a href="../legal/government.html">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-join-btn" id="floatingJoinBtn">
+        <button class="join-close-btn" aria-label="Close join button" onclick="document.getElementById('floatingJoinBtn').style.display='none'; return false;">×</button>
+        <a href="#newsletter" class="join-now-link">Join Now</a>
+    </div>
+
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/utils.js"></script>
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

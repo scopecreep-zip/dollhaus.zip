@@ -14,7 +14,7 @@
 
     <div class="announcement-banner">
         <div class="container">
-            <p class="announcement-text">Breaking: The Age of Dreams Has Officially Begun - Join Us in Making History!</p>
+            <p class="announcement-text">Making the White House Femme Again ✨ Protect the Dolls • Support Trans Joy • Choose Your Haus</p>
         </div>
     </div>
 
@@ -153,8 +153,8 @@
             <div class="issue-hero-overlay"></div>
             <div class="container">
                 <div class="issue-hero-content">
-                    <h1>Safe Communities</h1>
-                    <p class="issue-hero-description">Creating safe, inclusive spaces where all dolls can thrive and pursue their dreams without fear.</p>
+                    <h1>Community Defense & Abolition</h1>
+                    <p class="issue-hero-description">Building safety through mutual aid and community care—not policing. Protecting trans women, sex workers, and marginalized communities from state violence.</p>
                 </div>
             </div>
         </section>
@@ -164,9 +164,9 @@
             <div class="container">
                 <div class="issue-overview-content">
                     <h2>Overview</h2>
-                    <p>President Barbie's approach to community safety focuses on prevention, support, and building strong relationships between neighbors. We believe that truly safe communities are built on trust, mutual respect, and comprehensive support services that address root causes rather than just symptoms.</p>
-                    <p>Our strategy combines smart policing with community investment, mental health services, youth programs, and violence prevention initiatives. We're working to create neighborhoods where every doll feels safe, protected, and empowered to look out for one another.</p>
-                    <p>Through partnerships with local organizations, community leaders, and residents, we're building safety infrastructure that respects civil rights while effectively protecting all members of our diverse doll communities.</p>
+                    <p>President Barbie's approach to community safety rejects policing and punishment in favor of mutual aid, community defense, and abolition. We believe that true safety comes from meeting people's needs—housing, healthcare, food security—not from cops and cages.</p>
+                    <p>Our strategy centers the leadership of trans women, sex workers, and formerly incarcerated people in building alternatives to the carceral state. We're funding community defense patrols led by and for trans women, overdose prevention sites, conflict resolution circles, and transformative justice processes that actually keep communities safe.</p>
+                    <p>Through partnerships with abolition organizations, harm reduction networks, and grassroots defenders, we're building safety infrastructure that protects people from state violence rather than empowering it. Police don't keep us safe—we keep us safe.</p>
                 </div>
             </div>
         </section>
@@ -177,34 +177,34 @@
                 <h2>Key Initiatives</h2>
                 <div class="initiatives-grid">
                     <div class="initiative-card">
-                        <span class="initiative-icon">🚔</span>
-                        <h3>Community Policing</h3>
-                        <p>Building trust between law enforcement and communities through transparency, accountability, and partnership.</p>
+                        <span class="initiative-icon">⚡</span>
+                        <h3>Trans Safety Patrols</h3>
+                        <p>Community defense patrols organized by and for trans women to prevent violence, offer mutual aid, and provide safe passage.</p>
                     </div>
                     <div class="initiative-card">
-                        <span class="initiative-icon">🛡️</span>
-                        <h3>Crime Prevention</h3>
-                        <p>Implementing evidence-based programs that address root causes of crime and prevent violence before it happens.</p>
+                        <span class="initiative-icon">🏴</span>
+                        <h3>Defund & Abolish</h3>
+                        <p>Redirecting police budgets toward housing, healthcare, education, and community care—working toward complete abolition of prisons and police.</p>
+                    </div>
+                    <div class="initiative-card">
+                        <span class="initiative-icon">💊</span>
+                        <h3>Harm Reduction</h3>
+                        <p>Overdose prevention sites, clean supply programs, and healthcare without criminalization—because drug use is a health issue, not a crime.</p>
                     </div>
                     <div class="initiative-card">
                         <span class="initiative-icon">🤝</span>
-                        <h3>Victim Support Services</h3>
-                        <p>Providing comprehensive support for victims of crime including counseling, legal aid, and recovery resources.</p>
+                        <h3>Transformative Justice</h3>
+                        <p>Building accountability processes that actually heal harm instead of perpetuating violence through policing and prisons.</p>
                     </div>
                     <div class="initiative-card">
-                        <span class="initiative-icon">👥</span>
-                        <h3>Youth Programs</h3>
-                        <p>Creating positive opportunities for young dolls through mentorship, education, and recreational activities.</p>
-                    </div>
-                    <div class="initiative-card">
-                        <span class="initiative-icon">🌈</span>
-                        <h3>Inclusive Safe Spaces</h3>
-                        <p>Establishing welcoming environments where all dolls, especially marginalized groups, feel protected and valued.</p>
+                        <span class="initiative-icon">🏠</span>
+                        <h3>Mutual Aid Networks</h3>
+                        <p>Supporting grassroots networks that provide food, housing, healthcare, and resources without relying on the state or charity models.</p>
                     </div>
                     <div class="initiative-card">
                         <span class="initiative-icon">📞</span>
-                        <h3>Crisis Response</h3>
-                        <p>Deploying trained crisis intervention teams to respond to mental health and social service emergencies.</p>
+                        <h3>Non-Carceral Crisis Response</h3>
+                        <p>Community-led crisis teams trained in de-escalation, mental health support, and meeting immediate needs—no cops involved.</p>
                     </div>
                 </div>
             </div>
@@ -309,6 +309,9 @@
         </section>
     </main>
 
+    <!-- Footer Container -->
+    <div id="footerContainer"></div>
+
     <footer class="site-footer" id="contact">
         <div class="container">
             <div class="footer-top">
@@ -372,5 +375,27 @@
     <script src="../../assets/js/utils.js"></script>
     <script src="../../assets/js/components.js"></script>
     <script src="../../assets/js/script.js"></script>
+    <script>
+        // Render header and footer with basePath for subdirectory
+        document.addEventListener('DOMContentLoaded', () => {
+            const headerContainer = document.querySelector('#headerContainer');
+            const footerContainer = document.querySelector('#footerContainer');
+
+            if (headerContainer) {
+                Components.Header.render(headerContainer, { basePath: '../../' });
+                // Initialize header navigation after rendering
+                if (typeof initHeaderNavigation === 'function') {
+                    initHeaderNavigation();
+                }
+            }
+
+            if (footerContainer) {
+                Components.Footer.render(footerContainer, {
+                    basePath: '../../',
+                    brandHref: '../../index.html'
+                });
+            }
+        });
+    </script>
 </body>
 </html>

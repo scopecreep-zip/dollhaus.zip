@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moments That Made Us - The Doll House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Announcement Banner -->
+    <div class="announcement-banner">
+        <div class="container">
+            <p class="announcement-text">Celebrating the Milestones That Defined Our Journey</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-inner">
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <div class="site-logo">
+                    <a href="../../index.html">President Doll</a>
+                </div>
+
+                <div class="utility-nav">
+                    <button class="search-toggle" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                            <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="social-links" id="headerSocialLinks"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="primary-nav" aria-label="Primary" id="primary-nav">
+            <div class="nav-overlay-header" id="navOverlayHeader">
+                <div class="nav-close-btn-wrapper">
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <span class="nav-close-text">Close</span>
+                </div>
+                <button class="nav-search" aria-label="Open search">
+                    <span>Search</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-search-header" id="navSearchHeader" style="display: none;">
+                <div class="nav-menu-btn-wrapper">
+                    <button class="nav-menu-btn" aria-label="Back to menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <span class="nav-menu-text">Menu</span>
+                </div>
+                <div class="nav-close-btn-wrapper nav-close-btn-wrapper-reverse">
+                    <span class="nav-close-text">Close</span>
+                    <button class="nav-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-search-container" id="navSearchContainer" style="display: none;">
+                <div class="nav-search-wrapper">
+                    <input type="search" class="nav-search-input" id="navSearchInput" placeholder="Search The Doll House..." aria-label="Search">
+                    <p class="nav-search-hint">Press Enter to search</p>
+                </div>
+            </div>
+            <div class="nav-overlay-content" id="navOverlayContent">
+                <ul class="nav-menu">
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">News</button>
+                        <ul class="submenu">
+                            <li><a href="../news/articles.html">Articles</a></li>
+                            <li><a href="../news/briefings-statements.html">Briefings & Statements</a></li>
+                            <li><a href="../news/fact-sheets.html">Fact Sheets</a></li>
+                            <li><a href="../news/presidential-actions.html">Presidential Actions</a></li>
+                            <li><a href="../news/remarks.html">Remarks</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Administration</button>
+                        <ul class="submenu">
+                            <li><a href="../administration/president-barbie.html">President Doll</a></li>
+                            <li><a href="../administration/vp-ken.html">Vice President Ken</a></li>
+                            <li><a href="../administration/first-doll-skipper.html">First Doll Skipper</a></li>
+                            <li><a href="../administration/second-doll-teresa.html">Second Doll Teresa</a></li>
+                            <li><a href="../administration/cabinet.html">The Cabinet</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Media</button>
+                        <ul class="submenu">
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/live.html">Live News</a></li>
+                            <li><a href="../media/wire.html">Doll House Wire</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Priorities</button>
+                        <ul class="submenu">
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../priorities/investments.html">Investments</a></li>
+                            <li><a href="../priorities/achievements.html">Wins and Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">History</button>
+                        <ul class="submenu">
+                            <li><a href="../history/founders-museum.html">Founders Museum</a></li>
+                            <li><a href="moments-that-made-us.html">Moments That Made Us</a></li>
+                            <li><a href="../legal/government.html">Government Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="menu-link" aria-expanded="false">Get in Touch</button>
+                        <ul class="submenu">
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section style="background: linear-gradient(135deg, #FF1493 0%, #FFD700 50%, #87CEEB 100%); padding: 6rem 0; color: white; text-align: center;">
+            <div class="container">
+                <div style="font-size: 6rem; margin-bottom: 1rem;">⭐</div>
+                <h1 style="font-size: 3.5rem; font-family: var(--font-serif); margin-bottom: 1rem; color: white;">Moments That Made Us</h1>
+                <p style="font-size: 1.5rem; max-width: 800px; margin: 0 auto; opacity: 0.95;">Key Historical Moments in the Journey of Dolls and Dreams</p>
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; font-family: var(--font-serif);">Defining Moments in History</h2>
+                    <p style="font-size: 1.25rem; line-height: 1.75; color: #666;">Every great movement has pivotal moments that change everything. These are the breakthrough events, barrier-breaking achievements, and cultural milestones that shaped who we are today.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline of Moments -->
+        <section style="padding: 4rem 0; background: #f8f8f8;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem; font-family: var(--font-serif);">Cultural Impact Timeline</h2>
+
+                <div style="max-width: 1100px; margin: 0 auto; display: grid; gap: 3rem;">
+                    <!-- 1959 - First Barbie -->
+                    <article style="display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+                        <div style="background: linear-gradient(135deg, #FF1493 0%, #FFB6D9 100%); padding: 3rem; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center;">
+                            <div style="font-size: 5rem; margin-bottom: 1rem;">👗</div>
+                            <h3 style="font-size: 2.5rem; font-family: var(--font-serif); margin-bottom: 0.5rem;">1959</h3>
+                            <p style="font-size: 1.125rem; opacity: 0.95;">March 9</p>
+                        </div>
+                        <div style="padding: 3rem;">
+                            <h3 style="font-size: 1.75rem; color: #FF1493; margin-bottom: 1rem;">The First Barbie Debuts</h3>
+                            <p style="line-height: 1.75; color: #666; margin-bottom: 1rem;">At the American International Toy Fair in New York City, Barbie made her first public appearance. Wearing a black and white striped swimsuit, she revolutionized the toy industry and changed how children imagine their futures.</p>
+                            <p style="line-height: 1.75; color: #666; margin-bottom: 1.5rem;">The teenage fashion model doll was unlike anything the world had seen—an aspirational figure rather than a baby doll. Critics were skeptical, but children immediately fell in love.</p>
+                            <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 8px;">
+                                <h4 style="font-size: 1.125rem; margin-bottom: 0.75rem; color: #333;">Impact:</h4>
+                                <p style="font-size: 0.95rem; color: #666; line-height: 1.6;">350,000 dolls sold in the first year, establishing a cultural phenomenon that would span generations.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 1965 - Astronaut Barbie -->
+                    <article style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+                        <div style="padding: 3rem;">
+                            <h3 style="font-size: 1.75rem; color: #1e3a8a; margin-bottom: 1rem;">Astronaut Barbie Takes Flight</h3>
+                            <p style="line-height: 1.75; color: #666; margin-bottom: 1rem;">Four years before humans landed on the moon, Astronaut Barbie showed girls they could reach for the stars. This groundbreaking career doll demonstrated that no profession was off-limits.</p>
+                            <p style="line-height: 1.75; color: #666; margin-bottom: 1.5rem;">The space suit was meticulously designed, complete with helmet, boots, and American flag. It arrived during the height of the Space Race, inspiring a generation to dream of STEM careers.</p>
+                            <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 8px;">
+                                <h4 style="font-size: 1.125rem; margin-bottom: 0.75rem; color: #333;">Impact:</h4>
+                                <p style="font-size: 0.95rem; color: #666; line-height: 1.6;">Pioneered the "career doll" concept, showing that dolls could be anything they dreamed.</p>
+                            </div>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #1e3a8a 0%, #93c5fd 100%); padding: 3rem; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center;">
+                            <div style="font-size: 5rem; margin-bottom: 1rem;">🚀</div>
+                            <h3 style="font-size: 2.5rem; font-family: var(--font-serif); margin-bottom: 0.5rem;">1965</h3>
+                        </div>
+                    </article>
+
+                    <!-- 1973 - Surgeon Barbie -->
+                    <article style="display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+                        <div style="background: linear-gradient(135deg, #059669 0%, #10b981 100%); padding: 3rem; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center;">
+                            <div style="font-size: 5rem; margin-bottom: 1rem;">⚕️</div>
+                            <h3 style="font-size: 2.5rem; font-family: var(--font-serif); margin-bottom: 0.5rem;">1973</h3>
+                        </div>
+                        <div style="padding: 3rem;">
+                            <h3 style="font-size: 1.75rem; color: #059669; margin-bottom: 1rem;">Surgeon Barbie Breaks Barriers</h3>
+                            <p style="line-height: 1.75; color: #666; margin-bottom: 1rem;">At a time when only 9% of doctors were women, Surgeon Barbie showed up in full surgical scrubs, ready to save lives. She challenged gender stereotypes in medicine and inspired countless girls to pursue medical careers.</p>
+                            <p style="line-height: 1.75; color: #666; margin-bottom: 1.5rem;">Complete with surgical gown, mask, cap, and instruments, she represented the highest levels of professional achievement and demonstrated that medicine had no gender barriers.</p>
+                            <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 8px;">
+                                <h4 style="font-size: 1.125rem; margin-bottom: 0.75rem; color: #333;">Impact:</h4>
+                                <p style="font-size: 0.95rem; color: #666; line-height: 1.6;">Helped normalize women in high-level medical professions during a critical period of social change.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 1980 - Black Barbie -->
+                    <article style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+                        <div style="padding: 3rem;">
+                            <h3 style="font-size: 1.75rem; color: #7c3aed; margin-bottom: 1rem;">Black Barbie: A Milestone in Diversity</h3>
+                            <p style="line-height: 1.75; color: #666; margin-bottom: 1rem;">The introduction of Black Barbie marked a watershed moment in toy diversity. Created with unique facial features, skin tone, and hair texture, she represented authentic beauty and showed that dolls come in all colors.</p>
+                            <p style="line-height: 1.75; color: #666; margin-bottom: 1.5rem;">This wasn't just a color variation—it was a statement that beauty, aspiration, and possibility belong to everyone. The doll sold out immediately and became a cultural touchstone.</p>
+                            <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 8px;">
+                                <h4 style="font-size: 1.125rem; margin-bottom: 0.75rem; color: #333;">Impact:</h4>
+                                <p style="font-size: 0.95rem; color: #666; line-height: 1.6;">Opened the door for greater representation and diversity across all product lines.</p>
+                            </div>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%); padding: 3rem; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center;">
+                            <div style="font-size: 5rem; margin-bottom: 1rem;">🌟</div>
+                            <h3 style="font-size: 2.5rem; font-family: var(--font-serif); margin-bottom: 0.5rem;">1980</h3>
+                        </div>
+                    </article>
+
+                    <!-- 1992 - President Barbie -->
+                    <article style="display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+                        <div style="background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%); padding: 3rem; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center;">
+                            <div style="font-size: 5rem; margin-bottom: 1rem;">🏛️</div>
+                            <h3 style="font-size: 2.5rem; font-family: var(--font-serif); margin-bottom: 0.5rem;">1992</h3>
+                        </div>
+                        <div style="padding: 3rem;">
+                            <h3 style="font-size: 1.75rem; color: #dc2626; margin-bottom: 1rem;">President Barbie: Breaking the Highest Glass Ceiling</h3>
+                            <p style="line-height: 1.75; color: #666; margin-bottom: 1rem;">Twenty-four years before a woman became a major party presidential nominee, President Barbie showed girls they could lead the nation. Dressed in a red power suit, she embodied executive leadership and political power.</p>
+                            <p style="line-height: 1.75; color: #666; margin-bottom: 1.5rem;">The doll came with everything needed for the Oval Office and sparked conversations about women in politics across generations.</p>
+                            <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 8px;">
+                                <h4 style="font-size: 1.125rem; margin-bottom: 0.75rem; color: #333;">Impact:</h4>
+                                <p style="font-size: 0.95rem; color: #666; line-height: 1.6;">Normalized the concept of female political leadership for millions of children.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 2016 - Body Diversity -->
+                    <article style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+                        <div style="padding: 3rem;">
+                            <h3 style="font-size: 1.75rem; color: #ea580c; margin-bottom: 1rem;">Fashionistas: Celebrating All Body Types</h3>
+                            <p style="line-height: 1.75; color: #666; margin-bottom: 1rem;">The Fashionistas line revolutionized dolls by introducing curvy, tall, and petite body types alongside the original. This groundbreaking move recognized that beauty comes in infinite forms and that representation matters.</p>
+                            <p style="line-height: 1.75; color: #666; margin-bottom: 1.5rem;">The diverse line included 7 skin tones, 22 eye colors, 24 hairstyles, and multiple body types, ensuring every child could see themselves reflected.</p>
+                            <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 8px;">
+                                <h4 style="font-size: 1.125rem; margin-bottom: 0.75rem; color: #333;">Impact:</h4>
+                                <p style="font-size: 0.95rem; color: #666; line-height: 1.6;">Transformed industry standards for body positivity and inclusive representation.</p>
+                            </div>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #ea580c 0%, #fb923c 100%); padding: 3rem; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center;">
+                            <div style="font-size: 5rem; margin-bottom: 1rem;">💃</div>
+                            <h3 style="font-size: 2.5rem; font-family: var(--font-serif); margin-bottom: 0.5rem;">2016</h3>
+                        </div>
+                    </article>
+
+                    <!-- 2019 - Disability Inclusion -->
+                    <article style="display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+                        <div style="background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%); padding: 3rem; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center;">
+                            <div style="font-size: 5rem; margin-bottom: 1rem;">♿</div>
+                            <h3 style="font-size: 2.5rem; font-family: var(--font-serif); margin-bottom: 0.5rem;">2019</h3>
+                        </div>
+                        <div style="padding: 3rem;">
+                            <h3 style="font-size: 1.75rem; color: #0891b2; margin-bottom: 1rem;">Wheelchair and Prosthetic Limb Dolls</h3>
+                            <p style="line-height: 1.75; color: #666; margin-bottom: 1rem;">Barbie introduced dolls with wheelchairs and prosthetic limbs, working directly with disability advocates to ensure authentic representation. These dolls featured functional wheelchairs and realistic prosthetics.</p>
+                            <p style="line-height: 1.75; color: #666; margin-bottom: 1.5rem;">The launch included ramps for the Dreamhouse and other accessibility features, showing that inclusion means removing barriers everywhere.</p>
+                            <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 8px;">
+                                <h4 style="font-size: 1.125rem; margin-bottom: 0.75rem; color: #333;">Impact:</h4>
+                                <p style="font-size: 0.95rem; color: #666; line-height: 1.6;">Validated millions of children with disabilities and advanced conversations about accessibility.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Milestones -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 1.5rem; font-family: var(--font-serif);">Career Dolls Breaking Barriers</h2>
+                <p style="text-align: center; font-size: 1.125rem; color: #666; margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">Over 200 careers represented, inspiring generations to dream bigger</p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+                    <div style="text-align: center; padding: 2rem; background: #f8f8f8; border-radius: 8px;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">👩‍⚕️</div>
+                        <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: #333;">Doctor</h3>
+                        <p style="font-size: 0.875rem; color: #999;">Since 1973</p>
+                    </div>
+                    <div style="text-align: center; padding: 2rem; background: #f8f8f8; border-radius: 8px;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">👩‍🚀</div>
+                        <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: #333;">Astronaut</h3>
+                        <p style="font-size: 0.875rem; color: #999;">Since 1965</p>
+                    </div>
+                    <div style="text-align: center; padding: 2rem; background: #f8f8f8; border-radius: 8px;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">👩‍💻</div>
+                        <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: #333;">Engineer</h3>
+                        <p style="font-size: 0.875rem; color: #999;">Since 2010</p>
+                    </div>
+                    <div style="text-align: center; padding: 2rem; background: #f8f8f8; border-radius: 8px;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">👩‍🔬</div>
+                        <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: #333;">Scientist</h3>
+                        <p style="font-size: 0.875rem; color: #999;">Since 2008</p>
+                    </div>
+                    <div style="text-align: center; padding: 2rem; background: #f8f8f8; border-radius: 8px;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">👩‍✈️</div>
+                        <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: #333;">Pilot</h3>
+                        <p style="font-size: 0.875rem; color: #999;">Since 1990</p>
+                    </div>
+                    <div style="text-align: center; padding: 2rem; background: #f8f8f8; border-radius: 8px;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">👩‍⚖️</div>
+                        <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: #333;">Judge</h3>
+                        <p style="font-size: 0.875rem; color: #999;">Since 2019</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Quote -->
+        <section style="padding: 4rem 0; background: linear-gradient(135deg, #FF1493 0%, #FFD700 100%); color: white; text-align: center;">
+            <div class="container">
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div style="font-size: 4rem; margin-bottom: 1.5rem; opacity: 0.9;">💫</div>
+                    <blockquote style="font-size: 2rem; font-family: var(--font-serif); line-height: 1.5; margin-bottom: 1.5rem;">
+                        "You can be anything."
+                    </blockquote>
+                    <p style="font-size: 1.125rem; opacity: 0.9;">The promise that has inspired generations to dream without limits</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Global Impact -->
+        <section style="padding: 4rem 0; background: white;">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; font-family: var(--font-serif);">Global Cultural Impact</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                        <div>
+                            <div style="font-size: 3rem; color: #FF1493; margin-bottom: 0.5rem; font-weight: 700;">150+</div>
+                            <p style="color: #666;">Countries Worldwide</p>
+                        </div>
+                        <div>
+                            <div style="font-size: 3rem; color: #FF1493; margin-bottom: 0.5rem; font-weight: 700;">1B+</div>
+                            <p style="color: #666;">Dolls Sold</p>
+                        </div>
+                        <div>
+                            <div style="font-size: 3rem; color: #FF1493; margin-bottom: 0.5rem; font-weight: 700;">200+</div>
+                            <p style="color: #666;">Careers Represented</p>
+                        </div>
+                        <div>
+                            <div style="font-size: 3rem; color: #FF1493; margin-bottom: 0.5rem; font-weight: 700;">65</div>
+                            <p style="color: #666;">Years of Inspiration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay in the Know</h2>
+                    <p>Get the latest updates from President Doll and The Doll House</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h3 style="color: var(--color-secondary); font-family: var(--font-serif); margin: 0;">The Doll House</h3>
+                </div>
+
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3>News</h3>
+                        <ul>
+                            <li><a href="wire.html">Wire</a></li>
+                            <li><a href="../priorities/priorities.html">Issues</a></li>
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                            <li><a href="../contact/visit.html">Visit</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Administration</h3>
+                        <ul>
+                            <li><a href="../media/gallery.html">Gallery</a></li>
+                            <li><a href="../media/videos.html">Video Library</a></li>
+                            <li><a href="../history/founders-museum.html">Founders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="government.html">Governance</a></li>
+                            <li><a href="../../history.html">History</a></li>
+                            <li><a href="../contact/internships.html">Internships</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-social" id="footerSocialLinks"></div>
+
+                <div class="footer-address">
+                    <p>The Doll House<br>
+                    1600 Dreamhouse Lane<br>
+                    Malibu, CA 90265</p>
+                </div>
+
+                <div class="footer-legal">
+                    <a href="../legal/privacy.html">Privacy Policy</a>
+                    <a href="../legal/copyright.html">Copyright Policy</a>
+                    <a href="../legal/government.html">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Join Button -->
+    <div class="floating-join-btn" id="floatingJoinBtn">
+        <button class="join-close-btn" aria-label="Close join button" onclick="document.getElementById('floatingJoinBtn').style.display='none'; return false;">×</button>
+        <a href="#newsletter" class="join-now-link">Join Now</a>
+    </div>
+
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/utils.js"></script>
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

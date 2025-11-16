@@ -538,6 +538,187 @@ const Components = {
   },
 
   /**
+   * Header Component
+   * Renders the universal header for all pages
+   */
+  Header: {
+    render(container, options = {}) {
+      console.log('Header.render called', container);
+      if (!container) {
+        console.error('Header.render: No container provided');
+        return;
+      }
+
+      const defaults = {
+        basePath: '', // For pages in subdirectories, set to '../' or '../../'
+        bannerText: 'Making the White House Femme Again ✨ Protect the Dolls • Support Trans Joy • Choose Your Haus'
+      };
+
+      // Merge options with defaults
+      const config = Object.assign({}, defaults, options);
+      const bp = config.basePath; // Shorthand for base path
+
+      const headerHTML = `
+        <!-- Announcement Banner -->
+        <div class="announcement-banner">
+          <div class="container">
+            <p class="announcement-text">${config.bannerText}</p>
+          </div>
+        </div>
+
+        <!-- Header -->
+        <header class="site-header">
+          <div class="header-container">
+            <div class="header-inner">
+              <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+              </button>
+
+              <div class="site-logo">
+                <a href="${bp}index.html">President Doll</a>
+              </div>
+
+              <div class="header-center-logo">
+                <a href="${bp}index.html">
+                  <img src="${bp}assets/images/thedollhaus%20white.png" alt="The Doll Haus" class="site-logo-image">
+                </a>
+              </div>
+
+              <div class="utility-nav">
+                <button class="search-toggle" aria-label="Search">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                    <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </button>
+                <div class="header-house-logo">
+                  <img src="${bp}assets/images/dollhaus%20house.png" alt="Dollhaus" class="header-house-image">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <nav class="primary-nav" aria-label="Primary" id="primary-nav">
+            <div class="nav-overlay-header" id="navOverlayHeader">
+              <div class="nav-close-btn-wrapper">
+                <button class="nav-close-btn" aria-label="Close menu">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </button>
+                <span class="nav-close-text">Close</span>
+              </div>
+              <button class="nav-search" aria-label="Open search">
+                <span>Search</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                  <path d="M13 13L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
+            </div>
+
+            <div class="nav-search-header" id="navSearchHeader" style="display: none;">
+              <div class="nav-menu-btn-wrapper">
+                <button class="nav-menu-btn" aria-label="Back to menu">
+                  <span class="hamburger-line"></span>
+                  <span class="hamburger-line"></span>
+                  <span class="hamburger-line"></span>
+                </button>
+                <span class="nav-menu-text">Menu</span>
+              </div>
+              <div class="nav-close-btn-wrapper nav-close-btn-wrapper-reverse">
+                <span class="nav-close-text">Close</span>
+                <button class="nav-close-btn" aria-label="Close menu">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="nav-search-container" id="navSearchContainer" style="display: none;">
+              <div class="nav-search-wrapper">
+                <input type="search" class="nav-search-input" id="navSearchInput" placeholder="Search The Doll Haus..." aria-label="Search">
+                <p class="nav-search-hint">Press Enter to search</p>
+              </div>
+            </div>
+
+            <div class="nav-overlay-content" id="navOverlayContent">
+              <ul class="nav-menu">
+                <li class="menu-item has-submenu">
+                  <button class="menu-link" aria-expanded="false">News</button>
+                  <ul class="submenu">
+                    <li><a href="${bp}pages/news/articles.html">Articles</a></li>
+                    <li><a href="${bp}pages/news/briefings-statements.html">Briefings & Statements</a></li>
+                    <li><a href="${bp}pages/news/fact-sheets.html">Fact Sheets</a></li>
+                    <li><a href="${bp}pages/news/presidential-actions.html">Presidential Actions</a></li>
+                    <li><a href="${bp}pages/news/remarks.html">Remarks</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item has-submenu">
+                  <button class="menu-link" aria-expanded="false">Administration</button>
+                  <ul class="submenu">
+                    <li><a href="${bp}pages/administration/president-barbie.html">President Barbie</a></li>
+                    <li><a href="${bp}pages/administration/vp-ken.html">Vice President Ken</a></li>
+                    <li><a href="${bp}pages/administration/first-doll-skipper.html">First Doll Skipper</a></li>
+                    <li><a href="${bp}pages/administration/second-doll-teresa.html">Second Doll Teresa</a></li>
+                    <li><a href="${bp}pages/administration/cabinet.html">The Cabinet</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item has-submenu">
+                  <button class="menu-link" aria-expanded="false">Media</button>
+                  <ul class="submenu">
+                    <li><a href="${bp}pages/media/videos.html">Video Library</a></li>
+                    <li><a href="${bp}pages/media/gallery.html">Gallery</a></li>
+                    <li><a href="${bp}pages/media/live.html">Live News</a></li>
+                    <li><a href="${bp}pages/media/wire.html">Doll House Wire</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item has-submenu">
+                  <button class="menu-link" aria-expanded="false">Priorities</button>
+                  <ul class="submenu">
+                    <li><a href="${bp}pages/priorities/priorities.html">Issues</a></li>
+                    <li><a href="${bp}pages/priorities/investments.html">Investments</a></li>
+                    <li><a href="${bp}pages/priorities/achievements.html">Wins and Achievements</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item has-submenu">
+                  <button class="menu-link" aria-expanded="false">History</button>
+                  <ul class="submenu">
+                    <li><a href="${bp}pages/history/founders-museum.html">Founders Museum</a></li>
+                    <li><a href="${bp}pages/history/moments-that-made-us.html">Timeline</a></li>
+                    <li><a href="${bp}pages/legal/government.html">Government Information</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item has-submenu">
+                  <button class="menu-link" aria-expanded="false">Get in Touch</button>
+                  <ul class="submenu">
+                    <li><a href="${bp}pages/contact/contact.html">Contact</a></li>
+                    <li><a href="${bp}pages/contact/visit.html">Visit</a></li>
+                    <li><a href="${bp}pages/contact/internships.html">Internships</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+      `;
+
+      container.innerHTML = headerHTML;
+
+      // Render social links after header is in DOM
+      setTimeout(() => {
+        const socialContainer = document.querySelector('#headerSocialLinks');
+        if (socialContainer) {
+          Components.SocialLinks.render(socialContainer);
+        }
+      }, 0);
+    }
+  },
+
+  /**
    * Footer Component
    * Renders the universal footer for all pages
    */
@@ -602,10 +783,10 @@ const Components = {
 
                   <!-- Sub-column 2: Logo & Newsletter -->
                   <div class="footer-center-middle">
-                    <div class="footer-logo">
-                      <h3 style="color: var(--color-secondary); font-family: var(--font-serif); margin: 0;">${config.siteName}</h3>
-                    </div>
                     <div class="footer-newsletter-main">
+                      <div class="footer-house-logo">
+                        <img src="${bp}assets/images/dollhaus%20house.png" alt="Dollhaus" class="footer-house-image">
+                      </div>
                       <h4>Subscribe to The Doll Haus newsletter</h4>
                       <form class="newsletter-form-main">
                         <input type="email" placeholder="Your email" aria-label="Email address" required>
@@ -670,6 +851,7 @@ Object.freeze(Components.Carousel);
 Object.freeze(Components.Form);
 Object.freeze(Components.Search);
 Object.freeze(Components.DocumentReader);
+Object.freeze(Components.Header);
 Object.freeze(Components.Footer);
 
 // Export for ES6 modules (if needed in future)

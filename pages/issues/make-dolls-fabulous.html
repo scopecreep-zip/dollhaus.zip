@@ -14,7 +14,7 @@
 
     <div class="announcement-banner">
         <div class="container">
-            <p class="announcement-text">Breaking: The Age of Dreams Has Officially Begun - Join Us in Making History!</p>
+            <p class="announcement-text">Making the White House Femme Again ✨ Protect the Dolls • Support Trans Joy • Choose Your Haus</p>
         </div>
     </div>
 
@@ -153,8 +153,8 @@
             <div class="issue-hero-overlay"></div>
             <div class="container">
                 <div class="issue-hero-content">
-                    <h1>Make Dolls Fabulous Again</h1>
-                    <p class="issue-hero-description">Promoting health, wellness, confidence, and self-care for every doll, celebrating body positivity and mental well-being.</p>
+                    <h1>Bimbo Feminism: Make Politics Fabulous</h1>
+                    <p class="issue-hero-description">Hyperfemininity as radical resistance - proving glamour, intelligence, and political power are not opposites but weapons against patriarchy.</p>
                 </div>
             </div>
         </section>
@@ -164,9 +164,9 @@
             <div class="container">
                 <div class="issue-overview-content">
                     <h2>Overview</h2>
-                    <p>President Barbie's vision is a Dreamhouse Nation where every doll feels fabulous, confident, and empowered. Our comprehensive wellness initiative addresses physical health, mental well-being, self-esteem, and the importance of self-care in a holistic approach to doll wellness.</p>
-                    <p>We're breaking down unrealistic standards and celebrating the beauty of diversity in all its forms. From expanding access to mental health services to promoting body positivity and creating spaces for dolls to express themselves authentically, we're building a culture of wellness and acceptance.</p>
-                    <p>Through community wellness programs, mental health awareness campaigns, and accessible healthcare services, we're ensuring that every doll has the resources and support they need to be their most fabulous selves.</p>
+                    <p>Bimbo feminism is our radical reclamation of hyperfemininity as political power. For too long, patriarchy has weaponized the false binary between intelligence and aesthetics, glamour and substance, pink and politics. We reject this lie. Trans women have always known: you can be brilliant in glitter, strategically minded in stilettos, politically fierce in pink.</p>
+                    <p>We're not asking permission to exist in political spaces while feminine. We're demanding recognition that hyperfemininity itself is resistance - especially for trans women who face violence for expressing femininity, for sex workers criminalized for their presentation, for anyone told their aesthetic choices invalidate their intellect.</p>
+                    <p>Through bimbo feminist politics, we celebrate gender euphoria, reject "girlboss" exploitation, center joy and rest over hustle culture, and prove that being visibly, unapologetically femme is a political act. This is liberation in pink packaging - and it's just as valid as liberation in any other aesthetic.</p>
                 </div>
             </div>
         </section>
@@ -309,6 +309,9 @@
         </section>
     </main>
 
+    <!-- Footer Container -->
+    <div id="footerContainer"></div>
+
     <footer class="site-footer" id="contact">
         <div class="container">
             <div class="footer-top">
@@ -372,5 +375,27 @@
     <script src="../../assets/js/utils.js"></script>
     <script src="../../assets/js/components.js"></script>
     <script src="../../assets/js/script.js"></script>
+    <script>
+        // Render header and footer with basePath for subdirectory
+        document.addEventListener('DOMContentLoaded', () => {
+            const headerContainer = document.querySelector('#headerContainer');
+            const footerContainer = document.querySelector('#footerContainer');
+
+            if (headerContainer) {
+                Components.Header.render(headerContainer, { basePath: '../../' });
+                // Initialize header navigation after rendering
+                if (typeof initHeaderNavigation === 'function') {
+                    initHeaderNavigation();
+                }
+            }
+
+            if (footerContainer) {
+                Components.Footer.render(footerContainer, {
+                    basePath: '../../',
+                    brandHref: '../../index.html'
+                });
+            }
+        });
+    </script>
 </body>
 </html>

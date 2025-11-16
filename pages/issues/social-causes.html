@@ -14,7 +14,7 @@
 
     <div class="announcement-banner">
         <div class="container">
-            <p class="announcement-text">Breaking: The Age of Dreams Has Officially Begun - Join Us in Making History!</p>
+            <p class="announcement-text">Making the White House Femme Again ✨ Protect the Dolls • Support Trans Joy • Choose Your Haus</p>
         </div>
     </div>
 
@@ -153,8 +153,8 @@
             <div class="issue-hero-overlay"></div>
             <div class="container">
                 <div class="issue-hero-content">
-                    <h1>Social Causes</h1>
-                    <p class="issue-hero-description">Championing equality, diversity, LGBTQ+ rights, racial justice, women's empowerment, and disability rights for all dolls.</p>
+                    <h1>Trans Liberation & Social Justice</h1>
+                    <p class="issue-hero-description">Centering trans women—especially Black & Latina—in our fight for liberation, alongside sex worker rights, racial justice, and abolition.</p>
                 </div>
             </div>
         </section>
@@ -164,9 +164,9 @@
             <div class="container">
                 <div class="issue-overview-content">
                     <h2>Overview</h2>
-                    <p>President Barbie believes that Dreamhouse Nation is strongest when every doll is free to be their authentic self. Our social justice agenda is comprehensive and unwavering: equal rights and opportunities for all dolls, regardless of background, identity, ability, or any other characteristic.</p>
-                    <p>We're working to dismantle systemic barriers, challenge discrimination, and build a society where diversity is celebrated as a strength. From protecting LGBTQ+ rights to advancing racial justice, from empowering women in leadership to ensuring accessibility for dolls with disabilities, we're committed to creating true equality.</p>
-                    <p>Through legislation, policy reform, education initiatives, and cultural change, we're building a Dreamhouse Nation that lives up to its promise of liberty and justice for all dolls.</p>
+                    <p>President Barbie believes that liberation requires centering those who face the most violence: trans women, particularly Black and Latina trans women. Our agenda is unapologetically radical: protect the dolls, dismantle carceral systems, and build power from the margins.</p>
+                    <p>We're working to abolish systems of oppression—not reform them. From ensuring trans women's survival to decriminalizing sex work, from defunding police to building mutual aid networks, we're committed to liberation over assimilation. Bimbo feminism teaches us that hyperfemininity, intelligence, and political power are not contradictions—they're weapons against patriarchy.</p>
+                    <p>Through direct action, community defense, reparations, and grassroots organizing, we're building a movement that rejects respectability politics and embraces the fullness of trans joy, sex worker autonomy, and collective liberation.</p>
                 </div>
             </div>
         </section>
@@ -177,34 +177,34 @@
                 <h2>Key Initiatives</h2>
                 <div class="initiatives-grid">
                     <div class="initiative-card">
-                        <span class="initiative-icon">🏳️‍🌈</span>
-                        <h3>LGBTQ+ Rights</h3>
-                        <p>Protecting and advancing the rights of LGBTQ+ dolls through comprehensive anti-discrimination legislation and support programs.</p>
+                        <span class="initiative-icon">🏳️‍⚧️</span>
+                        <h3>Trans Liberation</h3>
+                        <p>Protecting trans women's lives through community defense, healthcare access, housing, and legal protections—centering Black and Latina trans women.</p>
                     </div>
                     <div class="initiative-card">
                         <span class="initiative-icon">✊</span>
-                        <h3>Racial Justice</h3>
-                        <p>Addressing systemic racism and creating equitable opportunities for dolls of all backgrounds and ethnicities.</p>
+                        <h3>Sex Worker Rights</h3>
+                        <p>Full decriminalization of sex work, reparations for criminalization, and ensuring sex workers lead policy that affects them.</p>
                     </div>
                     <div class="initiative-card">
-                        <span class="initiative-icon">♀️</span>
-                        <h3>Women's Empowerment</h3>
-                        <p>Advancing gender equality, closing wage gaps, and supporting women dolls in leadership positions across all sectors.</p>
+                        <span class="initiative-icon">🔥</span>
+                        <h3>Racial Justice & Abolition</h3>
+                        <p>Dismantling white supremacy, defunding police, closing prisons, and building community-based accountability systems.</p>
                     </div>
                     <div class="initiative-card">
-                        <span class="initiative-icon">♿</span>
-                        <h3>Disability Rights</h3>
-                        <p>Ensuring accessibility, accommodation, and full participation in society for dolls with disabilities.</p>
+                        <span class="initiative-icon">💃</span>
+                        <h3>Ballroom Culture Preservation</h3>
+                        <p>Protecting and funding ballroom houses, preserving QTPOC cultural heritage, and ensuring haus mothers receive institutional support.</p>
                     </div>
                     <div class="initiative-card">
-                        <span class="initiative-icon">🌍</span>
-                        <h3>Cultural Diversity</h3>
-                        <p>Celebrating and protecting the rich cultural heritage of dolls from all backgrounds and traditions.</p>
+                        <span class="initiative-icon">🏠</span>
+                        <h3>Chosen Family Recognition</h3>
+                        <p>Legal recognition and resources for haus structures, chosen families, and non-traditional kinship networks.</p>
                     </div>
                     <div class="initiative-card">
-                        <span class="initiative-icon">⚖️</span>
-                        <h3>Equal Rights</h3>
-                        <p>Enforcing civil rights protections and ensuring equal treatment under law for every doll in Dreamhouse Nation.</p>
+                        <span class="initiative-icon">⚡</span>
+                        <h3>Antifascist Defense</h3>
+                        <p>Organizing against rising fascism, protecting targeted communities, and building solidarity networks for collective safety.</p>
                     </div>
                 </div>
             </div>
@@ -309,6 +309,9 @@
         </section>
     </main>
 
+    <!-- Footer Container -->
+    <div id="footerContainer"></div>
+
     <footer class="site-footer" id="contact">
         <div class="container">
             <div class="footer-top">
@@ -372,5 +375,27 @@
     <script src="../../assets/js/utils.js"></script>
     <script src="../../assets/js/components.js"></script>
     <script src="../../assets/js/script.js"></script>
+    <script>
+        // Render header and footer with basePath for subdirectory
+        document.addEventListener('DOMContentLoaded', () => {
+            const headerContainer = document.querySelector('#headerContainer');
+            const footerContainer = document.querySelector('#footerContainer');
+
+            if (headerContainer) {
+                Components.Header.render(headerContainer, { basePath: '../../' });
+                // Initialize header navigation after rendering
+                if (typeof initHeaderNavigation === 'function') {
+                    initHeaderNavigation();
+                }
+            }
+
+            if (footerContainer) {
+                Components.Footer.render(footerContainer, {
+                    basePath: '../../',
+                    brandHref: '../../index.html'
+                });
+            }
+        });
+    </script>
 </body>
 </html>

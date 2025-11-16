@@ -28,7 +28,9 @@
                 </button>
 
                 <div class="site-logo">
-                    <a href="../index.html">President Doll</a>
+                    <a href="../index.html">
+                        <img src="../assets/images/thedollhaus white.png" alt="The Doll Haus" class="site-logo-image">
+                    </a>
                 </div>
 
                 <div class="utility-nav">
@@ -288,10 +290,20 @@
     <script src="../assets/js/utils.js"></script>
     <script src="../assets/js/components.js"></script>
     <script src="../assets/js/script.js"></script>
-    <script>
-        // Render footer with basePath for subdirectory
+        <script>
+        // Render header and footer with basePath for subdirectory
         document.addEventListener('DOMContentLoaded', () => {
+            const headerContainer = document.querySelector('#headerContainer');
             const footerContainer = document.querySelector('#footerContainer');
+
+            if (headerContainer) {
+                Components.Header.render(headerContainer, { basePath: '../' });
+                // Initialize header navigation after rendering
+                if (typeof initHeaderNavigation === 'function') {
+                    initHeaderNavigation();
+                }
+            }
+
             if (footerContainer) {
                 Components.Footer.render(footerContainer, {
                     basePath: '../',
