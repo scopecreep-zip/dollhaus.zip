@@ -75,6 +75,17 @@ logs
 *.temp
 .cache/
 
+# Backup files
+*.bak
+*.bak2
+*.backup
+*.update_bak
+*.orig
+
+# Scripts (temporary development scripts)
+update-all-pages.sh
+update_pages.py
+
 # Build outputs (if you add build tools later)
 dist/
 build/
